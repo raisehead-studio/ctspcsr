@@ -1,8 +1,10 @@
 import { useState } from "react";
 import Pagination from "@mui/material/Pagination";
-import Link from "next/link";
+import { useRouter } from "next/router";
 import path from "path";
 import fs from "fs/promises";
+import Button from "@mui/material/Button";
+import SearchIcon from "@mui/icons-material/Search";
 
 import Breadcrumb from "../../components/Breadcrumb";
 
@@ -10,6 +12,7 @@ import layout from "../layout.module.scss";
 import style from "./styles.module.scss";
 
 const News = ({ data }: { data: any }) => {
+  const router = useRouter();
   const [page, setPage] = useState(1);
   const PER_PAGE = 10;
   function currentData() {
@@ -33,18 +36,40 @@ const News = ({ data }: { data: any }) => {
           <strong>最新消息</strong>
           <Breadcrumb />
         </div>
+        <table className={style.news_table}>
+          <thead>
+            <tr>
+              <th>日期</th>
+              <th>標題</th>
+              <th>功能</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            {currentData().map((i: any) => (
+              <tr key={i.news_id}>
+                <td>{i.create_date}</td>
+                <td>{i.news_title}</td>
+                <td
+                  style={{
+                    textAlign: "center",
+                  }}>
+                  <Button
+                    onClick={() => router.push(`/news/${i.news_id}`)}
+                    sx={{
+                      backgroundColor: "#32b4c2",
+                      padding: "5px 10px",
+                    }}
+                    variant="contained"
+                    startIcon={<SearchIcon />}>
+                    檢視
+                  </Button>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
         <div className={style.news_container}>
-          {currentData().map((i: any) => (
-            <div className={style.news_item} key={i.news_id}>
-              <Link href={`/news/${i.news_id}`}>{i.news_title}</Link>
-              <div>
-                <p>{i.create_date}</p>
-              </div>
-              <Link className={style.read_more} href={`/news/${i.news_id}`}>
-                Read More
-              </Link>
-            </div>
-          ))}
           <div className={style.pagination_container}>
             <Pagination
               count={Math.ceil(data.length / PER_PAGE)}
@@ -69,7 +94,6 @@ async function getData() {
 export async function getStaticProps(context: any) {
   const data = await getData();
   const news = data
-    .filter((i: any) => i.news_catgory === "2")
     .sort(
       (a: any, b: any) => +new Date(b.create_date) - +new Date(a.create_date)
     )

@@ -8,13 +8,25 @@ import layout from "../../layout.module.scss";
 
 export default function T({ data }: { data: any }) {
   return (
-    <div className={layout.page_layout}>
+    <div
+      className={layout.page_layout}
+      style={{
+        gridTemplateColumns: "1fr",
+      }}>
       <div className={layout.page_content}>
         <div className={layout.page_header}>
-          <strong>{data?.news_title}</strong>
+          <strong
+            style={{
+              maxWidth: "100%",
+            }}>
+            {data?.news_title}
+          </strong>
           {/* <Breadcrumb /> */}
         </div>
-        <div dangerouslySetInnerHTML={{ __html: data?.news_content }} />
+        <div
+          className={layout.page_description}
+          dangerouslySetInnerHTML={{ __html: data?.news_content }}
+        />
       </div>
     </div>
   );

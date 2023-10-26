@@ -102,8 +102,12 @@ export default function Header() {
                     isOpenNewTab: false,
                   },
                 ]
-            ).map((item) => (
-              <li key={item.title}>
+            ).map((item, index) => (
+              <li
+                key={item.title}
+                style={{
+                  borderRight: index === 4 ? "none" : "1px solid #ffff",
+                }}>
                 <Link
                   target={item.isOpenNewTab ? "_blank" : ""}
                   href={item.path}>
