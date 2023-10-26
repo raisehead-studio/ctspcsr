@@ -1,0 +1,13 @@
+.about_stsp_photo_container {
+  padding: 20px 0px 50px 0px;
+  max-width: 1280px;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+
+  > img {
+    width: 100%;
+    object-fit: contain;
+    position: inherit !important;
+  }
+}

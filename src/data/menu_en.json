@@ -1,0 +1,211 @@
+[
+  {
+    "title": "CSRGuide",
+    "path": "/",
+    "sub": [
+      {
+        "title": "Introduction to Central Taiwan Science Park",
+        "path": "/introduction"
+      },
+      {
+        "title": "Sustainability Management Performance",
+        "path": "/csr_performance"
+      },
+      {
+        "title": "Message from the Director-General",
+        "path": "/message_director"
+      },
+      {
+        "title": "Focus Column",
+        "sub": [
+          {
+            "title": "Developing sustainable water resources",
+            "path": "/focus/1"
+          },
+          {
+            "title": "In the epidemic, jointly protect competitive industries",
+            "path": "/focus/2"
+          },
+          {
+            "title": "Revitalize the central industry and invest in the Erlin Park",
+            "path": "/focus/3"
+          }
+        ]
+      },
+      {
+        "title": "Video",
+        "path": "/video"
+      }
+    ]
+  },
+  {
+    "title": "Themes and Goals Implementation",
+    "sub": [
+      {
+        "title": "Stakeholder Interaction",
+        "path": "/stakeholder_interaction"
+      },
+      {
+        "title": "Material Topics Identification",
+        "path": "/big_topics"
+      },
+      {
+        "title": "Sustainable Development Goals",
+        "path": "/csr_goals"
+      },
+      {
+        "title": "Active Implementation of | SustainableDevelopment Goals",
+        "path": "/csr_practical_goals"
+      }
+    ]
+  },
+  {
+    "title": "2022 VDR Summary",
+    "sub": [
+      {
+        "title": "E Green Park-Climate Action",
+        "path": "/e",
+        "sub": [
+          {
+            "title": "Climate Change Disaster Prevention and Adaptation",
+            "path": "/e/1"
+          },
+          {
+            "title": "Energy Resource Management",
+            "path": "/e/2"
+          },
+          {
+            "title": "Ecological Park",
+            "path": "/e/3"
+          },
+          {
+            "title": "Net Zero Program",
+            "path": "/e/4"
+          },
+          {
+            "title": "Environmental Management",
+            "path": "/e/5",
+            "sub": [
+              {
+                "title": "Total Mass Based Control",
+                "path": "/e/5/1"
+              },
+              {
+                "title": "Air Pollution and Greenhouse Gases",
+                "path": "/e/5/2"
+              },
+              {
+                "title": "Sewage Management",
+                "path": "/e/5/3"
+              },
+              {
+                "title": "Waste Management",
+                "path": "/e/5/4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "S Innovation Driven Industries-Innovation Driven Industries",
+        "path": "/s",
+        "sub": [
+          {
+            "title": "Park Development and Innovation Transformation",
+            "path": "/s/1"
+          },
+          {
+            "title": "Booming smart industry",
+            "path": "/s/2"
+          },
+          {
+            "title": "Combined with industry-government, university and research",
+            "path": "/s/3"
+          },
+          {
+            "title": "Deepen International Cooperation",
+            "path": "/s/4"
+          },
+          {
+            "title": "New Dreams Come True",
+            "path": "/s/5"
+          },
+          {
+            "title": "Integration of Technological Creativity and Self- production",
+            "path": "/s/6"
+          },
+          {
+            "title": "Safe Workplace",
+            "path": "/s/7",
+            "sub": [
+              {
+                "title": "Creating Career Opportunities",
+                "path": "/s/7/1"
+              },
+              {
+                "title": "Cultivating Talent",
+                "path": "/s/7/2"
+              },
+              {
+                "title": "Park Labor Rights",
+                "path": "/s/7/3"
+              },
+              {
+                "title": "Creating a Safe and Healthy Park",
+                "path": "/s/7/4"
+              }
+            ]
+          },
+          {
+            "title": "Social Interaction",
+            "path": "/s/8",
+            "sub": [
+              {
+                "title": "Convenient Life in the Smart Park",
+                "path": "/s/8/1"
+              },
+              {
+                "title": "Good neighborly and friendly environment",
+                "path": "/s/8/2"
+              },
+              {
+                "title": "Cultivate talents to lay out the future",
+                "path": "/s/8/3"
+              },
+              {
+                "title": "Cultivate talents to lay out the future",
+                "path": "/s/8/4"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "G Park operation and maintenance- Integrity Governance",
+        "path": "/g",
+        "sub": [
+          {
+            "title": "Overview of the operation of the CTSP",
+            "path": "/g/1"
+          },
+          {
+            "title": "Risk management",
+            "path": "/g/2"
+          },
+          {
+            "title": "Compliance with Laws and Regulations",
+            "path": "/g/3"
+          },
+          {
+            "title": "Supply Chain Management",
+            "path": "/g/4"
+          },
+          {
+            "title": "Information security management",
+            "path": "/g/5"
+          }
+        ]
+      }
+    ]
+  }
+]

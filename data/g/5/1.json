@@ -1,0 +1,18 @@
+{
+  "title": "資訊安全管理",
+  "content": [
+    "<p><strong>資安政策</strong></p>",
+    "<p>隨著網路技術與科技不斷地推陳出新，再加上疫情期間許多企業實施居家暨遠距辦公，中科管理局身為政府機關，為加強資訊安全防護，中科在11月19日接受科技部的資安稽核，確保落實資通安全管理法規定。並通過ISO 27001:2013資安驗證及BS 10012:2017個人資訊管理系統、定期資安健檢、舉辦內部資訊安全、社交工程教育訓練、每年辦理資訊安全研討會等，持續在軟硬體設備上更新，落實相關防範措施，近三年本局並無發生重要資訊外洩之情形。</p>",
+    "<p>受新冠肺炎疫情影響，為降低群聚與通勤的感染風險，實施遠距工作或居家上班措施，以期在防範員工感染之下，維持最大限度地正常運作，為此提供本局同仁使用VPN(Virtual Private Network)虛擬專用網路來進行遠距辦公，並且採用可開放時間、帳號、系統版本等方式管控， 降低資安風險；而配合遠距辦公，為了讓同仁間溝通更加便利，亦採用了U視訊軟體，做為內部與科技部、其它園區等單位之視訊溝通的工具，該軟體符合多項資安認證、支援點對點加密、且資料落地於台灣本地的伺服器，減少資安疑慮。</p>",
+    "<p>中科管理局於2021年5月6日特別辦理「後疫情時代的資安防護」資安研討會，探討虛實整合下工控場所企業面臨新型態的資安攻擊要如何能有效的偵測防禦及佈建，與企業分享資安新技術與資訊防護相關經驗。藉由專業講師群的經驗案例分享與各產業的人員交流，使參與人員獲益良多。</p>",
+    "<div class='page_photo_container'><img alt='' src='/images/images/image92.png'  title=''></div>",
+    "<p>相關連結:<a href='https://www.ctsp.gov.tw/chinese/other/security97.aspx?v=1' target='_blank'>資安政策</a></p>",
+    "<p><strong>共構機房</strong></p>",
+    "<p> 科技部暨所屬三園區(竹科、中科、南科)之共構機房建至於中科，由專案維運團隊負責。2021年9月28日科技部資安長陳宗權次長率領資訊處薛大勇處長李東宜高級分析師等視察中科管理局（關鍵基礎設施提供者）資通安全業務作業，瞭解共構機房資安防護措施及維運概況。陳次長為維護機關資通安全，關切機器設備使用情況，指示管理局除資通硬體及物聯網(Internet of Things, IOT)設備外，後續避免使用到陸製軟體、元件、服務及委外人力。中科管理局因應金管會要求由許正宗副局長擔任資安長一職，率一級主管歡迎次長，藉由安全業務推動簡報說明中科依據「資通安全管理法」及「資通安全管理法施行細則」等6項子法，推動資通安全業務，中科為加強資訊安全並協助園區廠商，將辦理資安防護措施、建立管理制度及教育訓練，以區域聯防概念共同維護資安。中科也將配合行政院推動各機關強化資通安全管理，期望能提供三園區完善且安全的資訊服務。</p>",
+    "<table class='c40'><tbody><tr class='c128'><td class='c144' colspan='1' rowspan='1'><p class='c147'><span style='overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 244.22px; height: 183.06px;'><img alt='' src='/images/images/image90.png' style='width: 244.22px; height: 183.06px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);' title=''></span></p></td><td class='c74' colspan='1' rowspan='1'><p class='c147'><span style='overflow: hidden; display: inline-block; margin: 0.00px 0.00px; border: 0.00px solid #000000; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px); width: 239.15px; height: 179.08px;'><img alt='' src='/images/images/image81.png' style='width: 239.15px; height: 179.08px; margin-left: -0.00px; margin-top: -0.00px; transform: rotate(0.00rad) translateZ(0px); -webkit-transform: rotate(0.00rad) translateZ(0px);' title=''></span></p></td></tr><tr class='c128'><td class='c144' colspan='1' rowspan='1'><p class='c147'><span class='c58 c50'>科技部資安長及長官視察中科管理局共構機房</span></p></td><td class='c74' colspan='1' rowspan='1'><p class='c147'><span class='c50 c58'>於共構機房中討論資訊安全相關辦法</span></p></td></tr></tbody></table>",
+    "<p><strong>科學園區資安資訊分享與分析中心</strong></p>",
+    "<p>「科學園區資安資訊分享與分析中心(SP-ISAC)」由科技部規劃推動專屬於新竹、中部及南部科學園區，期透過研析分享資安情資及接軌國際資安技術，辦理技術訓練、人員培訓、研討會議及協助資安演練等服務，讓園區廠商資安管理人員掌握最新攻擊手法並提出因應措施，達到早期預警、協助改善及緊急應變等防護目標，強化園區內部資安管控防護能量。</p>",
+    "<p>近年來APT(Advanced Persistent Threats, APT)的攻擊被企業視為最難防禦的手法，他是針對特定組織所做出複雜且多方位的攻擊，要減輕APT發生的風險必須落實弱點掃描，得輔佐企業能夠於第一時間發現漏洞，當機立斷進行漏洞修補抑制駭客有機可趁。SP-ISAC也於2021年3月25日舉辦【資安中階課程】系統漏洞檢測分析實務，本課程將介紹弱點產生的因素，討論近期的資安弱點，並結合相關檢測工具及修補方式，強化防毒系統，保護企業免於面臨資安威脅所帶來的衝擊。</p>",
+    "<div class='page_photo_container'><img alt='' src='/images/images/image79.png'  title=''></div>"
+  ]
+}

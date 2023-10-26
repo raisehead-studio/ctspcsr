@@ -1,0 +1,96 @@
+{
+  "/": [
+    {
+      "title": "中科園區簡介",
+      "path": "/introduction"
+    },
+    {
+      "title": "永續管理績效",
+      "path": "/csr_performance"
+    },
+    {
+      "title": "局長的話",
+      "path": "/message_director"
+    },
+    {
+      "title": "焦點專欄",
+      "sub": [
+        {
+          "title": "開拓永續水資源",
+          "path": "/focus/1"
+        },
+        {
+          "title": "疫起守護護國神山群",
+          "path": "/focus/2"
+        },
+        {
+          "title": "振興中部產業 投資二林園區",
+          "path": "/focus/3"
+        }
+      ]
+    },
+    {
+      "title": "最新消息",
+      "path": "/news"
+    },
+    {
+      "title": "影片專區",
+      "path": "/video"
+    },
+    {
+      "title": "互動藝術",
+      "path": "/interactive_art"
+    },
+    {
+      "title": "好站相連",
+      "path": "/links"
+    }
+  ],
+  "/introduction": [
+    {
+      "title": "永續導覽",
+      "path": "/"
+    },
+    {
+      "title": "永續管理績效",
+      "path": "/csr_performance"
+    },
+    {
+      "title": "局長的話",
+      "path": "/message_director"
+    },
+    {
+      "title": "焦點專欄",
+      "sub": [
+        {
+          "title": "開拓永續水資源",
+          "path": "/focus/1"
+        },
+        {
+          "title": "疫起守護護國神山群",
+          "path": "/focus/2"
+        },
+        {
+          "title": "振興中部產業 投資二林園區",
+          "path": "/focus/3"
+        }
+      ]
+    },
+    {
+      "title": "最新消息",
+      "path": "/news"
+    },
+    {
+      "title": "影片專區",
+      "path": "/video"
+    },
+    {
+      "title": "互動藝術",
+      "path": "/interactive_art"
+    },
+    {
+      "title": "好站相連",
+      "path": "/links"
+    }
+  ]
+}

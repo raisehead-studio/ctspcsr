@@ -1,0 +1,23 @@
+.practical_plan_content {
+  display: grid;
+  grid-template-areas: "section1 section4" "section2 section5" "section3 .";
+  .section1 {
+    grid-area: section1;
+  }
+  .section2 {
+    grid-area: section2;
+  }
+  .section3 {
+    grid-area: section3;
+  }
+  .section4 {
+    grid-area: section4;
+  }
+  .section5 {
+    grid-area: section5;
+  }
+
+  @media (max-width: 768px) {
+    grid-template-areas: "section1" "section2" "section3" "section4" "section5";
+  }
+}

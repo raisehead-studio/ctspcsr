@@ -1,0 +1,32 @@
+.links_container {
+  display: grid;
+  grid-template-columns: calc(50% - 30px) calc(50% - 30px);
+  gap: 20px;
+  justify-content: space-between;
+
+  .links_container_item {
+    background-color: transparent;
+    border: 1px solid #205081;
+    color: #205081;
+    text-decoration: none;
+    width: 100%;
+    text-align: center;
+    padding: 35px 10px;
+    font-weight: 700;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    &:hover {
+      background-color: #205081;
+      color: #fff;
+      transition: 0.5s;
+    }
+  }
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
+  }
+}
