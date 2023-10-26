@@ -350,7 +350,7 @@ export default function Performance() {
           </div>
         </div>
         <div className={style.page_sidemenu}>
-          <SideMenu menu={menu_en} />
+          <SideMenu />
         </div>
       </div>
     );
@@ -716,7 +716,7 @@ export default function Performance() {
         </div>
       </div>
       <div className={style.page_sidemenu}>
-        <SideMenu menu={menu_zh} />
+        <SideMenu />
       </div>
     </div>
   );

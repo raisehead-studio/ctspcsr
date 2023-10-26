@@ -153,7 +153,7 @@ export default function CSRCompanyListPage() {
         </div>
       </div>
       <div className={layout.page_sidemenu}>
-        <SideMenu menu={menu_zh} />
+        <SideMenu />
       </div>
     </div>
   );

@@ -551,7 +551,7 @@ function SusData() {
         </Box>
       </div>
       <div className={layout.page_sidemenu}>
-        <SideMenu menu={menu_zh} />
+        <SideMenu />
       </div>
       <Modal
         open={open}

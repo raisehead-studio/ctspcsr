@@ -439,7 +439,7 @@ export default function Video() {
         </Box>
       </div>
       <div className={style.page_sidemenu}>
-        <SideMenu menu={lang === "en" ? menu_en : menu_zh} />
+        <SideMenu />
       </div>
     </div>
   );

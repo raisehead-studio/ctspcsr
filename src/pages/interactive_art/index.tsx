@@ -42,7 +42,7 @@ export default function F({
           </div>
         </div>
         <div>
-          <SideMenu menu={[]} />
+          <SideMenu />
         </div>
       </div>
     );
@@ -65,7 +65,7 @@ export default function F({
         </div>
       </div>
       <div>
-        <SideMenu menu={[]} />
+        <SideMenu />
       </div>
     </div>
   );

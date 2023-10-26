@@ -153,7 +153,7 @@ const Gri2021 = () => {
           </div>
         </div>
         <div className={layout.page_sidemenu}>
-          <SideMenu menu={menu_en} />
+          <SideMenu />
         </div>
       </div>
     );
@@ -240,7 +240,7 @@ const Gri2021 = () => {
         </div>
       </div>
       <div className={layout.page_sidemenu}>
-        <SideMenu menu={menu_zh} />
+        <SideMenu />
       </div>
     </div>
   );
