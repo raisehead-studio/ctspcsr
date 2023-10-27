@@ -300,13 +300,13 @@ const Home = ({ data }: { data: any[] }) => {
       <section>
         <Carousel showArrows={true} autoPlay infiniteLoop>
           <div>
-            <a href="https://www.stspcsr.com.tw/article_list/view_article_detail/?id=143">
+            <a href="">
               <Image
                 alt=""
-                src="/images/home/zh/banner1.png"
+                src="/images/home/zh/banner3.png"
                 sizes={"100vw"}
                 width={500}
-                height={370}
+                height={380}
               />
             </a>
           </div>
@@ -317,18 +317,19 @@ const Home = ({ data }: { data: any[] }) => {
                 src="/images/home/zh/banner2.png"
                 sizes={"100vw"}
                 width={500}
-                height={370}
+                height={380}
               />
             </a>
           </div>
+
           <div>
-            <a href="">
+            <a href="https://www.stspcsr.com.tw/article_list/view_article_detail/?id=143">
               <Image
                 alt=""
-                src="/images/home/zh/banner3.png"
+                src="/images/home/zh/banner1.png"
                 sizes={"100vw"}
                 width={500}
-                height={370}
+                height={380}
               />
             </a>
           </div>
@@ -422,7 +423,7 @@ const Home = ({ data }: { data: any[] }) => {
               </div>
               <RunningNumbers
                 n={55937}
-                c={"XX"}
+                c={"千元"}
                 to_fixed={0}
                 is_currency={true}
               />
@@ -503,7 +504,7 @@ const Home = ({ data }: { data: any[] }) => {
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/team_icon2.jpg"
+          image_src="/images/images/image54.png"
           alt="team"
           link="/message_director"
           text="局長的話"
