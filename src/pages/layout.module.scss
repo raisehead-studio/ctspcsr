@@ -265,10 +265,10 @@
       "container1 container2"
       "container3 container4";
     max-width: 1280px;
-    padding: 0 20px 0 50px 0px;
+    padding: 0 20px 0 30px 0px;
     width: 100%;
     gap: 30px;
-    margin: 24px auto;
+    margin: 24px auto 12px auto;
 
     .container1 {
       grid-area: container1;
@@ -334,6 +334,7 @@
           display: grid;
           grid-template-columns: 40px 1fr;
           column-gap: 10px;
+          height: 70px;
 
           .line_container {
             display: flex;
@@ -353,7 +354,7 @@
 
             .line {
               width: 2px;
-              height: 110%;
+              height: 90%;
               position: absolute;
               background-color: #999;
             }
@@ -437,9 +438,9 @@
 
   .divider_section {
     max-width: 1280px;
-    margin: 24px auto 48px auto;
+    margin: 0px auto 48px auto;
     padding: 0 20px;
-    height: 50px;
+    height: 30px;
     box-shadow: 17px 19px 21px -13px rgba(74, 74, 74, 0.2);
   }
 

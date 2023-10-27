@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
@@ -17,6 +17,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 const Home = ({ data }: { data: any[] }) => {
+  const router = useRouter();
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
 
@@ -160,7 +161,7 @@ const Home = ({ data }: { data: any[] }) => {
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
               allowFullScreen={true}></iframe>
           </div>
-          <div className={style.container2}>
+          {/* <div className={style.container2}>
             <iframe
               width="560"
               height="315"
@@ -181,7 +182,7 @@ const Home = ({ data }: { data: any[] }) => {
               <CardWithMoreEffect
                 small
                 height={"170"}
-                image_src="/images/home/en/team_icon2.jpg"
+                image_src="/images/home/en/team_icon2.png"
                 alt="team"
                 link="/csr_company_list?lang=en"
               />
@@ -202,7 +203,7 @@ const Home = ({ data }: { data: any[] }) => {
               link="/vision_and_blueprint?lang=en"
               small={false}
             />
-          </div>
+          </div> */}
         </section>
         <section className={style.download_section}>
           <div className={style.head}>
@@ -305,7 +306,7 @@ const Home = ({ data }: { data: any[] }) => {
                 src="/images/home/zh/banner1.png"
                 sizes={"100vw"}
                 width={500}
-                height={400}
+                height={370}
               />
             </a>
           </div>
@@ -316,7 +317,7 @@ const Home = ({ data }: { data: any[] }) => {
                 src="/images/home/zh/banner2.png"
                 sizes={"100vw"}
                 width={500}
-                height={400}
+                height={370}
               />
             </a>
           </div>
@@ -327,7 +328,7 @@ const Home = ({ data }: { data: any[] }) => {
                 src="/images/home/zh/banner3.png"
                 sizes={"100vw"}
                 width={500}
-                height={400}
+                height={370}
               />
             </a>
           </div>
@@ -344,11 +345,9 @@ const Home = ({ data }: { data: any[] }) => {
         </div>
         <div className={style.text}>
           <p>
-            一些文字，一些文字，一些文字，一些文字，一些文字，一些文字，一些文字，
-            一些文字， 一些文字， 一些文字，
-          </p>
-          <p>
-            一些文字，一些文字，一些文字，一些文字，一些文字，一些文字，一些文字。
+            提供高科技產業優質之環境，鼓勵研究發展及製造高科技工業產品，進而帶動科技產業技術提昇，
+            <br />
+            促進中部地區產業之升級，並形成中部高科技產業新聚落。
           </p>
         </div>
         <div className={style.image}>
@@ -363,7 +362,7 @@ const Home = ({ data }: { data: any[] }) => {
       <section className={style.performance_data_section}>
         <div className={style.performance_data_container}>
           <div className={style.head}>
-            <p className={style.year}>2022 永續管理績效</p>
+            <p className={style.year}>2021 永續管理績效</p>
             <div className={style.poly_container}>
               <Image
                 src="/images/home/polygon.png"
@@ -409,7 +408,7 @@ const Home = ({ data }: { data: any[] }) => {
               <div className={style.data_type}>
                 <RunningNumbers
                   n={46.33}
-                  c_ahead="太陽能發電裝置XX達"
+                  c_ahead="太陽能發電裝置容量達"
                   c={"MW"}
                   to_fixed={2}
                   is_currency={true}
@@ -422,17 +421,17 @@ const Home = ({ data }: { data: any[] }) => {
                 <p>社會面</p>
               </div>
               <RunningNumbers
-                n={59.437}
+                n={55937}
                 c={"XX"}
-                to_fixed={3}
+                to_fixed={0}
                 is_currency={true}
               />
               <div className={style.data_type}>
                 <RunningNumbers
-                  n={59.437}
-                  c_ahead="xxxxxxx"
-                  c={"MW"}
-                  to_fixed={3}
+                  n={5937}
+                  c_ahead="辦理紓困方案共77件，統計"
+                  c={"千元"}
+                  to_fixed={0}
                   is_currency={true}
                   is_table
                 />
@@ -445,12 +444,24 @@ const Home = ({ data }: { data: any[] }) => {
         <div className={style.container1}>
           <div className={style.head}>
             <h4>
-              最新消息 / NEWS <span>[ xxxxx ]</span>
+              最新消息 / NEWS{" "}
+              <span>
+                <a
+                  href="https://www.ctsp.gov.tw/chinese/01-News/03-custom.aspx?v=1&fr=1000&no=1003"
+                  target="_blank">
+                  [ 即時新聞澄清 ]
+                </a>
+              </span>
             </h4>
           </div>
           <div className={style.content}>
             {data?.map((i: any) => (
-              <div className={style.content_item} key={i.news_id}>
+              <div
+                className={style.content_item}
+                key={i.news_id}
+                onClick={() => {
+                  router.push(`/news/${i.news_id}`);
+                }}>
                 <div className={style.line_container}>
                   <div className={style.circle} />
                   <div className={style.line} />
@@ -468,7 +479,7 @@ const Home = ({ data }: { data: any[] }) => {
           </div>
 
           <div className={style.more}>
-            <Link href={"/c1"}>More ...</Link>
+            <Link href={"/news"}>More ...</Link>
           </div>
         </div>
         <div className={style.container2}>
@@ -478,7 +489,7 @@ const Home = ({ data }: { data: any[] }) => {
           <iframe
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/v1lgmDckSl4"
+            src="https://www.youtube.com/embed/MNKPH-S1wOA"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen={true}></iframe>
@@ -491,31 +502,40 @@ const Home = ({ data }: { data: any[] }) => {
       <section className={style.links_section}>
         <CardWithMoreEffect
           small
-          height={"260"}
+          height={"220"}
           image_src="/images/home/zh/team_icon2.jpg"
           alt="team"
           link="/message_director"
+          text="局長的話"
+          text_container_color="rgba(91, 39, 245, 0.2)"
         />
         <CardWithMoreEffect
           small
-          height={"260"}
-          image_src="/images/home/zh/team_icon2.jpg"
+          height={"220"}
+          image_src="/images/home/zh/team_icon4.png"
           alt="team"
-          link="/message_director"
+          link="/focus/1/"
+          text="開拓永續水資源"
+          text_container_color="rgba(39, 82, 245, 0.4)"
         />
         <CardWithMoreEffect
           small
-          height={"260"}
-          image_src="/images/home/zh/team_icon2.jpg"
+          height={"220"}
+          image_src="/images/home/zh/team_icon3.png"
           alt="team"
-          link="/message_director"
+          link="/focus/2/"
+          text="疫起守護護國神山群"
+          text_container_color="rgba(245, 39, 43, 0.4)"
         />
+
         <CardWithMoreEffect
           small
-          height={"260"}
-          image_src="/images/home/zh/team_icon2.jpg"
+          height={"220"}
+          image_src="/images/home/zh/team_icon2.png"
           alt="team"
-          link="/message_director"
+          link="/focus/3/"
+          text="振興中部產業"
+          text_container_color="rgba(39, 99, 245, 0.66)"
         />
       </section>
     </>

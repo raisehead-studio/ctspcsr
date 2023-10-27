@@ -72,7 +72,7 @@ export default function Header() {
                   },
                   {
                     title: "FB",
-                    path: "https://www.facebook.com/stsp543/?ref=ts&fref=ts",
+                    path: "https://www.facebook.com/CTSPBureau/?locale=zh_TW",
                     isOpenNewTab: true,
                   },
                   {
@@ -93,22 +93,33 @@ export default function Header() {
                     isOpenNewTab: false,
                   },
                   {
-                    title: "問卷",
+                    title: "中科管理局",
+                    path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
+                    isOpenNewTab: true,
+                  },
+                  {
+                    title: "利害關係人問卷",
                     path: "https://forms.gle/kvTyN4R5wKAwxanX7",
                     isOpenNewTab: true,
+                    isConstruction: true,
                   },
                   {
-                    title: "FB",
-                    path: "https://www.facebook.com/stsp543/?ref=ts&fref=ts",
+                    title: "訂閱電子報",
+                    path: "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108&sn=51",
                     isOpenNewTab: true,
                   },
                   {
-                    title: "網站地圖",
+                    title: "網站導覽",
                     path: { pathname: "/sitemap" },
                     isOpenNewTab: false,
                   },
                   {
-                    title: "EN",
+                    title: "意見回饋",
+                    path: "https://web2.ctsp.gov.tw/CtspMisc/Letters/Create",
+                    isOpenNewTab: true,
+                  },
+                  {
+                    title: "ENG",
                     path: { pathname: "/", query: { lang: "en" } },
                     isOpenNewTab: false,
                     isConstruction: true,
@@ -118,7 +129,7 @@ export default function Header() {
               <li
                 key={item.title}
                 style={{
-                  borderRight: index === 4 ? "none" : "1px solid #ffff",
+                  borderRight: index === 6 ? "none" : "1px solid #ffff",
                 }}>
                 <Link
                   target={item.isOpenNewTab ? "_blank" : ""}
@@ -142,7 +153,7 @@ export default function Header() {
               }
               alt="logo"
               width={253}
-              height={63.42}
+              height={53.42}
             />
           </Link>
         </div>

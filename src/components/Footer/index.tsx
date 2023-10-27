@@ -6,6 +6,7 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import FaxIcon from "@mui/icons-material/Fax";
 import { useSearchParams } from "next/navigation";
+import Swal from "sweetalert2";
 
 import style from "./styles.module.scss";
 
@@ -13,6 +14,16 @@ export default function Header() {
   const ref = useRef(null);
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
+
+  const handleOpenUnderConstruction = (e: any) => {
+    e.preventDefault();
+
+    Swal.fire({
+      title: "頁面正在維修中。",
+    }).then(() => {
+      return;
+    });
+  };
 
   if (lang === "en") {
     return (
@@ -149,6 +160,7 @@ export default function Header() {
           <ul>
             <li>
               <Link
+                onClick={handleOpenUnderConstruction}
                 href={
                   "https://www.stsp.gov.tw/web/WEB/Jsp/Page/cindex.jsp?frontTarget=DEFAULT&thisRootID=85"
                 }>
@@ -156,12 +168,15 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link href={"https://www.facebook.com/stsp543/?ref=ts&fref=ts"}>
+              <Link
+                onClick={handleOpenUnderConstruction}
+                href={"https://www.facebook.com/stsp543/?ref=ts&fref=ts"}>
                 影音專區
               </Link>
             </li>
             <li>
               <Link
+                target="_blank"
                 href={
                   "https://www.stsp.gov.tw/feedback/?opg=Y&frontTarget=DEFAULT"
                 }>
@@ -169,20 +184,12 @@ export default function Header() {
               </Link>
             </li>
             <li>
-              <Link
-                target="_blank"
-                href={
-                  "https://www.stsp.gov.tw/web/indexGroups?frontTarget=DEFAULT"
-                }>
-                好站連結
-              </Link>
+              <Link href={"/links"}>好站連結</Link>
             </li>
             <li>
               <Link
                 target="_blank"
-                href={
-                  "https://www.stsp.gov.tw/web/indexGroups?frontTarget=DEFAULT"
-                }>
+                href={"https://web2.ctsp.gov.tw/CtspMisc/Letters/Create"}>
                 意見回饋
               </Link>
             </li>
@@ -248,7 +255,7 @@ export default function Header() {
       </div>
       <div className={style.container5}>
         <h4>2020 © 中部科學園區管理局 Central Taiwan Science Park.</h4>
-        <h4>訪客人數 3319</h4>
+        <h4>訪客人數 35237</h4>
       </div>
     </footer>
   );
