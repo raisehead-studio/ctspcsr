@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>南部科學園區管理局永續發展專區</title>
-        <meta name="description" content="南部科學園區管理局永續發展專區" />
+        <title>中部科學園區管理局永續發展專區</title>
+        <meta name="description" content="中部科學園區管理局永續發展專區" />
         <link
           rel="apple-touch-icon"
           sizes="76x76"

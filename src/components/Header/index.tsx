@@ -142,7 +142,7 @@ export default function Header() {
               }
               alt="logo"
               width={253}
-              height={73.42}
+              height={63.42}
             />
           </Link>
         </div>
@@ -165,6 +165,10 @@ export default function Header() {
                               }
                               onMouseLeave={() => handleSetOPenItem("")}>
                               <Link
+                                onClick={
+                                  subItem.isConstruction &&
+                                  handleOpenUnderConstruction
+                                }
                                 href={
                                   lang === "en"
                                     ? {
@@ -190,6 +194,10 @@ export default function Header() {
                                   {subItem.sub.map((subSubItem: any) => (
                                     <li key={subSubItem.title}>
                                       <Link
+                                        onClick={
+                                          subSubItem.isConstruction &&
+                                          handleOpenUnderConstruction
+                                        }
                                         style={
                                           subItem.title ===
                                             "Game(under maintenance)" ||
@@ -221,6 +229,10 @@ export default function Header() {
                           return (
                             <li key={subItem.title}>
                               <Link
+                                onClick={
+                                  subItem.isConstruction &&
+                                  handleOpenUnderConstruction
+                                }
                                 href={
                                   lang === "en"
                                     ? {
@@ -253,6 +265,11 @@ export default function Header() {
                               query: { lang: "en" },
                             }
                           : { pathname: item.path }
+                      }
+                      onClick={
+                        item.isConstruction
+                          ? (e) => handleOpenUnderConstruction(e)
+                          : () => {}
                       }>
                       {item.title}
                     </Link>
@@ -300,6 +317,10 @@ export default function Header() {
                               }
                               onMouseLeave={() => handleSetOPenItem("")}>
                               <Link
+                                onClick={
+                                  subItem.isConstruction &&
+                                  handleOpenUnderConstruction
+                                }
                                 href={
                                   lang === "en"
                                     ? {
@@ -324,6 +345,10 @@ export default function Header() {
                                   {subItem.sub.map((subSubItem: any) => (
                                     <li key={subSubItem.title}>
                                       <Link
+                                        onClick={
+                                          subSubItem.isConstruction &&
+                                          handleOpenUnderConstruction
+                                        }
                                         style={
                                           subItem.title ===
                                             "Game(under maintenance)" ||
@@ -355,6 +380,10 @@ export default function Header() {
                           return (
                             <li key={subItem.title}>
                               <Link
+                                onClick={
+                                  subItem.isConstruction &&
+                                  handleOpenUnderConstruction
+                                }
                                 href={
                                   lang === "en"
                                     ? {
@@ -381,6 +410,11 @@ export default function Header() {
               return (
                 <li className={style.dropdown} key={item.title}>
                   <Link
+                    onClick={
+                      item.isConstruction
+                        ? (e) => handleOpenUnderConstruction(e)
+                        : () => {}
+                    }
                     href={
                       lang === "en"
                         ? {

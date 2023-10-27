@@ -4,6 +4,7 @@ import Link from "next/link";
 import Collapse from "@mui/material/Collapse";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Swal from "sweetalert2";
 
 import { usePathname, useSearchParams } from "next/navigation";
 import zh_menu from "../../data/menu_zh.json";
@@ -16,6 +17,16 @@ export default function SideMenu() {
   const lang = searchParams.get("lang");
   const pathname = usePathname();
   const [openMenu, setOpenMenu] = useState<string>("");
+
+  const handleOpenUnderConstruction = (e: any) => {
+    e.preventDefault();
+
+    Swal.fire({
+      title: "頁面正在維修中。",
+    }).then(() => {
+      return;
+    });
+  };
 
   const handleToggleMenu = (menuName: string) => {
     if (openMenu === menuName) {
@@ -79,6 +90,7 @@ export default function SideMenu() {
           }
           key={menu[0].title}>
           <Link
+            onClick={menu[0].isConstruction && handleOpenUnderConstruction}
             href={
               lang === "en"
                 ? {
@@ -112,6 +124,7 @@ export default function SideMenu() {
                 }
                 key={item.title}>
                 <Link
+                  onClick={item.isConstruction && handleOpenUnderConstruction}
                   href={
                     lang === "en"
                       ? {
@@ -140,6 +153,10 @@ export default function SideMenu() {
                           }
                           key={sub_item.title}>
                           <Link
+                            onClick={
+                              sub_item.isConstruction &&
+                              handleOpenUnderConstruction
+                            }
                             style={
                               sub_item.title === "Game(under maintenance)" ||
                               sub_item.title === "小遊戲(維護中)"
@@ -195,6 +212,10 @@ export default function SideMenu() {
                                   }
                                   key={sub_item.title}>
                                   <Link
+                                    onClick={
+                                      sub_item.isConstruction &&
+                                      handleOpenUnderConstruction
+                                    }
                                     href={
                                       lang === "en"
                                         ? {

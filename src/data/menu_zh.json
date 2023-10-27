@@ -38,11 +38,13 @@
       },
       {
         "title": "影片專區",
-        "path": "/video"
+        "path": "/video",
+        "isConstruction": true
       },
       {
         "title": "互動藝術",
-        "path": "/interactive_art"
+        "path": "/interactive_art",
+        "isConstruction": true
       },
       {
         "title": "好站相連",
@@ -226,10 +228,12 @@
   },
   {
     "title": "園區廠商永續專區",
-    "path": "/csr_company_list"
+    "path": "/csr_company_list",
+    "isConstruction": true
   },
   {
     "title": "報告書下載",
-    "path": "/report_download"
+    "path": "/report_download",
+    "isConstruction": true
   }
 ]
