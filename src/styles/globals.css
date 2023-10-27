@@ -36,3 +36,17 @@ a {
   bottom: 0px;
   background-color: #222222;
 }
+@media (max-width: 768px) {
+  .backdrop {
+    height: 103px;
+  }
+
+  .page_photo_container {
+    max-width: 100vw;
+    overflow: hidden;
+  }
+
+  .page_photo_container > img {
+    height: 25vh;
+  }
+}

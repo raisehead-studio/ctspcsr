@@ -37,56 +37,11 @@ export default function Video() {
     setValue(newValue);
   };
 
-  const menu_zh = [
-    {
-      title: "互動專區",
-      sub: [
-        {
-          title: "影音專區",
-          path: "/video",
-        },
-        {
-          title: "報告書下載",
-          path: "/report_download",
-        },
-        {
-          title: "小遊戲(維護中)",
-          path: "/",
-        },
-        {
-          title: "好站相連",
-          path: "/links",
-        },
-      ],
-    },
-  ];
-
-  const menu_en = [
-    {
-      title: "Interactive",
-      sub: [
-        {
-          title: "Video",
-          path: "/video",
-        },
-        {
-          title: "Report Download",
-          path: "/report_download",
-        },
-        {
-          title: "Game(under maintenance)",
-          path: "/",
-        },
-        {
-          title: "Good Links",
-          path: "/links",
-        },
-      ],
-    },
-  ];
-
   return (
     <div className={layout.page_layout}>
+      <div className={style.page_sidemenu}>
+        <SideMenu />
+      </div>
       <div className={layout.page_content}>
         <div className={layout.page_header}>
           <strong>{lang === "en" ? "Video" : "影音專區"}</strong>
@@ -437,9 +392,6 @@ export default function Video() {
             </div>
           </CustomTabPanel>
         </Box>
-      </div>
-      <div className={style.page_sidemenu}>
-        <SideMenu />
       </div>
     </div>
   );

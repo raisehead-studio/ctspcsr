@@ -22,7 +22,8 @@
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.29.0",
     "sass": "^1.64.2",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.7.32"
   },
   "devDependencies": {
     "@types/node": "20.4.9",

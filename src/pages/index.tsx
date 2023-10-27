@@ -20,10 +20,6 @@ const Home = ({ data }: { data: any[] }) => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
 
-  useEffect(() => {
-    console.log(data);
-  }, [data]);
-
   if (lang === "en") {
     return (
       <>
@@ -359,8 +355,7 @@ const Home = ({ data }: { data: any[] }) => {
           <Image
             objectFit="contain"
             src="/images/home/zh/main.png"
-            width={1200}
-            height={850}
+            layout="fill"
             alt="team"
           />
         </div>
@@ -537,7 +532,6 @@ async function getData() {
 export async function getStaticProps(context: any) {
   const data = await getData();
   const news = data
-    .filter((i: any) => i.news_catgory === "2")
     .sort(
       (a: any, b: any) => +new Date(b.create_date) - +new Date(a.create_date)
     )

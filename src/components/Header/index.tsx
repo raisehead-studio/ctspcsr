@@ -6,6 +6,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
 import MenuIcon from "@mui/icons-material/Menu";
+import Swal from "sweetalert2";
 
 import menu_zh from "../../data/menu_zh.json";
 import menu_en from "../../data/menu_en.json";
@@ -38,6 +39,16 @@ export default function Header() {
     setOpenSlide(false);
     setOpenMobileMainMenuItem("");
   }, [pathname]);
+
+  const handleOpenUnderConstruction = (e: any) => {
+    e.preventDefault();
+
+    Swal.fire({
+      title: "頁面正在維修中。",
+    }).then(() => {
+      return;
+    });
+  };
 
   return (
     <header className={style.header}>
@@ -100,9 +111,10 @@ export default function Header() {
                     title: "EN",
                     path: { pathname: "/", query: { lang: "en" } },
                     isOpenNewTab: false,
+                    isConstruction: true,
                   },
                 ]
-            ).map((item, index) => (
+            ).map((item: any, index) => (
               <li
                 key={item.title}
                 style={{
@@ -110,7 +122,8 @@ export default function Header() {
                 }}>
                 <Link
                   target={item.isOpenNewTab ? "_blank" : ""}
-                  href={item.path}>
+                  href={item.path}
+                  onClick={item.isConstruction && handleOpenUnderConstruction}>
                   {item.title}
                 </Link>
               </li>

@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
-import Image from "next/image";
 import path from "path";
 import fs from "fs/promises";
 
@@ -29,7 +28,7 @@ export default function F({
       <div className={layout.page_layout}>
         <div className={layout.page_content}>
           <div className={layout.page_header}>
-            <strong></strong>
+            <strong>互動藝術</strong>
             <Breadcrumb />
           </div>
           <div>
@@ -50,22 +49,15 @@ export default function F({
 
   return (
     <div className={layout.page_layout}>
-      <div className={layout.page_content}>
-        <div className={layout.page_header}>
-          <strong></strong>
-          <Breadcrumb />
-        </div>
-        <div>
-          {domLoaded && (
-            <div
-              className={layout.page_description}
-              dangerouslySetInnerHTML={{ __html: data.content }}
-            />
-          )}
-        </div>
-      </div>
       <div>
         <SideMenu />
+      </div>
+      <div className={layout.page_content}>
+        <div className={layout.page_header}>
+          <strong>互動藝術</strong>
+          <Breadcrumb />
+        </div>
+        <div></div>
       </div>
     </div>
   );
