@@ -99,9 +99,8 @@ export default function Header() {
                   },
                   {
                     title: "利害關係人問卷",
-                    path: "https://forms.gle/kvTyN4R5wKAwxanX7",
+                    path: "https://forms.gle/kxzyUP6eUqnRkkr38",
                     isOpenNewTab: true,
-                    isConstruction: true,
                   },
                   {
                     title: "訂閱電子報",
