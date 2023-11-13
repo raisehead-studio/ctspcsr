@@ -13,6 +13,8 @@ export default function F({
   data: {
     title: string;
     content: any[];
+    en_title: string;
+    en_content: any[];
   };
 }) {
   const searchParams = useSearchParams();
@@ -23,30 +25,6 @@ export default function F({
     setDomLoaded(true);
   }, []);
 
-  if (lang) {
-    return (
-      <div className={layout.page_layout}>
-        <div className={layout.page_content}>
-          <div className={layout.page_header}>
-            <strong></strong>
-            <Breadcrumb />
-          </div>
-          <div>
-            {domLoaded && (
-              <div
-                className={layout.page_description}
-                dangerouslySetInnerHTML={{ __html: data.content }}
-              />
-            )}
-          </div>
-        </div>
-        <div>
-          <SideMenu />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className={layout.page_layout}>
       <div>
@@ -54,7 +32,7 @@ export default function F({
       </div>
       <div className={layout.page_content}>
         <div className={layout.page_header}>
-          <strong>{data.title}</strong>
+          <strong>{lang ? data.en_title : data.title}</strong>
           <Breadcrumb />
         </div>
         <div>
@@ -62,7 +40,9 @@ export default function F({
             <div
               className={layout.page_description}
               dangerouslySetInnerHTML={{
-                __html: data.content.join(""),
+                __html: lang
+                  ? data.en_content.map((i) => `<p>${i}</p>`).join("")
+                  : data.content.join(""),
               }}
             />
           )}

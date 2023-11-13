@@ -23,30 +23,6 @@ export default function F({
     setDomLoaded(true);
   }, []);
 
-  if (lang) {
-    return (
-      <div className={layout.page_layout}>
-        <div className={layout.page_content}>
-          <div className={layout.page_header}>
-            <strong>互動藝術</strong>
-            <Breadcrumb />
-          </div>
-          <div>
-            {domLoaded && (
-              <div
-                className={layout.page_description}
-                dangerouslySetInnerHTML={{ __html: data.content }}
-              />
-            )}
-          </div>
-        </div>
-        <div>
-          <SideMenu />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <div className={layout.page_layout}>
       <div>

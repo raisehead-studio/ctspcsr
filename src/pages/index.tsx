@@ -21,280 +21,6 @@ const Home = ({ data }: { data: any[] }) => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
 
-  if (lang === "en") {
-    return (
-      <>
-        <section className={style.carousel_root}>
-          <Carousel showArrows={true} autoPlay infiniteLoop>
-            <div>
-              <a href="https://www.stspcsr.com.tw/article_list/view_article_detail/?id=143">
-                <Image
-                  alt=""
-                  src="/images/home/en/banner1.png"
-                  sizes={"100vw"}
-                  width={500}
-                  height={400}
-                />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <Image
-                  alt=""
-                  src="/images/home/en/banner2.png"
-                  sizes={"100vw"}
-                  width={500}
-                  height={400}
-                />
-              </a>
-            </div>
-            <div>
-              <a href="">
-                <Image
-                  alt=""
-                  src="/images/home/en/banner3.png"
-                  sizes={"100vw"}
-                  width={500}
-                  height={400}
-                />
-              </a>
-            </div>
-          </Carousel>
-        </section>
-        <section className={style.performance_data_section}>
-          <div className={style.performance_data_container}>
-            <div className={style.head}>
-              <p
-                className={style.eternal}
-                style={{
-                  marginTop: "50px",
-                }}>
-                Sustainability Management Performance 2022
-              </p>
-            </div>
-            <div className={`${style.data_container} ${style.data_container1}`}>
-              <RunningNumbers
-                n={1.483374}
-                c={"NTD"}
-                c_ahead="trillion"
-                to_fixed={2}
-                is_currency={true}
-                is_trillion={false}
-              />
-              <div className={style.data_type}>
-                <p>The annual turnover of STSP</p>
-              </div>
-            </div>
-            <div className={`${style.data_container} ${style.data_container2}`}>
-              <RunningNumbers n={272} c={""} to_fixed={0} is_currency={true} />
-              <div className={style.data_type}>
-                <p
-                  style={{
-                    textAlign: "center",
-                  }}>
-                  The cumulative validly <br />
-                  approved manufacturers
-                </p>
-              </div>
-            </div>
-            <div className={`${style.data_container} ${style.data_container3}`}>
-              <RunningNumbers
-                n={951}
-                c={"visitors"}
-                to_fixed={0}
-                is_currency={true}
-              />
-              <div className={style.data_type}>
-                <p
-                  style={{
-                    textAlign: "center",
-                  }}>
-                  Domestic and foreign groups <br /> visited STSP
-                </p>
-              </div>
-            </div>
-            <div className={`${style.data_container} ${style.data_container4}`}>
-              <RunningNumbers
-                n={93.19}
-                c={"%"}
-                to_fixed={2}
-                is_currency={true}
-              />
-              <div className={style.data_type}>
-                <p>Waste recycling rate</p>
-              </div>
-            </div>
-            <div className={`${style.data_container} ${style.data_container5}`}>
-              <RunningNumbers
-                n={4680.8}
-                c={"Million kWh/year"}
-                to_fixed={2}
-                is_currency={true}
-              />
-              <div className={style.data_type}>
-                <p>Cumulative water saving potential</p>
-              </div>
-            </div>
-            <div className={`${style.data_container} ${style.data_container6}`}>
-              <RunningNumbers
-                n={10536.1}
-                c={"Million kWh/year"}
-                to_fixed={2}
-                is_currency={true}
-              />
-              <div className={style.data_type}>
-                <p>Cumulative power saving potential</p>
-              </div>
-            </div>
-            <div className={style.menu_button}>
-              <Link href={"/performance"}>MORE</Link>
-            </div>
-          </div>
-        </section>
-        <section className={style.content_section}>
-          <div className={style.container1}>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/v1lgmDckSl4"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen={true}></iframe>
-          </div>
-          {/* <div className={style.container2}>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fstsp543%2F&tabs=timeline&width=625&height=365&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId"
-              title="YouTube video player"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen={true}></iframe>
-          </div>
-          <div className={style.container3}>
-            <CardWithMoreEffect
-              small
-              height={"370"}
-              image_src="/images/home/en/team_icon4.jpg"
-              alt="team"
-              link="/message_director?lang=en"
-            />
-            <div>
-              <CardWithMoreEffect
-                small
-                height={"170"}
-                image_src="/images/home/en/team_icon2.png"
-                alt="team"
-                link="/csr_company_list?lang=en"
-              />
-              <CardWithMoreEffect
-                small
-                height={"170"}
-                image_src="/images/home/en/team_icon3.jpg"
-                alt="team"
-                link="/links?lang=en"
-              />
-            </div>
-          </div>
-          <div className={style.container4}>
-            <CardWithMoreEffect
-              height={"370"}
-              image_src="/images/home/en/team_icon1.jpg"
-              alt="team"
-              link="/vision_and_blueprint?lang=en"
-              small={false}
-            />
-          </div> */}
-        </section>
-        <section className={style.download_section}>
-          <div className={style.head}>
-            <h2 style={{ textTransform: "none" }}>Report Download</h2>
-            <hr />
-          </div>
-          <div className={style.desktop_slider}>
-            <Slider
-              dots={false}
-              infinite={true}
-              speed={100}
-              slidesToShow={4}
-              slidesToScroll={1}
-              autoplay={true}>
-              {[
-                { year: 2022, photo: "2022.png" },
-                { year: 2021, photo: "2021.png" },
-                { year: 2020, photo: "2020.png" },
-                { year: 2019, photo: "2019.png" },
-                { year: 2018, photo: "2018.png" },
-                { year: 2017, photo: "2017.png" },
-                { year: 2016, photo: "2016.png" },
-                { year: 2015, photo: "2015.jpg" },
-                { year: 2014, photo: "2014.jpg" },
-                { year: 2013, photo: "2013.jpg" },
-                { year: 2012, photo: "101.jpg" },
-                { year: 2011, photo: "100.jpg" },
-              ].map((i) => (
-                <div key={i.year}>
-                  <Link
-                    href={`https://www.stspcsr.com.tw/download/${i.year}_zh.pdf`}
-                    target="_blank">
-                    <Image
-                      src={`/images/report_download/zh/${i.photo}`}
-                      width={245}
-                      height={i.year < 2013 ? 145 : 345}
-                      alt="team"
-                      style={{
-                        boxShadow: "3px 3px 8px gray",
-                      }}
-                    />
-                  </Link>
-                </div>
-              ))}
-            </Slider>
-          </div>
-          <div className={style.mobile_slider}>
-            <Slider
-              dots={false}
-              infinite={true}
-              speed={100}
-              slidesToShow={1}
-              slidesToScroll={1}
-              autoplay={true}>
-              {[
-                { year: 2022, photo: "2022.png" },
-                { year: 2021, photo: "2021.png" },
-                { year: 2020, photo: "2020.png" },
-                { year: 2019, photo: "2019.png" },
-                { year: 2018, photo: "2018.png" },
-                { year: 2017, photo: "2017.png" },
-                { year: 2016, photo: "2016.png" },
-                { year: 2015, photo: "2015.jpg" },
-                { year: 2014, photo: "2014.jpg" },
-                { year: 2013, photo: "2013.jpg" },
-                { year: 2012, photo: "101.jpg" },
-                { year: 2011, photo: "100.jpg" },
-              ].map((i) => (
-                <div key={i.year}>
-                  <Link
-                    href={`https://www.stspcsr.com.tw/download/${i.year}_zh.pdf`}
-                    target="_blank">
-                    <Image
-                      src={`/images/report_download/zh/${i.photo}`}
-                      width={245}
-                      height={i.year < 2013 ? 145 : 345}
-                      alt="team"
-                      style={{
-                        boxShadow: "3px 3px 8px gray",
-                      }}
-                    />
-                  </Link>
-                </div>
-              ))}
-            </Slider>
-          </div>
-        </section>
-      </>
-    );
-  }
-
   return (
     <>
       <section>
@@ -303,7 +29,7 @@ const Home = ({ data }: { data: any[] }) => {
             <a href="">
               <Image
                 alt=""
-                src="/images/home/zh/banner3.png"
+                src={`/images/home/${lang ? "en" : ""}/banner3.png`}
                 sizes={"100vw"}
                 width={500}
                 height={380}
@@ -314,7 +40,7 @@ const Home = ({ data }: { data: any[] }) => {
             <a href="">
               <Image
                 alt=""
-                src="/images/home/zh/banner2.png"
+                src={`/images/home/${lang ? "en" : ""}/banner2.png`}
                 sizes={"100vw"}
                 width={500}
                 height={380}
@@ -323,10 +49,10 @@ const Home = ({ data }: { data: any[] }) => {
           </div>
 
           <div>
-            <a href="https://www.stspcsr.com.tw/article_list/view_article_detail/?id=143">
+            <a href="">
               <Image
                 alt=""
-                src="/images/home/zh/banner1.png"
+                src={`/images/home/${lang ? "en" : ""}/banner1.png`}
                 sizes={"100vw"}
                 width={500}
                 height={380}
@@ -336,7 +62,11 @@ const Home = ({ data }: { data: any[] }) => {
         </Carousel>
       </section>
       <section className={style.main_section}>
-        <h4 className={style.head}>積極實踐永續發展目標</h4>
+        <h4 className={style.head}>
+          {lang
+            ? "Actively Implementing Sustainable Development Goals"
+            : "積極實踐永續發展目標"}
+        </h4>
         <div className={style.divider}>
           <div className={style.line}></div>
           <div>
@@ -346,15 +76,23 @@ const Home = ({ data }: { data: any[] }) => {
         </div>
         <div className={style.text}>
           <p>
-            提供高科技產業優質之環境，鼓勵研究發展及製造高科技工業產品，進而帶動科技產業技術提昇，
+            {lang
+              ? "Provide a high-tech industry-friendly environment, encourage R&D and manufacturing of high-tech industrial products, "
+              : "提供高科技產業優質之環境，鼓勵研究發展及製造高科技工業產品，進而帶動科技產業技術提昇，"}
             <br />
-            促進中部地區產業之升級，並形成中部高科技產業新聚落。
+            {lang
+              ? "and drive technological advancement in the tech industry."
+              : "提供高科技產業優質之環境，鼓勵研究發展及製造高科技工業產品，進而帶動科技產業技術提昇，"}
+            <br />
+            {lang
+              ? "Promote industrial upgrading in the central region and establish a new hub for high-tech industries."
+              : "促進中部地區產業之升級，並形成中部高科技產業新聚落。"}
           </p>
         </div>
         <div className={style.image}>
           <Image
             objectFit="contain"
-            src="/images/home/zh/main.png"
+            src={`/images/home/${lang ? "en" : ""}/main.png`}
             layout="fill"
             alt="team"
           />
@@ -363,7 +101,11 @@ const Home = ({ data }: { data: any[] }) => {
       <section className={style.performance_data_section}>
         <div className={style.performance_data_container}>
           <div className={style.head}>
-            <p className={style.year}>2021 永續管理績效</p>
+            <p className={style.year}>
+              {lang
+                ? "Sustainability Management Performance in 2021"
+                : "2021 永續管理績效"}
+            </p>
             <div className={style.poly_container}>
               <Image
                 src="/images/home/polygon.png"
@@ -376,19 +118,20 @@ const Home = ({ data }: { data: any[] }) => {
           <div className={style.performance_data_content_container}>
             <div className={`${style.data_container} ${style.data_container1}`}>
               <div className={style.data_type}>
-                <p>經濟面</p>
+                <p>{lang ? "Economic" : "經濟面"}</p>
               </div>
               <RunningNumbers
                 n={9353}
-                c={"億元"}
+                c_ahead={lang ? "billions" : ""}
+                c={lang ? "NTD" : "億元"}
                 to_fixed={0}
                 is_currency={true}
               />
               <div className={style.data_type}>
                 <RunningNumbers
                   n={9353}
-                  c_ahead="營業額達"
-                  c={"億元"}
+                  c_ahead={lang ? "revenue" : "營業額達"}
+                  c={lang ? "billion NTD" : "億元"}
                   to_fixed={0}
                   is_currency={true}
                   is_table
@@ -397,7 +140,7 @@ const Home = ({ data }: { data: any[] }) => {
             </div>
             <div className={`${style.data_container} ${style.data_container2}`}>
               <div className={style.data_type}>
-                <p>環境面</p>
+                <p>{lang ? "Environment" : "環境面"}</p>
               </div>
               <RunningNumbers
                 c_ahead=""
@@ -409,7 +152,7 @@ const Home = ({ data }: { data: any[] }) => {
               <div className={style.data_type}>
                 <RunningNumbers
                   n={46.33}
-                  c_ahead="太陽能發電裝置容量達"
+                  c_ahead={lang ? "Installed-Capacity" : "太陽能發電裝置容量達"}
                   c={"MW"}
                   to_fixed={2}
                   is_currency={true}
@@ -419,19 +162,24 @@ const Home = ({ data }: { data: any[] }) => {
             </div>
             <div className={`${style.data_container} ${style.data_container3}`}>
               <div className={style.data_type}>
-                <p>社會面</p>
+                <p>{lang ? "Society" : "社會面"}</p>
               </div>
               <RunningNumbers
                 n={55937}
-                c={"千元"}
+                c_ahead={lang ? "thousand" : ""}
+                c={lang ? "NTD" : "千元"}
                 to_fixed={0}
                 is_currency={true}
               />
               <div className={style.data_type}>
                 <RunningNumbers
-                  n={5937}
-                  c_ahead="辦理紓困方案共77件，統計"
-                  c={"千元"}
+                  n={lang ? 5937000 : 5937}
+                  c_ahead={
+                    lang
+                      ? "Implemented 77 Programs"
+                      : "辦理紓困方案共77件，統計"
+                  }
+                  c={lang ? "" : "千元"}
                   to_fixed={0}
                   is_currency={true}
                   is_table
@@ -442,7 +190,9 @@ const Home = ({ data }: { data: any[] }) => {
         </div>
       </section>
       <section className={style.content_section}>
-        <div className={style.container1}>
+        <div
+          className={style.container1}
+          style={lang ? { display: "none" } : { display: "flex" }}>
           <div className={style.head}>
             <h4>
               最新消息 / NEWS{" "}
@@ -483,9 +233,9 @@ const Home = ({ data }: { data: any[] }) => {
             <Link href={"/news"}>More ...</Link>
           </div>
         </div>
-        <div className={style.container2}>
+        <div className={lang ? style.container1 : style.container2}>
           <div className={style.head}>
-            <h4>中科影音 / VIDEO</h4>
+            <h4>{lang ? "VIDEO" : "中科影音 / VIDEO"}</h4>
           </div>
           <iframe
             width="560"
@@ -506,8 +256,8 @@ const Home = ({ data }: { data: any[] }) => {
           height={"220"}
           image_src="/images/images/image54.png"
           alt="team"
-          link="/message_director"
-          text="局長的話"
+          link={lang ? "/message_director/?lang=en" : "/message_director/"}
+          text={lang ? "Message from the Director-General" : "局長的話"}
           text_container_color="rgba(91, 39, 245, 0.2)"
         />
         <CardWithMoreEffect
@@ -515,8 +265,10 @@ const Home = ({ data }: { data: any[] }) => {
           height={"220"}
           image_src="/images/home/zh/team_icon4.png"
           alt="team"
-          link="/focus/1/"
-          text="開拓永續水資源"
+          link={lang ? "/focus/1/?lang=en" : "/focus/1"}
+          text={
+            lang ? "Developing sustainable water resources" : "開拓永續水資源"
+          }
           text_container_color="rgba(39, 82, 245, 0.4)"
         />
         <CardWithMoreEffect
@@ -524,8 +276,12 @@ const Home = ({ data }: { data: any[] }) => {
           height={"220"}
           image_src="/images/home/zh/team_icon3.png"
           alt="team"
-          link="/focus/2/"
-          text="疫起守護護國神山群"
+          link={lang ? "/focus/2/?lang=en" : "/focus/2/"}
+          text={
+            lang
+              ? "In the epidemic, jointly protect competitive industries"
+              : "疫起守護護國神山群"
+          }
           text_container_color="rgba(245, 39, 43, 0.4)"
         />
 
@@ -534,8 +290,8 @@ const Home = ({ data }: { data: any[] }) => {
           height={"220"}
           image_src="/images/home/zh/team_icon2.png"
           alt="team"
-          link="/focus/3/"
-          text="振興中部產業"
+          link={lang ? "/focus/3/?lang=en" : "/focus/3/"}
+          text={lang ? "Message from the Director-General" : "振興中部產業"}
           text_container_color="rgba(39, 99, 245, 0.66)"
         />
       </section>

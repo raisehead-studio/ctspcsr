@@ -132,8 +132,7 @@ export default function Header() {
                 }}>
                 <Link
                   target={item.isOpenNewTab ? "_blank" : ""}
-                  href={item.path}
-                  onClick={item.isConstruction && handleOpenUnderConstruction}>
+                  href={item.path}>
                   {item.title}
                 </Link>
               </li>
@@ -143,7 +142,7 @@ export default function Header() {
       </div>
       <div className={style.navbar}>
         <div>
-          <Link href="/">
+          <Link href={lang ? "/?lang=en" : "/"}>
             <Image
               src={
                 lang === "en"
