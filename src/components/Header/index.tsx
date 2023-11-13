@@ -44,7 +44,7 @@ export default function Header() {
     e.preventDefault();
 
     Swal.fire({
-      title: "頁面正在維修中。",
+      title: lang ? "Under Construction." : "頁面正在維修中。",
     }).then(() => {
       return;
     });
