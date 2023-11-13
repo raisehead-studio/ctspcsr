@@ -29,7 +29,7 @@ const Home = ({ data }: { data: any[] }) => {
             <a href="">
               <Image
                 alt=""
-                src={`/images/home/${lang ? "en" : ""}/banner3.png`}
+                src={`/images/home/${lang ? "en" : "zh"}/banner3.png`}
                 sizes={"100vw"}
                 width={500}
                 height={380}
@@ -40,7 +40,7 @@ const Home = ({ data }: { data: any[] }) => {
             <a href="">
               <Image
                 alt=""
-                src={`/images/home/${lang ? "en" : ""}/banner2.png`}
+                src={`/images/home/${lang ? "en" : "zh"}/banner2.png`}
                 sizes={"100vw"}
                 width={500}
                 height={380}
@@ -52,7 +52,7 @@ const Home = ({ data }: { data: any[] }) => {
             <a href="">
               <Image
                 alt=""
-                src={`/images/home/${lang ? "en" : ""}/banner1.png`}
+                src={`/images/home/${lang ? "en" : "zh"}/banner1.png`}
                 sizes={"100vw"}
                 width={500}
                 height={380}
@@ -78,7 +78,7 @@ const Home = ({ data }: { data: any[] }) => {
           <p>
             {lang
               ? "Provide a high-tech industry-friendly environment, encourage R&D and manufacturing of high-tech industrial products, "
-              : "提供高科技產業優質之環境，鼓勵研究發展及製造高科技工業產品，進而帶動科技產業技術提昇，"}
+              : ""}
             <br />
             {lang
               ? "and drive technological advancement in the tech industry."
@@ -92,7 +92,7 @@ const Home = ({ data }: { data: any[] }) => {
         <div className={style.image}>
           <Image
             objectFit="contain"
-            src={`/images/home/${lang ? "en" : ""}/main.png`}
+            src={`/images/home/${lang ? "en" : "zh"}/main.png`}
             layout="fill"
             alt="team"
           />
