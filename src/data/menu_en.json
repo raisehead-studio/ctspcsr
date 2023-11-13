@@ -34,7 +34,8 @@
       },
       {
         "title": "Video",
-        "path": "/video"
+        "path": "/video",
+        "isConstruction": true
       }
     ]
   },
