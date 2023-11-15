@@ -233,7 +233,6 @@
   },
   {
     "title": "報告書下載",
-    "path": "/report_download",
-    "isConstruction": true
+    "path": "/report_download"
   }
 ]
