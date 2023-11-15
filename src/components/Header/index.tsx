@@ -6,6 +6,13 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
 import MenuIcon from "@mui/icons-material/Menu";
+import DoorbellIcon from "@mui/icons-material/Doorbell";
+import PollIcon from "@mui/icons-material/Poll";
+import FactoryIcon from "@mui/icons-material/Factory";
+import NewspaperIcon from "@mui/icons-material/Newspaper";
+import AccountTreeIcon from "@mui/icons-material/AccountTree";
+import FeedbackIcon from "@mui/icons-material/Feedback";
+import LanguageIcon from "@mui/icons-material/Language";
 import Swal from "sweetalert2";
 
 import menu_zh from "../../data/menu_zh.json";
@@ -62,28 +69,46 @@ export default function Header() {
               ? [
                   {
                     title: "Home",
-                    path: { pathname: "/", query: { lang: "en" } },
+                    path: { pathname: "/" },
                     isOpenNewTab: false,
+                    icon: <DoorbellIcon />,
+                  },
+                  {
+                    title: "CTSP",
+                    path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
+                    isOpenNewTab: true,
+                    icon: <FactoryIcon />,
                   },
                   {
                     title: "Survey",
-                    path: "https://forms.gle/kvTyN4R5wKAwxanX7",
+                    path: "https://forms.gle/kxzyUP6eUqnRkkr38",
                     isOpenNewTab: true,
+                    icon: <PollIcon />,
                   },
                   {
-                    title: "FB",
-                    path: "https://www.facebook.com/CTSPBureau/?locale=zh_TW",
+                    title: "News",
+                    path: "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108&sn=51",
                     isOpenNewTab: true,
+                    icon: <NewspaperIcon />,
                   },
                   {
                     title: "Site Map",
-                    path: { pathname: "/sitemap", query: { lang: "en" } },
+                    path: { pathname: "/sitemap" },
                     isOpenNewTab: false,
+                    icon: <AccountTreeIcon />,
+                  },
+                  {
+                    title: "Feedback",
+                    path: "https://web2.ctsp.gov.tw/CtspMisc/Letters/Create",
+                    isOpenNewTab: true,
+                    icon: <FeedbackIcon />,
                   },
                   {
                     title: "中文",
-                    path: "/",
+                    path: { pathname: "/", query: { lang: "en" } },
                     isOpenNewTab: false,
+                    isConstruction: true,
+                    icon: <LanguageIcon />,
                   },
                 ]
               : [
@@ -91,37 +116,44 @@ export default function Header() {
                     title: "首頁",
                     path: { pathname: "/" },
                     isOpenNewTab: false,
+                    icon: <DoorbellIcon />,
                   },
                   {
                     title: "中科管理局",
                     path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
                     isOpenNewTab: true,
+                    icon: <FactoryIcon />,
                   },
                   {
                     title: "利害關係人問卷",
                     path: "https://forms.gle/kxzyUP6eUqnRkkr38",
                     isOpenNewTab: true,
+                    icon: <PollIcon />,
                   },
                   {
                     title: "訂閱電子報",
                     path: "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108&sn=51",
                     isOpenNewTab: true,
+                    icon: <NewspaperIcon />,
                   },
                   {
                     title: "網站導覽",
                     path: { pathname: "/sitemap" },
                     isOpenNewTab: false,
+                    icon: <AccountTreeIcon />,
                   },
                   {
                     title: "意見回饋",
                     path: "https://web2.ctsp.gov.tw/CtspMisc/Letters/Create",
                     isOpenNewTab: true,
+                    icon: <FeedbackIcon />,
                   },
                   {
                     title: "ENG",
                     path: { pathname: "/", query: { lang: "en" } },
                     isOpenNewTab: false,
                     isConstruction: true,
+                    icon: <LanguageIcon />,
                   },
                 ]
             ).map((item: any, index) => (
@@ -131,9 +163,16 @@ export default function Header() {
                   borderRight: index === 6 ? "none" : "1px solid #ffff",
                 }}>
                 <Link
+                  className={style.top_bar_menu_container_item_desktop}
                   target={item.isOpenNewTab ? "_blank" : ""}
                   href={item.path}>
                   {item.title}
+                </Link>
+                <Link
+                  className={style.top_bar_menu_container_item_mobile}
+                  target={item.isOpenNewTab ? "_blank" : ""}
+                  href={item.path}>
+                  {item.icon}
                 </Link>
               </li>
             ))}

@@ -34,6 +34,25 @@
             font-weight: 700;
             padding: 7px 11px;
           }
+          .top_bar_menu_container_item_mobile {
+            display: none;
+
+            @media (max-width: 768px) {
+              display: block;
+
+              > svg {
+                font-size: 18px;
+              }
+            }
+          }
+
+          .top_bar_menu_container_item_desktop {
+            display: block;
+
+            @media (max-width: 768px) {
+              display: none;
+            }
+          }
         }
 
         @media (max-width: 768px) {
@@ -221,6 +240,7 @@
       position: fixed;
       right: 0px;
       padding: 10px;
+      color: #fff;
     }
   }
 
