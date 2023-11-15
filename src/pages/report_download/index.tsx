@@ -28,6 +28,13 @@ export default function ReportDownload() {
         <div className={style.download_section}>
           {[
             {
+              name: "2021",
+              image: "2021.png",
+              reader_link: "",
+              pdf_link: "https://www.ctspcsr.com.tw/download/2021_zh.pdf",
+              video_link: "",
+            },
+            {
               name: "2020",
               image: "2020.png",
               reader_link: "",
