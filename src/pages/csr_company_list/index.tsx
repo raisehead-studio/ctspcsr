@@ -138,7 +138,7 @@ const CSRCompanyListPage = () => {
       上市櫃狀況: "上市",
       登記資本額: "4,950,000,000",
       "實收資本額(元)": "3,750,646,260",
-      "發行時間(年)": "無發行",
+      "發行時間(年)": "2022",
       公司官網: "https://www.giantgroup-cycling.com/",
       備註: "",
     },
@@ -1645,24 +1645,30 @@ const CSRCompanyListPage = () => {
                   </tr>
                 </thead>
                 <tbody>
-                  {data.map((item, index) => (
-                    <tr
-                      key={index}
-                      className={
-                        index % 2 !== 0 ? style.odd_row : style.even_row
-                      }>
-                      <td>{item["產業別"]}</td>
-                      <td>
-                        <Link
-                          href={item["公司官網"] || ""}
-                          target="_blank"
-                          style={{
-                            color: "#3281c1",
-                          }}>
-                          {item["公司名稱"]}
-                        </Link>
-                      </td>
-                      {/* <td>
+                  {data
+                    .filter(
+                      (i) =>
+                        i["發行時間(年)"].search("無發行") === -1 &&
+                        i["發行時間(年)"].search("無公司網站") === -1
+                    )
+                    .map((item, index) => (
+                      <tr
+                        key={index}
+                        className={
+                          index % 2 !== 0 ? style.odd_row : style.even_row
+                        }>
+                        <td>{item["產業別"]}</td>
+                        <td>
+                          <Link
+                            href={item["公司官網"] || ""}
+                            target="_blank"
+                            style={{
+                              color: "#3281c1",
+                            }}>
+                            {item["公司名稱"]}
+                          </Link>
+                        </td>
+                        {/* <td>
                         <Link href={item.link || ""} target="_blank">
                           {item.spc_title}
 
@@ -1673,10 +1679,10 @@ const CSRCompanyListPage = () => {
                           )}
                         </Link>
                       </td> */}
-                      <td>{item["發行時間(年)"]}</td>
-                      <td>{item["上市櫃狀況"]}</td>
-                    </tr>
-                  ))}
+                        <td>{item["發行時間(年)"]}</td>
+                        <td>{item["上市櫃狀況"]}</td>
+                      </tr>
+                    ))}
                 </tbody>
               </table>
             </div>
