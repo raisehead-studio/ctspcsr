@@ -313,11 +313,6 @@ export default function Header() {
                               query: { lang: "en" },
                             }
                           : { pathname: item.path }
-                      }
-                      onClick={
-                        item.isConstruction
-                          ? (e) => handleOpenUnderConstruction(e)
-                          : () => {}
                       }>
                       {item.title}
                     </Link>
@@ -458,11 +453,6 @@ export default function Header() {
               return (
                 <li className={style.dropdown} key={item.title}>
                   <Link
-                    onClick={
-                      item.isConstruction
-                        ? (e) => handleOpenUnderConstruction(e)
-                        : () => {}
-                    }
                     href={
                       lang === "en"
                         ? {
