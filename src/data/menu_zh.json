@@ -228,8 +228,7 @@
   },
   {
     "title": "園區廠商永續專區",
-    "path": "/csr_company_list",
-    "isConstruction": true
+    "path": "/csr_company_list"
   },
   {
     "title": "報告書下載",
