@@ -102,7 +102,9 @@ export default function ReportDownload() {
               <div className={style.download_section_item_inner_container}>
                 <div className={style.download_section_item_image_container}>
                   <Image
-                    src={`/images/report_download/zh/${i.image}`}
+                    src={`/images/report_download/${lang ? "en" : "zh"}/${
+                      i.image
+                    }`}
                     fill={true}
                     alt={`${i.name} cover photo`}
                   />
