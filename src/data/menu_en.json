@@ -61,7 +61,7 @@
     ]
   },
   {
-    "title": "2022 VDR Summary",
+    "title": "2022 ESG Summary",
     "sub": [
       {
         "title": "E Green Park-Climate Action",
@@ -208,5 +208,9 @@
         ]
       }
     ]
+  },
+  {
+    "title": "Report Download",
+    "path": "/report_download"
   }
 ]

@@ -105,7 +105,7 @@ export default function Header() {
                   },
                   {
                     title: "中文",
-                    path: { pathname: "/", query: { lang: "en" } },
+                    path: { pathname: "/" },
                     isOpenNewTab: false,
                     isConstruction: true,
                     icon: <LanguageIcon />,
