@@ -22,9 +22,9 @@ export default function ReportDownload() {
   const handleRedirect = (url: string) => () => {
     Swal.fire({
       confirmButtonColor: "#32b4c2",
-      text: lang
-        ? "Please complete the survey before downloading."
-        : "下載報告書前，請填寫利害關係人問卷。",
+      html: lang
+        ? "<p style='padding-top:10px'>Please complete the survey before downloading.</p>"
+        : "<p style='padding-top:10px'>下載報告書前，請填<a style='color:#32b4c2; text-decoration:underline' href='https://forms.gle/kxzyUP6eUqnRkkr38' target='_blank'>寫利害關係人問卷。</a></p>",
     }).then(() => {
       window.open(url, "_blank");
     });
