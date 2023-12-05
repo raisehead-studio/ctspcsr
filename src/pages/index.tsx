@@ -24,7 +24,7 @@ const Home = ({ data }: { data: any[] }) => {
   return (
     <>
       <section className={style.slider_mobile}>
-        <Carousel showArrows={true} autoPlay infiniteLoop>
+        <Carousel showArrows={true} autoPlay infiniteLoop interval={6000}>
           <div>
             <a href="">
               <Image
@@ -62,7 +62,7 @@ const Home = ({ data }: { data: any[] }) => {
         </Carousel>
       </section>
       <section className={style.slider_desktop}>
-        <Carousel showArrows={true} autoPlay infiniteLoop>
+        <Carousel showArrows={true} autoPlay infiniteLoop interval={6000}>
           <div>
             <a href="">
               <Image

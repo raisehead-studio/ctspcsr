@@ -5,6 +5,8 @@ import Link from "next/link";
 import TabletAndroidIcon from "@mui/icons-material/TabletAndroid";
 import PictureAsPdfIcon from "@mui/icons-material/PictureAsPdf";
 import SmartDisplayIcon from "@mui/icons-material/SmartDisplay";
+import IconButton from "@mui/material/IconButton";
+import Swal from "sweetalert2";
 
 import Breadcrumb from "../../components/Breadcrumb";
 import SideMenu from "../../components/SideMenu";
@@ -16,6 +18,17 @@ export default function ReportDownload() {
   const searchParams = useSearchParams();
   const [data, setData] = useState<any[]>([]);
   const lang = searchParams.get("lang");
+
+  const handleRedirect = (url: string) => () => {
+    Swal.fire({
+      confirmButtonColor: "#32b4c2",
+      text: lang
+        ? "Please complete the survey before downloading."
+        : "下載報告書前，請填寫利害關係人問卷。",
+    }).then(() => {
+      window.open(url, "_blank");
+    });
+  };
 
   useEffect(() => {
     if (lang) {
@@ -119,12 +132,21 @@ export default function ReportDownload() {
                     </Link>
                   )}
                   {i.pdf_link && (
-                    <Link href={i.pdf_link} target="_blank">
+                    <IconButton onClick={handleRedirect(i.pdf_link)}>
                       <div style={{ color: "#cf4038" }}>
-                        <PictureAsPdfIcon />
-                        <p>PDF</p>
+                        <PictureAsPdfIcon
+                          sx={{
+                            fontSize: "40px",
+                          }}
+                        />
+                        <p
+                          style={{
+                            fontSize: "15px",
+                          }}>
+                          PDF
+                        </p>
                       </div>
-                    </Link>
+                    </IconButton>
                   )}
                   {i.video_link && (
                     <Link href={i.video_link} target="_blank">
