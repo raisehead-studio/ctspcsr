@@ -33,6 +33,10 @@
         ]
       },
       {
+        "title": "News",
+        "path": "/en_news"
+      },
+      {
         "title": "Video",
         "path": "/video",
         "isConstruction": true
