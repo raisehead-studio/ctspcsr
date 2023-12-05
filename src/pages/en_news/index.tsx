@@ -33,15 +33,15 @@ const News = ({ data }: { data: any }) => {
       }}>
       <div className={layout.page_content}>
         <div className={layout.page_header}>
-          <strong>最新消息</strong>
+          <strong>News</strong>
           <Breadcrumb />
         </div>
         <table className={style.news_table}>
           <thead>
             <tr>
-              <th>日期</th>
-              <th>標題</th>
-              <th>功能</th>
+              <th>Date</th>
+              <th>Title</th>
+              <th>Function</th>
             </tr>
           </thead>
 
@@ -55,14 +55,14 @@ const News = ({ data }: { data: any }) => {
                     textAlign: "center",
                   }}>
                   <Button
-                    onClick={() => router.push(`/en_news/${i.news_id}`)}
+                    onClick={() => router.push(`/en_news/${i.news_id}?lang=en`)}
                     sx={{
                       backgroundColor: "#32b4c2",
                       padding: "5px 10px",
                     }}
                     variant="contained"
                     startIcon={<SearchIcon />}>
-                    檢視
+                    view
                   </Button>
                 </td>
               </tr>

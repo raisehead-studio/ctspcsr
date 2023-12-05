@@ -23,7 +23,45 @@ const Home = ({ data }: { data: any[] }) => {
 
   return (
     <>
-      <section>
+      <section className={style.slider_mobile}>
+        <Carousel showArrows={true} autoPlay infiniteLoop>
+          <div>
+            <a href="">
+              <Image
+                alt=""
+                src={`/images/home/${lang ? "en" : "zh"}/banner3.png`}
+                sizes={"100vw"}
+                width={500}
+                height={280}
+              />
+            </a>
+          </div>
+          <div>
+            <a href="">
+              <Image
+                alt=""
+                src={`/images/home/${lang ? "en" : "zh"}/banner2.png`}
+                sizes={"100vw"}
+                width={500}
+                height={280}
+              />
+            </a>
+          </div>
+
+          <div>
+            <a href="">
+              <Image
+                alt=""
+                src={`/images/home/${lang ? "en" : "zh"}/banner1.png`}
+                sizes={"100vw"}
+                width={500}
+                height={280}
+              />
+            </a>
+          </div>
+        </Carousel>
+      </section>
+      <section className={style.slider_desktop}>
         <Carousel showArrows={true} autoPlay infiniteLoop>
           <div>
             <a href="">

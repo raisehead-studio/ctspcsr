@@ -22,6 +22,21 @@
     }
   }
 
+  .slider_mobile {
+    display: none;
+    @media (max-width: 768px) {
+      display: block;
+      transform: translateY(34px);
+    }
+  }
+
+  .slider_desktop {
+    display: block;
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+
   .main_section {
     width: calc(100vw - 60px);
     display: flex;
