@@ -21,6 +21,8 @@ const Home = ({ data }: { data: any[] }) => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
 
+  console.log("test");
+
   return (
     <>
       <section className={style.slider_mobile}>
