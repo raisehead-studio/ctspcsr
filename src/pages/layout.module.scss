@@ -562,6 +562,15 @@
         color: #999;
         line-height: 1.6;
         font-family: "微軟正黑體", "Microsoft JhengHei !important";
+        > img {
+          width: 25vw !important;
+          object-fit: contain;
+          position: inherit !important;
+
+          @media (max-width: 768px) {
+            width: 100% !important;
+          }
+        }
       }
       > ul {
         > li {
