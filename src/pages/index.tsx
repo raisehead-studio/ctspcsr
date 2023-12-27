@@ -293,7 +293,13 @@ const Home = ({ data }: { data: any[] }) => {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen={true}></iframe>
           <div className={style.more}>
-            <Link href={"/c1"}>More ...</Link>
+            <a
+              href={
+                "https://www.ctsp.gov.tw/chinese/05-Publication/05-mv.aspx?v=1&fr=1105&no=1110"
+              }
+              target="_blank">
+              More ...
+            </a>
           </div>
         </div>
       </section>

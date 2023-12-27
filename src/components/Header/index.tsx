@@ -274,29 +274,39 @@ export default function Header() {
                             </li>
                           );
                         } else {
-                          return (
-                            <li key={subItem.title}>
-                              <Link
-                                onClick={
-                                  subItem.isConstruction &&
-                                  handleOpenUnderConstruction
-                                }
-                                href={
-                                  lang === "en"
-                                    ? {
-                                        pathname: subItem.path,
-                                        query: {
-                                          lang: "en",
-                                        },
-                                      }
-                                    : {
-                                        pathname: subItem.path,
-                                      }
-                                }>
-                                {subItem.title}
-                              </Link>
-                            </li>
-                          );
+                          if (subItem.isExternal) {
+                            return (
+                              <li key={subItem.title}>
+                                <a href={subItem.path} target="_blank">
+                                  {subItem.title}
+                                </a>
+                              </li>
+                            );
+                          } else {
+                            return (
+                              <li key={subItem.title}>
+                                <Link
+                                  onClick={
+                                    subItem.isConstruction &&
+                                    handleOpenUnderConstruction
+                                  }
+                                  href={
+                                    lang === "en"
+                                      ? {
+                                          pathname: subItem.path,
+                                          query: {
+                                            lang: "en",
+                                          },
+                                        }
+                                      : {
+                                          pathname: subItem.path,
+                                        }
+                                  }>
+                                  {subItem.title}
+                                </Link>
+                              </li>
+                            );
+                          }
                         }
                       })}
                     </ul>

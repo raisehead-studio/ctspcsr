@@ -38,8 +38,8 @@
       },
       {
         "title": "影片專區",
-        "path": "/video",
-        "isConstruction": true
+        "path": "https://www.ctsp.gov.tw/chinese/05-Publication/05-mv.aspx?v=1&fr=1105&no=1110",
+        "isExternal": true
       },
       {
         "title": "互動藝術",
