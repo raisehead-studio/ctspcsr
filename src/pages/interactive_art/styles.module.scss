@@ -10,6 +10,17 @@
     padding-bottom: 20px;
     border-bottom: 1px solid #aaaaaa;
 
+    .photo_area {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      row-gap: 20px;
+      column-gap: 20px;
+
+      @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+      }
+    }
+
     > div {
       > h3 {
         border-bottom: #32b4c2 2px solid;

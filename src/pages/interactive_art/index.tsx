@@ -1,7 +1,5 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { useSearchParams } from "next/navigation";
-import { Carousel } from "react-responsive-carousel";
-import Swal from "sweetalert2";
 
 import Breadcrumb from "../../components/Breadcrumb";
 import SideMenu from "../../components/SideMenu";
@@ -15,7 +13,6 @@ import "slick-carousel/slick/slick-theme.css";
 
 export default function ReportDownload() {
   const searchParams = useSearchParams();
-  const [data, setData] = useState<any[]>([]);
   const lang = searchParams.get("lang");
 
   return (
@@ -33,35 +30,28 @@ export default function ReportDownload() {
             <div>
               <h3>前三名</h3>
             </div>
-            <div>
-              <Carousel
-                showArrows={true}
-                autoPlay
-                infiniteLoop
-                interval={6000}
-                showStatus={false}>
-                <div>
-                  <CardWithMoreEffect
-                    image_src="https://ctspcsr.com.tw/meida/award_photo/1/1.jpg"
-                    alt="team"
-                    text="卓錫隆_綠能科技遇到親子遊(銀獎)"
-                  />
-                </div>
-                <div>
-                  <CardWithMoreEffect
-                    image_src="https://ctspcsr.com.tw/meida/award_photo/1/2.jpg"
-                    alt="team"
-                    text="李祐村_台中園區之美13(銅獎)"
-                  />
-                </div>
-                <div>
-                  <CardWithMoreEffect
-                    image_src="https://ctspcsr.com.tw/meida/award_photo/1/3.jpg"
-                    alt="team"
-                    text="趙令級_科技與休閒(首獎)"
-                  />
-                </div>
-              </Carousel>
+            <div className={style.photo_area}>
+              <div>
+                <CardWithMoreEffect
+                  image_src="https://ctspcsr.com.tw/meida/award_photo/1/1.jpg"
+                  alt="team"
+                  text="卓錫隆_綠能科技遇到親子遊(銀獎)"
+                />
+              </div>
+              <div>
+                <CardWithMoreEffect
+                  image_src="https://ctspcsr.com.tw/meida/award_photo/1/2.jpg"
+                  alt="team"
+                  text="李祐村_台中園區之美13(銅獎)"
+                />
+              </div>
+              <div>
+                <CardWithMoreEffect
+                  image_src="https://ctspcsr.com.tw/meida/award_photo/1/3.jpg"
+                  alt="team"
+                  text="趙令級_科技與休閒(首獎)"
+                />
+              </div>
             </div>
           </div>
           <div className={style.download_section_item}>
@@ -69,12 +59,7 @@ export default function ReportDownload() {
               <h3>佳作</h3>
             </div>
             <div>
-              <Carousel
-                showArrows={true}
-                autoPlay
-                infiniteLoop
-                interval={6000}
-                showStatus={false}>
+              <div className={style.photo_area}>
                 <div>
                   <CardWithMoreEffect
                     image_src="https://ctspcsr.com.tw/meida/award_photo/2/1.jpg"
@@ -152,7 +137,7 @@ export default function ReportDownload() {
                     text="陳建興_上班去(佳作)"
                   />
                 </div>
-              </Carousel>
+              </div>
             </div>
           </div>
           <div className={style.download_section_item}>
@@ -160,12 +145,7 @@ export default function ReportDownload() {
               <h3>特別獎</h3>
             </div>
             <div>
-              <Carousel
-                showArrows={true}
-                autoPlay
-                infiniteLoop
-                interval={6000}
-                showStatus={false}>
+              <div className={style.photo_area}>
                 <div>
                   <CardWithMoreEffect
                     image_src="https://ctspcsr.com.tw/meida/award_photo/3/1.jpg"
@@ -271,7 +251,7 @@ export default function ReportDownload() {
                     text="黃春麗_台中園區大眾運輸接駁站(一)(景觀)"
                   />
                 </div>
-              </Carousel>
+              </div>
             </div>
           </div>
           <div className={style.download_section_item}>
@@ -279,12 +259,7 @@ export default function ReportDownload() {
               <h3>入選獎</h3>
             </div>
             <div>
-              <Carousel
-                showArrows={true}
-                autoPlay
-                infiniteLoop
-                interval={6000}
-                showStatus={false}>
+              <div className={style.photo_area}>
                 <div>
                   <CardWithMoreEffect
                     image_src="https://ctspcsr.com.tw/meida/award_photo/4/1.jpg"
@@ -341,7 +316,7 @@ export default function ReportDownload() {
                     text="陳萬教_卑微處有大美(入選獎)"
                   />
                 </div>
-              </Carousel>
+              </div>
             </div>
           </div>
         </div>
