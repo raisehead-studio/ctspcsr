@@ -16,10 +16,12 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const Home = ({ data }: { data: any[] }) => {
+const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
+
+  console.log(zh_data, en_data);
 
   return (
     <>
@@ -238,13 +240,11 @@ const Home = ({ data }: { data: any[] }) => {
         </div>
       </section>
       <section className={style.content_section}>
-        <div
-          className={style.container1}
-          style={lang ? { display: "none" } : { display: "flex" }}>
+        <div className={style.container1}>
           <div className={style.head}>
             <h4>
-              最新消息 / NEWS{" "}
-              <span>
+              {lang ? "NEWS" : "最新消息 / NEWS"}
+              <span style={lang ? { display: "none" } : { display: "flex" }}>
                 <a
                   href="https://www.ctsp.gov.tw/chinese/01-News/03-custom.aspx?v=1&fr=1000&no=1003"
                   target="_blank">
@@ -254,34 +254,57 @@ const Home = ({ data }: { data: any[] }) => {
             </h4>
           </div>
           <div className={style.content}>
-            {data?.map((i: any) => (
-              <div
-                className={style.content_item}
-                key={i.news_id}
-                onClick={() => {
-                  router.push(`/news/${i.news_id}`);
-                }}>
-                <div className={style.line_container}>
-                  <div className={style.circle} />
-                  <div className={style.line} />
-                </div>
-                <div>
-                  <div>
-                    <p>{i.create_date}</p>
+            {lang &&
+              en_data?.map((i: any) => (
+                <div
+                  className={style.content_item}
+                  key={i.news_id}
+                  onClick={() => {
+                    router.push(`/news/${i.news_id}`);
+                  }}>
+                  <div className={style.line_container}>
+                    <div className={style.circle} />
+                    <div className={style.line} />
                   </div>
                   <div>
-                    <p>{i.news_title}</p>
+                    <div>
+                      <p>{i.create_date}</p>
+                    </div>
+                    <div>
+                      <p>{i.news_title}</p>
+                    </div>
                   </div>
                 </div>
-              </div>
-            ))}
+              ))}
+            {!lang &&
+              zh_data?.map((i: any) => (
+                <div
+                  className={style.content_item}
+                  key={i.news_id}
+                  onClick={() => {
+                    router.push(`/news/${i.news_id}`);
+                  }}>
+                  <div className={style.line_container}>
+                    <div className={style.circle} />
+                    <div className={style.line} />
+                  </div>
+                  <div>
+                    <div>
+                      <p>{i.create_date}</p>
+                    </div>
+                    <div>
+                      <p>{i.news_title}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
           </div>
 
           <div className={style.more}>
             <Link href={"/news"}>More ...</Link>
           </div>
         </div>
-        <div className={lang ? style.container1 : style.container2}>
+        <div className={style.container2}>
           <div className={style.head}>
             <h4>{lang ? "VIDEO" : "中科影音 / VIDEO"}</h4>
           </div>
@@ -353,32 +376,52 @@ const Home = ({ data }: { data: any[] }) => {
   );
 };
 
-async function getData() {
+async function getZhData() {
   const filePath = path.join(process.cwd(), "data", "news.json");
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
   return data;
 }
 
-export async function getStaticProps(context: any) {
-  const data = await getData();
-  const news = data
-    .sort(
-      (a: any, b: any) => +new Date(b.create_date) - +new Date(a.create_date)
-    )
-    .map((news: any) => ({
-      news_id: news.news_id,
-      news_title: news.news_title,
-      create_date: news.create_date,
-    }));
+async function getEnData() {
+  const filePath = path.join(process.cwd(), "data", "en_news.json");
+  const jsonData = await fs.readFile(filePath);
+  const data = JSON.parse(jsonData.toString());
+  return data;
+}
 
-  if (!news) {
+export async function getStaticProps(context: any) {
+  const zh_data = await getZhData();
+  const en_data = await getEnData();
+
+  if (!zh_data || !en_data) {
     return { notFound: true };
   }
 
   return {
     props: {
-      data: news.splice(0, 5),
+      zh_data: zh_data
+        .sort(
+          (a: any, b: any) =>
+            +new Date(b.create_date) - +new Date(a.create_date)
+        )
+        .map((news: any) => ({
+          news_id: news.news_id,
+          news_title: news.news_title,
+          create_date: news.create_date,
+        }))
+        .splice(0, 5),
+      en_data: en_data
+        .sort(
+          (a: any, b: any) =>
+            +new Date(b.create_date) - +new Date(a.create_date)
+        )
+        .map((news: any) => ({
+          news_id: news.news_id,
+          news_title: news.news_title,
+          create_date: news.create_date,
+        }))
+        .splice(0, 5),
     },
   };
 }
