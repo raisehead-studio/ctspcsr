@@ -268,10 +268,10 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
                   </div>
                   <div>
                     <div>
-                      <p>{i.create_date}</p>
-                    </div>
-                    <div>
-                      <p>{i.news_title}</p>
+                      <p>
+                        {i.create_date} <br />
+                        {i.news_title}
+                      </p>
                     </div>
                   </div>
                 </div>
