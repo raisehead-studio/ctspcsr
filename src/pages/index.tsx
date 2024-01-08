@@ -260,7 +260,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
                   className={style.content_item}
                   key={i.news_id}
                   onClick={() => {
-                    router.push(`/news/${i.news_id}`);
+                    router.push(`/en_news/${i.news_id}/?lang=en`);
                   }}>
                   <div className={style.line_container}>
                     <div className={style.circle} />
@@ -301,7 +301,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
           </div>
 
           <div className={style.more}>
-            <Link href={"/news"}>More ...</Link>
+            <Link href={lang ? "/en_news/?lang=en" : "/news"}>More ...</Link>
           </div>
         </div>
         <div className={style.container2}>
