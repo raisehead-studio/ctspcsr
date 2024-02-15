@@ -1,0 +1,2742 @@
+[
+  {
+    "sp_cf_id": "40",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2010.pdf",
+    "f_description": "2010",
+    "f_path": "022f666c-dfb8-7567-8393-9f8a27afe99b.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "41",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2011.pdf",
+    "f_description": "2011",
+    "f_path": "4191c0a8-cdd2-ad06-ff1c-6fc431d06c1b.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "42",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2012.pdf",
+    "f_description": "2012",
+    "f_path": "47969268-1e09-389e-73d5-cfb53a025234.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "43",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2013.pdf",
+    "f_description": "2013",
+    "f_path": "e73d1e84-59bf-4443-2f74-696327245e9a.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "44",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2014.pdf",
+    "f_description": "2014",
+    "f_path": "f34d1135-9ef7-bac5-7493-91d32a98065e.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "45",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2015.pdf",
+    "f_description": "2015",
+    "f_path": "c6cbdb3e-3d81-6166-5848-fe9a9dd9d4a4.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "46",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2016.pdf",
+    "f_description": "2016",
+    "f_path": "0d4dc716-4f87-8cc6-dd04-7ac73715fbaf.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "55",
+    "spc_id": "6",
+    "f_type": "1",
+    "f_name": "2012.pdf",
+    "f_description": "2012",
+    "f_path": "97382a92-586f-e7e5-6619-70b6253d9223.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "56",
+    "spc_id": "8",
+    "f_type": "1",
+    "f_name": "2014.pdf",
+    "f_description": "2014",
+    "f_path": "432b1d2d-6d3d-9177-bd38-ade448b7dd3a.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "57",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "csr2013.pdf",
+    "f_description": "2013",
+    "f_path": "02533ca3-bbb5-db7e-64ae-6d6f6d3e5323.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "58",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "csr2014.pdf",
+    "f_description": "2014",
+    "f_path": "6e203d5a-f9e0-8b49-ce14-903841a664a9.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "59",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "csr2015.pdf",
+    "f_description": "2015",
+    "f_path": "059ffc68-ceaf-5348-cf52-ac14a537a57b.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "60",
+    "spc_id": "10",
+    "f_type": "1",
+    "f_name": "2014.pdf",
+    "f_description": "2014",
+    "f_path": "d3df9013-5b6c-5e7c-53c9-8a5a46a7a80e.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "61",
+    "spc_id": "11",
+    "f_type": "1",
+    "f_name": "kingslide-2014csr.pdf",
+    "f_description": "2014",
+    "f_path": "f3eeaf3f-85f0-5f94-27c9-7c0c4148e730.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "63",
+    "spc_id": "11",
+    "f_type": "1",
+    "f_name": "kingslide-2015csr.pdf",
+    "f_description": "2015",
+    "f_path": "a80d7112-62a2-2303-26c0-731547bdb4dc.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "64",
+    "spc_id": "11",
+    "f_type": "1",
+    "f_name": "kingslide-2016csr.pdf",
+    "f_description": "2016",
+    "f_path": "176df02e-dd49-6312-4b13-f0a1e997c674.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "65",
+    "spc_id": "12",
+    "f_type": "1",
+    "f_name": "2011_csr_report.pdf",
+    "f_description": "2011",
+    "f_path": "901118f4-7be8-84bc-8895-bcae2c6b716c.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "66",
+    "spc_id": "12",
+    "f_type": "1",
+    "f_name": "2013_csr_report.pdf",
+    "f_description": "2013",
+    "f_path": "2a8a363a-d0d1-b1cd-47b2-cb538ed377e0.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "67",
+    "spc_id": "15",
+    "f_type": "1",
+    "f_name": "csr-2013.pdf",
+    "f_description": "2013",
+    "f_path": "4af81b46-ae13-06c0-e578-8211fa306f3a.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "68",
+    "spc_id": "15",
+    "f_type": "1",
+    "f_name": "csr-2014.pdf",
+    "f_description": "2014",
+    "f_path": "a9be68e4-e944-b5cb-5ec4-b5afeb926690.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "69",
+    "spc_id": "15",
+    "f_type": "1",
+    "f_name": "2015_CSR_ch.pdf",
+    "f_description": "2015",
+    "f_path": "330a9ded-4836-9971-0062-264a94ad1ec8.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "70",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "2013.pdf",
+    "f_description": "2013",
+    "f_path": "9e014438-b995-68a8-9805-c2325f55c29e.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "71",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "2014.pdf",
+    "f_description": "2014",
+    "f_path": "2e62431d-3b0b-3c37-1754-d31f57b06fae.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "72",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "2015.pdf",
+    "f_description": "2015",
+    "f_path": "f6fdab14-1179-a0aa-8ee8-912cda270404.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "73",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2008.pdf",
+    "f_description": "2008",
+    "f_path": "3dc79912-9024-0d12-5d2b-1a60df649900.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "74",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2007.pdf",
+    "f_description": "2007",
+    "f_path": "18cd98b0-9ff8-b073-f0a0-7758e96387e3.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "75",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2009.pdf",
+    "f_description": "2009",
+    "f_path": "364c657e-4a2b-0c30-0683-be06535ba0de.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "76",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2010.pdf",
+    "f_description": "2010",
+    "f_path": "fc9245d6-e798-55e4-7a8a-c809b595108a.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "77",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2011.pdf",
+    "f_description": "2011",
+    "f_path": "f67e6709-86c2-cfba-f4ff-eacd2de8c773.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "78",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2012.pdf",
+    "f_description": "2012",
+    "f_path": "7cad98d7-dc85-9965-9bec-da59035b07f1.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "79",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2013.pdf",
+    "f_description": "2013",
+    "f_path": "4cac4691-c686-d2b4-84b5-1840c5cb764b.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "80",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2014.pdf",
+    "f_description": "2014",
+    "f_path": "21883589-6a52-39c7-2f1d-fff929abed57.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "82",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2015.pdf",
+    "f_description": "2015",
+    "f_path": "8ebb316b-8b18-a4e3-ba96-fb33ee1138a2.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "83",
+    "spc_id": "20",
+    "f_type": "1",
+    "f_name": "Tosoh-Corporation-Annual-Report-2013.pdf",
+    "f_description": "2013",
+    "f_path": "f4b13025-448e-8e92-88cd-96ab86058f62.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "84",
+    "spc_id": "20",
+    "f_type": "1",
+    "f_name": "Tosoh Corporation Annual Report 2015 - Full.pdf",
+    "f_description": "2015",
+    "f_path": "ff339618-5944-2562-fa02-e7b8bcc8c4d9.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "85",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2011_CSR_report_chi_all.pdf",
+    "f_description": "2011",
+    "f_path": "f641cb46-46a3-204e-9206-a732f74644ea.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "86",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2012_CSR_report_chi_all.pdf",
+    "f_description": "2012",
+    "f_path": "92fac9c3-2433-2e7b-06a9-c79b24a86321.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "87",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2013_CSR_report_chi_all.pdf",
+    "f_description": "2013",
+    "f_path": "6bb229c8-1d12-7108-561d-33faf98c2b61.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "88",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2014_CSR_report_chi_all.pdf",
+    "f_description": "2014",
+    "f_path": "fc5dac57-b971-5601-4ade-76d1878437bb.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "89",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2015_CSR_report_chi_all.pdf",
+    "f_description": "2015",
+    "f_path": "353234bd-b975-202a-a670-e08e4327003f.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "90",
+    "spc_id": "25",
+    "f_type": "1",
+    "f_name": "CSR_2015.pdf",
+    "f_description": "2015",
+    "f_path": "e077699b-ba68-5254-8d9c-9aa5407d1cfc.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "91",
+    "spc_id": "25",
+    "f_type": "1",
+    "f_name": "CSR_2014.pdf",
+    "f_description": "2014",
+    "f_path": "c4a14b1a-2ca8-4db5-b838-026ff3bd09b3.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "92",
+    "spc_id": "26",
+    "f_type": "1",
+    "f_name": "和鑫CSR報告書2014.pdf",
+    "f_description": "2014",
+    "f_path": "8f4bd6b7-37d9-1a92-81a1-46e360471974.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "93",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2011Motech_CSR_Report.pdf",
+    "f_description": "2011",
+    "f_path": "c8a69003-28df-f1f7-8628-bd4c892cc893.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "94",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2012Motech_CSR_Report.pdf",
+    "f_description": "2012",
+    "f_path": "2b01be31-edc4-d734-1213-aae41d51d9b6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "95",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2014Motech_CSR_Report.pdf",
+    "f_description": "2014",
+    "f_path": "73f7cc26-bf68-277f-75e8-84a16d56091d.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "96",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2015Motech_CSR_Report.pdf",
+    "f_description": "2015",
+    "f_path": "5b5e1281-0206-4c9b-b401-22251d2013b6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "97",
+    "spc_id": "28",
+    "f_type": "1",
+    "f_name": "07_2014_CSR_CHT.pdf",
+    "f_description": "2014",
+    "f_path": "3e004ede-4880-b34e-e641-dc1cd0fcb173.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "98",
+    "spc_id": "28",
+    "f_type": "1",
+    "f_name": "07_2015_CSR_CHT.pdf",
+    "f_description": "2015",
+    "f_path": "55e0a511-da14-c757-fcc3-fbc0d3c498f3.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "99",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2009CSR_tw.pdf",
+    "f_description": "2009",
+    "f_path": "da1b08ff-8220-7013-1cad-83e478321a21.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "100",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2010CSR_tw.pdf",
+    "f_description": "2010",
+    "f_path": "3232a830-66d1-7e47-a301-37dbdc128df6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "101",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2011CSR_tw.pdf",
+    "f_description": "2011",
+    "f_path": "69093c7f-904c-6930-45b7-5a02b15dad6f.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "102",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2012CSR_tw.pdf",
+    "f_description": "2012",
+    "f_path": "00f86d33-c90d-b9ca-b6d0-1c7c59759efd.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "103",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2013CSR_tw.pdf",
+    "f_description": "2013",
+    "f_path": "ac4f31a5-f558-38b1-74d5-7ae3dde370c3.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "104",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2014CSR_tw.pdf",
+    "f_description": "2014",
+    "f_path": "ed2f7d90-6e95-f724-eca8-e7779db989b0.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "105",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2015CSR_tw.pdf",
+    "f_description": "2015",
+    "f_path": "c783fa0b-8ede-de6b-69b3-caed11769987.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "113",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2008.pdf",
+    "f_description": "2008",
+    "f_path": "8bcb74a7-9ff6-9a36-6507-5085638e53e4.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "114",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2009.pdf",
+    "f_description": "2009",
+    "f_path": "6c73ef93-b5b5-6536-bb98-a3c4258a0720.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "115",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2010.pdf",
+    "f_description": "2010",
+    "f_path": "d07e1e12-5a37-5aed-7ab3-163d428986d5.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "116",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2011.pdf",
+    "f_description": "2011",
+    "f_path": "42380a18-8760-7ea1-9214-ec7c69c77dd3.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "117",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2012.pdf",
+    "f_description": "2012",
+    "f_path": "7b6f39f0-6484-1e33-e5e9-5041cc2a8b5f.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "118",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2013.pdf",
+    "f_description": "2013",
+    "f_path": "7e4530a4-5784-dd28-e8a1-542e8f6e12c6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "119",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2014.pdf",
+    "f_description": "2014",
+    "f_path": "ff3a529e-d375-3918-1b6b-e96f225e05a7.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "120",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2015.pdf",
+    "f_description": "2015",
+    "f_path": "d42fe9c3-2ccb-ffb9-3d2e-fe84a95a908d.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "121",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "CSR_2008.pdf",
+    "f_description": "2008",
+    "f_path": "ce0926de-8c3c-2c77-0125-d6c2f6026f11.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "122",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "CSR_2009.pdf",
+    "f_description": "2009",
+    "f_path": "565b496c-d2c7-1da9-bea0-802d9ffea8ed.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "123",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2010csr.pdf",
+    "f_description": "2010",
+    "f_path": "54a995e0-a356-c51d-23b5-11986015bd95.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "124",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2011_CSR.pdf",
+    "f_description": "2011",
+    "f_path": "6eaaf564-69bb-ebcd-6d5a-258a39eb8f43.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "125",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2012_CSR.pdf",
+    "f_description": "2012",
+    "f_path": "b63321c9-5e26-d049-1b12-7169104ac88c.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "126",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2013CSR.pdf",
+    "f_description": "2013",
+    "f_path": "9ae9ee65-48e5-653d-d516-d337ef6c7218.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "127",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2014CSR.pdf",
+    "f_description": "2014",
+    "f_path": "6ff1f5ab-13c5-91f1-de5f-0486597aab5c.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "128",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2015_CSR_Report.pdf",
+    "f_description": "2015",
+    "f_path": "28e583fa-0152-edf6-db60-2c6f0af5e9d4.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "129",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2008_INX_CSR_Chinese.pdf",
+    "f_description": "2008",
+    "f_path": "c452f5cf-3d10-b7e9-10a3-dc6ea6abc65a.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "130",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2009_CMI_CSR_Chinese.pdf",
+    "f_description": "2009",
+    "f_path": "2b4dcf66-b425-06a2-5b31-e77cfe7bb844.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "131",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2010_CMI_CSR_Chinese.pdf",
+    "f_description": "2010",
+    "f_path": "3e1b6a7f-f74b-0eac-8c2d-c4222ab33ec5.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "132",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2011_INX_CSR_Chinese.pdf",
+    "f_description": "2011",
+    "f_path": "d25e53d3-8551-114e-4602-4ef4250b3a18.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "133",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2012_INX_CSR_Chinese.pdf",
+    "f_description": "2012",
+    "f_path": "f802212f-579c-5a4f-8945-404fe70b0f9d.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "134",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2013_INX_CSR_Chinese.pdf",
+    "f_description": "2013",
+    "f_path": "c4351469-3e95-f9ea-031a-2d9f3cb00317.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "135",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2014_INX CSR report-cn.pdf",
+    "f_description": "2014",
+    "f_path": "2cb043c0-ac14-43fc-0fb9-77ab087d7625.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "136",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "CSR2015-tw-0630f.pdf",
+    "f_description": "2015",
+    "f_path": "4ccb0e2c-0dc8-0e37-094c-7ef113f86634.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "137",
+    "spc_id": "34",
+    "f_type": "1",
+    "f_name": "EPISTAR_2014.pdf",
+    "f_description": "2014",
+    "f_path": "8f8cb8bf-86e2-00aa-e18f-9ae9332bca95.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "138",
+    "spc_id": "34",
+    "f_type": "1",
+    "f_name": "EPISTAR_2015.pdf",
+    "f_description": "2015",
+    "f_path": "da022341-44ce-5ba7-f945-5ba1183d7273.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "139",
+    "spc_id": "34",
+    "f_type": "1",
+    "f_name": "EPISTAR_2016.pdf",
+    "f_description": "2016",
+    "f_path": "ce4e8884-5c02-bb62-8a90-5bc88d771e6e.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "140",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2005_Delta_CSR_ report_EN.pdf",
+    "f_description": "2005",
+    "f_path": "309c2823-dda3-7190-bd3a-5e75262418a5.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "141",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2006_Delta_CSR_Report_EN.pdf",
+    "f_description": "2006",
+    "f_path": "5dd9dedb-6da2-bd16-c1d0-7efc5ac2b32d.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "142",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2007_Delta_CSR_Report_CH.pdf",
+    "f_description": "2007",
+    "f_path": "fb09ae33-12b6-2e7f-3514-57a183f71915.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "143",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2008_Delta_CSR_Report_CH.pdf",
+    "f_description": "2008",
+    "f_path": "9b118020-dc93-5726-18b0-daff9e571e32.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "144",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2009_Delta_CSR_Report_CH.pdf",
+    "f_description": "2009",
+    "f_path": "efe1eb9f-4bda-0a1c-de12-629d207aa3d6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "145",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2010_Delta_CSR_Report_CH.pdf",
+    "f_description": "2010",
+    "f_path": "ac5127b1-1d44-2d07-d204-ff5c386566a6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "146",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2011_Delta_CSR_Report_CH.pdf",
+    "f_description": "2011",
+    "f_path": "ea8f9862-a3c9-417e-b85e-00c668664aba.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "147",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2012_Delta_CSR_Report_CH.pdf",
+    "f_description": "2012",
+    "f_path": "01932379-8c73-f057-b119-c7dd5e267aab.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "148",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2013_Delta_CSR_Report_CH.pdf",
+    "f_description": "2013",
+    "f_path": "fe78d22a-8bf3-4c9b-75bc-0778111f8984.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "149",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2014_Delta_CSR_Report_CH.pdf",
+    "f_description": "2014",
+    "f_path": "b852878c-5355-e380-07e8-5df5250704cb.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "150",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2015_Delta_CSR_Report_CH.pdf",
+    "f_description": "2015",
+    "f_path": "335096be-c24b-914f-b1dc-1c2345001845.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "151",
+    "spc_id": "2",
+    "f_type": "1",
+    "f_name": "2012_企業社會責任報告.pdf",
+    "f_description": "2012",
+    "f_path": "f4cf3e5d-89b0-7f9c-96f2-a959a79ac570.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "152",
+    "spc_id": "2",
+    "f_type": "1",
+    "f_name": "2014_企業社會責任報告.pdf",
+    "f_description": "2014",
+    "f_path": "c76b892c-fdbd-3e23-5a83-8ea47ce85929.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "153",
+    "spc_id": "2",
+    "f_type": "1",
+    "f_name": "2015.pdf",
+    "f_description": "2015",
+    "f_path": "331d00a9-a441-5134-8607-fe4ea468a04d.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "154",
+    "spc_id": "2",
+    "f_type": "1",
+    "f_name": "2016年企業社會責任報告書.pdf",
+    "f_description": "2016",
+    "f_path": "9839eae4-f883-64f2-a6c9-6629e8bc4289.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "155",
+    "spc_id": "3",
+    "f_type": "1",
+    "f_name": "2016-sustainability-report.pdf",
+    "f_description": "2016",
+    "f_path": "d444165b-869c-c168-27f2-af350ed3013c.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-10-18"
+  },
+  {
+    "sp_cf_id": "156",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "CSR2016-tw_0626-web.pdf",
+    "f_description": "2016",
+    "f_path": "9e5ca025-86bc-fa27-5634-67dabfa530a8.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "157",
+    "spc_id": "33",
+    "f_type": "1",
+    "f_name": "2016年度綠能科技企業社會責任報告書.pdf",
+    "f_description": "2016",
+    "f_path": "874312a2-8c02-804c-7388-ca88e7cf4a97.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "158",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2016CSR Report.pdf",
+    "f_description": "2016",
+    "f_path": "edeba922-441f-c427-3aea-cd7483df8218.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "159",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2016.pdf",
+    "f_description": "2016",
+    "f_path": "cd778629-f9a7-4363-c978-d4ab624b47bd.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "160",
+    "spc_id": "28",
+    "f_type": "1",
+    "f_name": "07_2016_CSR_CHT.pdf.pdf",
+    "f_description": "2016",
+    "f_path": "c394f736-827e-b681-99ef-1728823f1de1.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "161",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2016CSR_tw.pdf",
+    "f_description": "2016",
+    "f_path": "7ee222a6-fba5-e6fc-37d8-5fd81bb8ecb1.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "162",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2016Motech_CSR_Report.pdf",
+    "f_description": "2016",
+    "f_path": "e5ad4a33-0e1c-a914-135f-c7e056f35488.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "163",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2016_CSR_report_chi_all.pdf",
+    "f_description": "2016",
+    "f_path": "c63c84da-0fb9-2548-4cb0-f979908dc46c.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "164",
+    "spc_id": "20",
+    "f_type": "1",
+    "f_name": "tosoh-corporate-social-responsibility-report-2016-200dpi.pdf",
+    "f_description": "2016",
+    "f_path": "87738059-0ffb-f5f4-8510-f93e84983e54.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "165",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2016台積電.pdf",
+    "f_description": "2016",
+    "f_path": "0a34c8fe-08ba-a919-122a-309e0ab57466.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "167",
+    "spc_id": "18",
+    "f_type": "1",
+    "f_name": "tw_csr_download_1563485792.pdf",
+    "f_description": "2016",
+    "f_path": "e699208e-b6a7-014b-7109-2becde758746.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "168",
+    "spc_id": "18",
+    "f_type": "1",
+    "f_name": "tw_download_1530000026.pdf",
+    "f_description": "2015",
+    "f_path": "85235696-b76f-9d78-400a-19a31dfcf11e.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "169",
+    "spc_id": "18",
+    "f_type": "1",
+    "f_name": "tw_download_1503685338.pdf",
+    "f_description": "2014",
+    "f_path": "f76d5ee0-908e-687a-d32e-b739a8000063.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "170",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "201706091634286889.pdf",
+    "f_description": "2016",
+    "f_path": "ce9a2903-57d5-338e-e13c-4a6d93a3f8f6.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "171",
+    "spc_id": "14",
+    "f_type": "1",
+    "f_name": "2014.pdf",
+    "f_description": "2014",
+    "f_path": "5acf9152-7656-6f0c-9b11-6e2394676284.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "172",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "csr2016.pdf",
+    "f_description": "2016",
+    "f_path": "4597c1db-0504-385f-95f6-999914b03734.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "173",
+    "spc_id": "3",
+    "f_type": "1",
+    "f_name": "2017-sustainability-report.pdf",
+    "f_description": "2017",
+    "f_path": "1b5b1d2f-4241-4bdc-5812-654d4945a21c.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-10"
+  },
+  {
+    "sp_cf_id": "174",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "2012_台灣3M CSR.pdf",
+    "f_description": "2012CSR報告書",
+    "f_path": "e6275387-0d62-b1a4-066e-c7f98c6ccbf0.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-13"
+  },
+  {
+    "sp_cf_id": "175",
+    "spc_id": "5",
+    "f_type": "1",
+    "f_name": "金穎CSR報告書(完稿)-1021029.pdf",
+    "f_description": "2012",
+    "f_path": "e97dd081-21ba-3ece-401c-f594ad5e7003.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-13"
+  },
+  {
+    "sp_cf_id": "176",
+    "spc_id": "24",
+    "f_type": "1",
+    "f_name": "2010_台灣凸版國際彩光CSR.pdf",
+    "f_description": "2010",
+    "f_path": "ec0cbabf-61b2-effe-8246-b9dba9d9ef96.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-13"
+  },
+  {
+    "sp_cf_id": "177",
+    "spc_id": "24",
+    "f_type": "1",
+    "f_name": "2011_台灣凸版國際彩光CSR.pdf",
+    "f_description": "2011",
+    "f_path": "7d603a39-77c0-0741-082c-7b7bfa7baeb2.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-13"
+  },
+  {
+    "sp_cf_id": "178",
+    "spc_id": "24",
+    "f_type": "1",
+    "f_name": "2012_台灣凸版國際彩光CSR.pdf",
+    "f_description": "2012",
+    "f_path": "0e798031-321f-bd71-0641-d703158ece40.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-13"
+  },
+  {
+    "sp_cf_id": "179",
+    "spc_id": "24",
+    "f_type": "1",
+    "f_name": "2013_台灣凸版國際彩光CSR(G4核心揭露).pdf",
+    "f_description": "2013",
+    "f_path": "472f3ee2-4f0e-d53d-6281-20856c40822b.pdf",
+    "spc_id2": "0",
+    "create_date": "2017-11-13"
+  },
+  {
+    "sp_cf_id": "181",
+    "spc_id": "11",
+    "f_type": "1",
+    "f_name": "kingslide-2018csr.pdf",
+    "f_description": "2017",
+    "f_path": "7596db99-9f8e-89a3-868d-982e2810b76a.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-06-29"
+  },
+  {
+    "sp_cf_id": "183",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "Coretronic_2017CSRReport.pdf",
+    "f_description": "2017",
+    "f_path": "4395a135-0759-1c79-a8d0-b7540a633895.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "184",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2016_Delta_CSR_Report_CH.pdf",
+    "f_description": "2016",
+    "f_path": "2b1f3274-7998-be22-05fe-afac266ca7d7.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "185",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2017_Delta_CSR_Report_CH.pdf",
+    "f_description": "2017",
+    "f_path": "9b497780-67fd-7dea-c421-f37a8119b2fc.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "186",
+    "spc_id": "1",
+    "f_type": "1",
+    "f_name": "daifuku2017.pdf",
+    "f_description": "2017",
+    "f_path": "4ad6b5a1-3e03-fd24-a9ae-6f07917539b4.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "187",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "Sustainability Report Complete 2017.pdf",
+    "f_description": "2017",
+    "f_path": "5d2798da-fa23-228e-70ac-0e41731df972.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "188",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "2011 GRI Report.pdf",
+    "f_description": "2011",
+    "f_path": "e20a4d32-4e29-61d0-43cb-9c04573b8623.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "189",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "3M's_2013_Global_Sustainability_Report.pdf",
+    "f_description": "2013",
+    "f_path": "17664e4b-621f-5d79-363d-779c8b320696.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "190",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "3M 2014 SustainabilityReport.pdf",
+    "f_description": "2014",
+    "f_path": "30a9b10e-5bd2-7a0c-bd5e-3ac7e6b07f25.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "191",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "2017台灣神隆.PDF",
+    "f_description": "2017",
+    "f_path": "94f1f231-7494-63b4-09bf-5833254494e2.PDF",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "192",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "2018_tsmc_csr_c_all.pdf",
+    "f_description": "2017",
+    "f_path": "363df9ab-72ea-8c1b-7c04-0c306f494af7.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "193",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "201806011114143510.pdf",
+    "f_description": "2017",
+    "f_path": "2c784c5b-bbcc-adda-3823-f96afa1980fe.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "194",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2017.pdf",
+    "f_description": "2017",
+    "f_path": "a79a1e0e-d899-7a0d-331b-ab2d62b0dd25.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "195",
+    "spc_id": "18",
+    "f_type": "1",
+    "f_name": "tw_csr_download_1595763986.pdf",
+    "f_description": "2017",
+    "f_path": "b51f72c6-3900-2a8c-8c4e-c14eed97771d.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "196",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2017Motech_CSR_Report.pdf",
+    "f_description": "2017",
+    "f_path": "260ce332-b6dd-6260-4305-e8bcf8727d62.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "197",
+    "spc_id": "37",
+    "f_type": "1",
+    "f_name": "TSC_CSR_2016_20171108160908.pdf",
+    "f_description": "2016",
+    "f_path": "851eabc0-6ddc-cecc-9b7c-9d1e552c6f4f.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "198",
+    "spc_id": "37",
+    "f_type": "1",
+    "f_name": "TSC_CSR_2017_20180719161039.pdf",
+    "f_description": "2017",
+    "f_path": "606c3ca5-fe37-d4d0-bf7f-17d6b91f8c95.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "200",
+    "spc_id": "34",
+    "f_type": "1",
+    "f_name": "EPISTAR_2017.pdf",
+    "f_description": "2017",
+    "f_path": "61c0bfa4-2dcf-7047-f8f9-8c2f65380df1.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "201",
+    "spc_id": "38",
+    "f_type": "1",
+    "f_name": "2017CSR.pdf",
+    "f_description": "2017",
+    "f_path": "c4538cad-1144-4082-31e4-5b2170ae8d55.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "202",
+    "spc_id": "28",
+    "f_type": "1",
+    "f_name": "CSR_Report 2017_ChT.pdf",
+    "f_description": "2017",
+    "f_path": "b7a777ce-ec02-a262-6dd3-505c08c22fb7.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "203",
+    "spc_id": "12",
+    "f_type": "1",
+    "f_name": "2016CSR報告(GRI4.0).pdf",
+    "f_description": "2016",
+    "f_path": "5f1d7dd8-544a-cde1-d357-c9789a152673.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "204",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2017_CSR_report_chi_all.pdf",
+    "f_description": "2017",
+    "f_path": "ed14d9cf-c423-d3d3-57ea-e8892d935ae9.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "205",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2017CSR_en.pdf",
+    "f_description": "2017",
+    "f_path": "916a716c-465c-0d3a-196c-f070a0e2e781.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "206",
+    "spc_id": "3",
+    "f_type": "1",
+    "f_name": "2018-sustainability-report.pdf",
+    "f_description": "2018",
+    "f_path": "d0eaff9b-dfb3-597f-2e0b-5e394900aa52.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "207",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "AUO_2010_CSR_TC_All_v0.pdf",
+    "f_description": "2010",
+    "f_path": "23e73022-628c-b439-ad77-0c34e57bc22d.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "208",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "AUO_2011_CSR_TC_All_v1.pdf",
+    "f_description": "2011",
+    "f_path": "83780ab9-1221-fee4-6b20-eca46abd7266.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "209",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "AUO_2012_CSR_TC_All.pdf",
+    "f_description": "2012",
+    "f_path": "d4d59b40-fb40-3e68-fcf0-d8b682b6e3d1.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "210",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "AUO_2013_CSR_TW_All.pdf",
+    "f_description": "2013",
+    "f_path": "d99bf6eb-8ba1-d7bf-a44b-22c2db5be52b.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "211",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "AUO_2014_CSR_TW_All.pdf",
+    "f_description": "2014",
+    "f_path": "7a7b4e10-1e8b-ad4c-db2b-e2ee01f4618c.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "212",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "2015_CSR_All_tc.pdf",
+    "f_description": "2015",
+    "f_path": "4a5a65d1-1437-6162-16eb-5042c9d66cf8.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "213",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "2016_CSR_All_tc.pdf",
+    "f_description": "2016",
+    "f_path": "46c22e26-45ca-fbb5-4a14-8bec899055a2.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "214",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "2017_CSR_All_tc.pdf",
+    "f_description": "2017",
+    "f_path": "554128f4-7d14-c85a-15a7-5531da711a2e.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "215",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "rc99.pdf",
+    "f_description": "1999",
+    "f_path": "e505908c-1ecb-baaf-34d5-acd13abd4c18.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "216",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "rc00.pdf",
+    "f_description": "2000",
+    "f_path": "cc73b0bf-6219-cdce-0741-85a944ec3057.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "217",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "rc01.pdf",
+    "f_description": "2001",
+    "f_path": "f1305091-9942-4ba3-c16b-b4d49223b13d.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "218",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "rc02.pdf",
+    "f_description": "2002",
+    "f_path": "2c3d1050-f926-ec26-416c-f00a436f8cc5.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "219",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "rc03.pdf",
+    "f_description": "2003",
+    "f_path": "f91c8b8e-687c-81d1-491c-9274558b83a3.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "220",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "rc04.pdf",
+    "f_description": "2004",
+    "f_path": "9fc60a84-7c71-6bae-d1dd-386f440a8f73.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "221",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2005.pdf",
+    "f_description": "2005",
+    "f_path": "c8cbf081-88a6-a2af-5cf8-f11a378a36d1.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "222",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2006.pdf",
+    "f_description": "2006",
+    "f_path": "371d589a-03da-2e36-c95f-cd16f8cc2c6c.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "223",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2007.pdf",
+    "f_description": "2007",
+    "f_path": "e466ae07-de89-43c7-6ebe-19805bcbe4e1.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "224",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2008.pdf",
+    "f_description": "2008",
+    "f_path": "fb154d76-3ef5-33d4-6cfa-0b75bad483f7.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "225",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2009.pdf",
+    "f_description": "2009",
+    "f_path": "4af43ac7-f2c6-9d52-c912-5165acbdd7ac.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "226",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2010.pdf",
+    "f_description": "2010",
+    "f_path": "93e8b8ad-606c-1c9d-53da-906721d54420.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "227",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "report2011.pdf",
+    "f_description": "2011",
+    "f_path": "e8b0c75a-53d4-0a7c-35bb-a93695ed86b4.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "228",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2012.pdf",
+    "f_description": "2012",
+    "f_path": "a5dfd7a4-f68d-b4a2-cdef-f9904ead1178.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "229",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2013.pdf",
+    "f_description": "2013",
+    "f_path": "b4abd776-26ca-807a-d887-84ccb82ce9de.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "230",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2014.pdf",
+    "f_description": "2014",
+    "f_path": "a877d967-b5b4-3759-ec9d-c7d61c4ed6a7.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "231",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2015.pdf",
+    "f_description": "2015",
+    "f_path": "4a638535-5b33-f250-72a3-ca53f4dadc78.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "232",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2016 (1).pdf",
+    "f_description": "2016",
+    "f_path": "5a28cef7-8642-377d-ec7b-299d5c7bf902.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "233",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2017.pdf",
+    "f_description": "2017",
+    "f_path": "8aecff3a-5e48-77e9-16ab-0c7241f53187.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "234",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "all.pdf",
+    "f_description": "2001",
+    "f_path": "4c475145-b011-19e4-0a27-e4ece8336edf.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "235",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "all (1).pdf",
+    "f_description": "2002",
+    "f_path": "a7050751-0462-226a-549a-0b880299924d.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "236",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2004.pdf",
+    "f_description": "2004",
+    "f_path": "0055c1fb-640f-009d-5ef9-3d47ffe56f1e.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "237",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2005.pdf",
+    "f_description": "2005",
+    "f_path": "d2a49217-ee5c-5964-5bee-d7365b4f7710.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "238",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2006.pdf",
+    "f_description": "2006",
+    "f_path": "781b7634-348c-b6ad-27fb-d25946974802.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "239",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2010_alle.pdf",
+    "f_description": "2010",
+    "f_path": "34d5d467-80f7-355f-82d4-869d16509f35.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "240",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2011_alle.pdf",
+    "f_description": "2011",
+    "f_path": "ae029d61-4dcf-0858-ffd3-b31566a5ad0c.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "241",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2012_alle.pdf",
+    "f_description": "2012",
+    "f_path": "6cc8aca7-26a4-85a4-1ea7-0477b0a0109f.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "242",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2013_alle.pdf",
+    "f_description": "2013",
+    "f_path": "1e5b2d8f-3507-b381-e887-f6a58ef209ec.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "243",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2014_alle.pdf",
+    "f_description": "2014",
+    "f_path": "23d788e9-2ef1-dfaa-f22e-619069c86444.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "244",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2015_alle.pdf",
+    "f_description": "2015",
+    "f_path": "254ad8ea-01cf-9a66-dc63-33f223debc10.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "245",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2016_alle.pdf",
+    "f_description": "2016",
+    "f_path": "7e6c986f-c65a-3604-bfb7-2d2799bdb228.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "246",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2017_alle.pdf",
+    "f_description": "2017",
+    "f_path": "42b1c975-18a2-9fcf-be2d-79c99558cce4.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "247",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2018_alle.pdf",
+    "f_description": "2018",
+    "f_path": "1c40dbf2-0f56-1fb6-0df8-af044ed3e2ae.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "248",
+    "spc_id": "42",
+    "f_type": "1",
+    "f_name": "sr2016_all.pdf",
+    "f_description": "2016",
+    "f_path": "dfd5dd9a-c805-2ec8-f988-750434ed1fc2.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "249",
+    "spc_id": "42",
+    "f_type": "1",
+    "f_name": "sr2017_all.pdf",
+    "f_description": "2017",
+    "f_path": "d2e50a24-8d13-8f16-9c68-27a9dbcc3b90.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "250",
+    "spc_id": "43",
+    "f_type": "1",
+    "f_name": "CSR_Report.pdf",
+    "f_description": "2016",
+    "f_path": "ddbb0217-14f3-ff4a-7bd6-74ec02a25075.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "251",
+    "spc_id": "43",
+    "f_type": "1",
+    "f_name": "Realtek_2017_CSR_web_Final version.pdf",
+    "f_description": "2017",
+    "f_path": "318b0487-28a6-a2f1-3810-4eaf4f6217c6.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "252",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2017_INX_CSR-tw0627.pdf",
+    "f_description": "2017",
+    "f_path": "0132d507-9d41-64a6-eb4e-5f60cbcd843d.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "253",
+    "spc_id": "36",
+    "f_type": "1",
+    "f_name": "2014CSRReportTC.pdf",
+    "f_description": "2014",
+    "f_path": "e5b9551f-d459-628f-074b-df1cbb93f837.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "254",
+    "spc_id": "36",
+    "f_type": "1",
+    "f_name": "2015CSRReportTC.pdf",
+    "f_description": "2015",
+    "f_path": "2740f144-833e-77a2-ff01-2c36a0ba2d32.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "255",
+    "spc_id": "36",
+    "f_type": "1",
+    "f_name": "2016CSR.pdf",
+    "f_description": "2016",
+    "f_path": "a8739e5d-f4a4-b804-b737-3ced437eabc8.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "256",
+    "spc_id": "36",
+    "f_type": "1",
+    "f_name": "2017WinbondCSRReport_Final.pdf",
+    "f_description": "2017",
+    "f_path": "df72c3a6-f2b8-aa46-56a5-1522c963ac85.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "257",
+    "spc_id": "33",
+    "f_type": "1",
+    "f_name": "2017年度綠能科技企業社會責任報告書.pdf",
+    "f_description": "2017",
+    "f_path": "dc7f3238-5a19-2b16-c452-500939db3c66.pdf",
+    "spc_id2": "0",
+    "create_date": "2018-08-27"
+  },
+  {
+    "sp_cf_id": "258",
+    "spc_id": "11",
+    "f_type": "1",
+    "f_name": "kingslide-2019csr.pdf",
+    "f_description": "2018",
+    "f_path": "244e6fbd-e5d9-02e8-bf68-433b458f907b.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-22"
+  },
+  {
+    "sp_cf_id": "259",
+    "spc_id": "3",
+    "f_type": "1",
+    "f_name": "2019-Sustainability-Report.pdf",
+    "f_description": "2019",
+    "f_path": "5c72f524-2ffd-2457-b811-e5b7ae6ecfd4.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-22"
+  },
+  {
+    "sp_cf_id": "260",
+    "spc_id": "2",
+    "f_type": "1",
+    "f_name": "2018年企業社會責任報告書(上傳版)_長興.pdf",
+    "f_description": "2018",
+    "f_path": "fd143d25-5276-8c7c-c13f-de6e5b0f753a.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-22"
+  },
+  {
+    "sp_cf_id": "261",
+    "spc_id": "12",
+    "f_type": "1",
+    "f_name": "CSR Report _萬潤-2017.pdf",
+    "f_description": "2017",
+    "f_path": "b4ec05b9-1caa-c525-f8df-e433cec2f80a.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-22"
+  },
+  {
+    "sp_cf_id": "262",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "201906101608556255_帆宣.pdf",
+    "f_description": "2018",
+    "f_path": "629f9431-0e4d-daf1-3963-77af688e07af.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-22"
+  },
+  {
+    "sp_cf_id": "264",
+    "spc_id": "18",
+    "f_type": "1",
+    "f_name": "tw_csr_download_1628383073-南茂.pdf",
+    "f_description": "2018",
+    "f_path": "9f96bb98-ac5e-5635-0a02-a80d767fb96f.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-23"
+  },
+  {
+    "sp_cf_id": "265",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "c_all-台積電.pdf",
+    "f_description": "2018",
+    "f_path": "4df88f8f-e964-0bad-13a5-c92a3d064045.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-26"
+  },
+  {
+    "sp_cf_id": "266",
+    "spc_id": "20",
+    "f_type": "1",
+    "f_name": "report2018-東曹石英.pdf",
+    "f_description": "2018",
+    "f_path": "51064058-fc7a-8e66-fe38-5a075e51e82b.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-26"
+  },
+  {
+    "sp_cf_id": "267",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2018_CSR_report_chi_all-聯電.pdf",
+    "f_description": "2018",
+    "f_path": "83458f48-be5b-f6e2-bec0-144f510522a5.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-26"
+  },
+  {
+    "sp_cf_id": "268",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "Sustainability Report Complete 2019-3M.pdf",
+    "f_description": "2019",
+    "f_path": "5cf9f022-adeb-99b1-e3b0-3614bff624a9.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-26"
+  },
+  {
+    "sp_cf_id": "269",
+    "spc_id": "26",
+    "f_type": "1",
+    "f_name": "和鑫CSR報告書2018.pdf",
+    "f_description": "2018",
+    "f_path": "be3f8145-7acb-4449-728d-c298e77b4eba.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "270",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2018Motech_CSR_Report-茂迪.pdf",
+    "f_description": "2018",
+    "f_path": "3b98c894-7871-e173-7a8e-b37d76f294c0.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "271",
+    "spc_id": "28",
+    "f_type": "1",
+    "f_name": "20190827-CSR_Report_2018_ChT-琳得科_頁面_01.jpg",
+    "f_description": "2018",
+    "f_path": "88d0a0f0-1924-9525-4235-3cdbf665c90d.jpg",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "272",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2018CSR_tw-瀚宇彩晶.pdf",
+    "f_description": "2018",
+    "f_path": "cbe2b7b3-2cd8-c31f-232e-c2dee6d5d0d5.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "273",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "SUMIKA-CSR-Report-2018-住華.pdf",
+    "f_description": "2018",
+    "f_path": "d94e3189-c37d-3a62-4979-b58692a81b49.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "274",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "Coretronic_2018_CSR Report-中強光電.pdf",
+    "f_description": "2018",
+    "f_path": "14da9fa7-abf7-e59d-f830-6d92a894c925.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "275",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2018_INX_CSR-tw0625-群創.pdf",
+    "f_description": "2018",
+    "f_path": "abd0f0c2-1cff-a604-4f77-a415c692125b.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "276",
+    "spc_id": "34",
+    "f_type": "1",
+    "f_name": "2018EPISTAR-CSR-晶元光電.pdf",
+    "f_description": "2018",
+    "f_path": "ddb00106-3e07-057e-d218-2fafe77f72de.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "277",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2018_Delta_CSR_Report_CH-台達電子.pdf",
+    "f_description": "2018",
+    "f_path": "c4d6ed91-f7fa-ce69-7b76-5f6c804825bc.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "278",
+    "spc_id": "36",
+    "f_type": "1",
+    "f_name": "2018WinbondCSRReport_Final-華邦.pdf",
+    "f_description": "2018",
+    "f_path": "ff16d07c-a717-4429-539f-360eedb83c32.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "279",
+    "spc_id": "37",
+    "f_type": "1",
+    "f_name": "2018_TSC_CSR_20190807165629-崇越.pdf",
+    "f_description": "2018",
+    "f_path": "fd599319-1167-bb37-e5e2-111d647d39d4.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "280",
+    "spc_id": "38",
+    "f_type": "1",
+    "f_name": "2018CSR-智邦.pdf",
+    "f_description": "2018",
+    "f_path": "984f1a1f-895e-bf22-5845-d859ad0ab300.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "281",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "AUO_CSR_Report_2018_TC-友達.pdf",
+    "f_description": "2018",
+    "f_path": "0fcf45ed-032a-c8a4-aeba-3a031afc751b.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "283",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2018-日立化成.pdf",
+    "f_description": "2018",
+    "f_path": "6c85434f-2572-5115-9bc8-8b3531967a23.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "285",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2019_all-日東.pdf",
+    "f_description": "2019",
+    "f_path": "c7fe9afd-4e66-2f4e-d9f6-cd8d0b1e23f0.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "286",
+    "spc_id": "42",
+    "f_type": "1",
+    "f_name": "sr2018_all_e-東京威力.pdf",
+    "f_description": "2018",
+    "f_path": "1558ca45-4fb0-0ca3-a39e-08308e674332.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "287",
+    "spc_id": "43",
+    "f_type": "1",
+    "f_name": "Realtek_2018_CSR_Report-瑞昱.pdf",
+    "f_description": "2018",
+    "f_path": "cb77043b-6a1a-8ff4-e782-81f3bd5b5c28.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-27"
+  },
+  {
+    "sp_cf_id": "288",
+    "spc_id": "44",
+    "f_type": "1",
+    "f_name": "CSRreport2018-捷恩智.pdf",
+    "f_description": "2018",
+    "f_path": "316203df-2277-234e-4d61-7cecf3435479.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "289",
+    "spc_id": "45",
+    "f_type": "1",
+    "f_name": "2017聯合骨科器材企業社會責任報告書.pdf",
+    "f_description": "2017",
+    "f_path": "48a7a39f-b222-7089-aca2-439196088053.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "290",
+    "spc_id": "45",
+    "f_type": "1",
+    "f_name": "2016聯合骨科器材企業社會責任報告書.pdf",
+    "f_description": "2016",
+    "f_path": "791a87ee-5ab4-20c1-f1a0-1e9704fa9d56.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "291",
+    "spc_id": "46",
+    "f_type": "1",
+    "f_name": "2017CSR-希華.pdf",
+    "f_description": "2017",
+    "f_path": "867101f6-43d8-5190-2fe1-a12123c5f2f8.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "292",
+    "spc_id": "47",
+    "f_type": "1",
+    "f_name": "2018_csr_rev2-台灣應材.pdf",
+    "f_description": "2018",
+    "f_path": "12433a0b-17b8-da8e-ab12-e38cc7e9c4a7.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "293",
+    "spc_id": "48",
+    "f_type": "1",
+    "f_name": "台灣穗高106年度企業社會責任報告書.pdf",
+    "f_description": "2017",
+    "f_path": "6811336d-cab3-c2d0-3955-b7c6b38f3254.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "294",
+    "spc_id": "48",
+    "f_type": "1",
+    "f_name": "台灣穗高107年度企業社會責任報告書.pdf",
+    "f_description": "2018",
+    "f_path": "7fb74048-4bb4-c65e-0dc7-3b01f5159b33.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "295",
+    "spc_id": "49",
+    "f_type": "1",
+    "f_name": "Lam-Research-CSR Report-2018-科林研發.pdf",
+    "f_description": "2018",
+    "f_path": "cc97fe86-0807-14f0-b3ed-e7e7c426a585.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "296",
+    "spc_id": "49",
+    "f_type": "1",
+    "f_name": "Lam_Research_Corporate_Social_Responsibility_Report_2017_v2.pdf",
+    "f_description": "2017",
+    "f_path": "4a88b6a3-9a7b-eb21-6047-f454472cadec.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "297",
+    "spc_id": "49",
+    "f_type": "1",
+    "f_name": "Lam_Research_Corporate_Social_Responsibility_Report_2016.pdf",
+    "f_description": "2016",
+    "f_path": "7ba645b5-cad7-3cee-6781-60be92af9218.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "298",
+    "spc_id": "50",
+    "f_type": "1",
+    "f_name": "2018_WNC_CSR_Report_TC_FullVersion-啓碁.pdf",
+    "f_description": "2018",
+    "f_path": "e61aa6a0-8775-3cc9-8b6d-ecfdf98a6233.pdf",
+    "spc_id2": "0",
+    "create_date": "2019-08-28"
+  },
+  {
+    "sp_cf_id": "299",
+    "spc_id": "31",
+    "f_type": "1",
+    "f_name": "2019-CSR-Report-_Website.pdf",
+    "f_description": "2019",
+    "f_path": "1cca76e0-188b-5a92-6089-a9e84a82fecc.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "300",
+    "spc_id": "35",
+    "f_type": "1",
+    "f_name": "2019_Delta_CSR_Report_CH.pdf",
+    "f_description": "2019",
+    "f_path": "ad96de61-ff70-287c-4423-f91d8564e350.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "301",
+    "spc_id": "23",
+    "f_type": "1",
+    "f_name": "Sustainability Report 2020 Complete.pdf",
+    "f_description": "2020",
+    "f_path": "d805a569-ca58-5923-6528-1cb558a80600.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "303",
+    "spc_id": "44",
+    "f_type": "1",
+    "f_name": "CSRreport2019.pdf",
+    "f_description": "2019",
+    "f_path": "03f35b49-4a2e-6c25-133a-22bd1e736434.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "304",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "c-all.pdf",
+    "f_description": "2019",
+    "f_path": "a1c042e1-ebd8-a21b-c685-55f1ed57acc2.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "305",
+    "spc_id": "19",
+    "f_type": "1",
+    "f_name": "c-all.pdf",
+    "f_description": "2019",
+    "f_path": "00d0ff59-c468-7f01-ecbe-23428ff9fd8b.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "307",
+    "spc_id": "16",
+    "f_type": "1",
+    "f_name": "202006241156500048.pdf",
+    "f_description": "2019",
+    "f_path": "2f06b236-5d57-cf15-5c00-95505af3feff.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "308",
+    "spc_id": "30",
+    "f_type": "1",
+    "f_name": "202062910028.pdf",
+    "f_description": "2019",
+    "f_path": "95853696-4e97-9e7a-eb1d-1543c9096fdd.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "309",
+    "spc_id": "26",
+    "f_type": "1",
+    "f_name": "20200720064138yr9d.pdf",
+    "f_description": "2019",
+    "f_path": "0d5958b8-833b-b7c2-de4b-14c5846d29a1.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "310",
+    "spc_id": "14",
+    "f_type": "1",
+    "f_name": "1575526162_968.pdf",
+    "f_description": "2018",
+    "f_path": "4445b693-9069-f6a4-5068-977bdcda53d9.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "311",
+    "spc_id": "18",
+    "f_type": "1",
+    "f_name": "tw_csr_download_1660142687.pdf",
+    "f_description": "2019",
+    "f_path": "c2597660-7f3e-c370-09fd-e79d897269a6.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "312",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "220200602111232.PDF",
+    "f_description": "2018",
+    "f_path": "1a9a832d-c5c6-75c5-2ebd-2decdefb2430.PDF",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "313",
+    "spc_id": "9",
+    "f_type": "1",
+    "f_name": "220200918170643.PDF",
+    "f_description": "2019",
+    "f_path": "e640b2e0-04d7-79c8-6aa5-2c83ddf177f8.PDF",
+    "spc_id2": "0",
+    "create_date": "2020-09-28"
+  },
+  {
+    "sp_cf_id": "314",
+    "spc_id": "27",
+    "f_type": "1",
+    "f_name": "2019Motech_CSR_Report.pdf",
+    "f_description": "2019",
+    "f_path": "0c092357-c85c-6889-0ca2-960983d94ad5.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "315",
+    "spc_id": "37",
+    "f_type": "1",
+    "f_name": "2019_TSC_CSR_20200706141548.pdf",
+    "f_description": "2019",
+    "f_path": "22fca804-12d3-f62a-23bc-ee6d57664178.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "316",
+    "spc_id": "34",
+    "f_type": "1",
+    "f_name": "EPISTAR-2019CSR.pdf",
+    "f_description": "2019",
+    "f_path": "b0a0af3f-8bf4-a66c-3910-26a88e8a3ec9.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "317",
+    "spc_id": "38",
+    "f_type": "1",
+    "f_name": "智邦2019.pdf",
+    "f_description": "2019",
+    "f_path": "94560ae6-ee54-467e-ab75-c3dea4484a05.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "318",
+    "spc_id": "28",
+    "f_type": "1",
+    "f_name": "CSR_Report_2019_CH_20200505.pdf",
+    "f_description": "2019",
+    "f_path": "9d91d0fe-2783-108e-cd90-9be1d4267404.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "319",
+    "spc_id": "12",
+    "f_type": "1",
+    "f_name": "108020.pdf",
+    "f_description": "2018",
+    "f_path": "01c36077-b93f-9b77-f447-1c151487c22c.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "320",
+    "spc_id": "21",
+    "f_type": "1",
+    "f_name": "2019_CSR_report_chi_all.pdf",
+    "f_description": "2019",
+    "f_path": "02bda1dc-2d46-a4e2-c218-716ed1d531a2.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-29"
+  },
+  {
+    "sp_cf_id": "321",
+    "spc_id": "3",
+    "f_type": "1",
+    "f_name": "900-20-008-US-sustainability-report-2020.pdf",
+    "f_description": "2020",
+    "f_path": "ef194a9c-68ba-7587-a9e5-aab121b40e3b.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-30"
+  },
+  {
+    "sp_cf_id": "322",
+    "spc_id": "39",
+    "f_type": "1",
+    "f_name": "5efadb62debb0.pdf",
+    "f_description": "2019",
+    "f_path": "34c07837-21b3-ac61-231a-f2d04da84252.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-09-30"
+  },
+  {
+    "sp_cf_id": "323",
+    "spc_id": "40",
+    "f_type": "1",
+    "f_name": "ar_2019.pdf",
+    "f_description": "2019",
+    "f_path": "03903895-d25f-91b5-8772-9cdc78c25285.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "324",
+    "spc_id": "41",
+    "f_type": "1",
+    "f_name": "2020_all.pdf",
+    "f_description": "2020",
+    "f_path": "72b705ba-89f0-f738-602a-d45e4fab6ba3.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "325",
+    "spc_id": "42",
+    "f_type": "1",
+    "f_name": "sustainability_report_2019_e.pdf",
+    "f_description": "2019",
+    "f_path": "c5820f68-7ed8-7a12-e3b6-d03a3b452f74.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "326",
+    "spc_id": "42",
+    "f_type": "1",
+    "f_name": "sustainability_report_2020_all_e.pdf",
+    "f_description": "2020",
+    "f_path": "df3d852b-41b5-9cdd-62db-ba6b306f13ed.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "327",
+    "spc_id": "43",
+    "f_type": "1",
+    "f_name": "Realtek_2019_CSR_Report_v1.pdf",
+    "f_description": "2019",
+    "f_path": "69507b1e-2e92-9ab7-29b0-2e94327de291.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "328",
+    "spc_id": "32",
+    "f_type": "1",
+    "f_name": "2019_INX_CSR-cn06f.pdf",
+    "f_description": "2019",
+    "f_path": "d6a085bb-918c-a55f-f5a2-722d7ff7f4da.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "329",
+    "spc_id": "36",
+    "f_type": "1",
+    "f_name": "2019WinbondCSRFinal.pdf",
+    "f_description": "2019",
+    "f_path": "2d9d0d59-9a12-9623-9f22-e35021eb0d9d.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "330",
+    "spc_id": "45",
+    "f_type": "1",
+    "f_name": "2018%20%E8%81%AF%E5%90%88%E9%AA%A8%E7%A7%91%E5%99%A8%E6%9D%90%E4%BC%81%E6%A5%AD%E7%A4%BE%E6%9C%83%E8%B2%AC%E4%BB%BB%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "f_description": "2018",
+    "f_path": "0babedc8-d09c-b180-ff30-856e53a44d30.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "331",
+    "spc_id": "45",
+    "f_type": "1",
+    "f_name": "2019%20%E8%81%AF%E5%90%88%E9%AA%A8%E7%A7%91%E5%99%A8%E6%9D%90%E4%BC%81%E6%A5%AD%E7%A4%BE%E6%9C%83%E8%B2%AC%E4%BB%BB%E5%A0%B1%E5%91%8A%E6%9B%B8.pdf",
+    "f_description": "2019",
+    "f_path": "7ab1357e-bbf3-7712-dbff-828f5fe0ab0a.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "332",
+    "spc_id": "46",
+    "f_type": "1",
+    "f_name": "2018CSR.pdf",
+    "f_description": "2018",
+    "f_path": "be22527d-f880-f062-edef-f50e2bff85db.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "333",
+    "spc_id": "47",
+    "f_type": "1",
+    "f_name": "2019_Sustainability_F.pdf",
+    "f_description": "2019",
+    "f_path": "559970ff-8869-997f-6206-158428261d63.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "334",
+    "spc_id": "48",
+    "f_type": "1",
+    "f_name": "108年度企業社會責任報告書.pdf",
+    "f_description": "2019",
+    "f_path": "3400049b-8f70-3d59-c408-89f0e50eb55b.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "335",
+    "spc_id": "49",
+    "f_type": "1",
+    "f_name": "Lam-Research-2019-CSR-Report.pdf",
+    "f_description": "2019",
+    "f_path": "bb2189db-206e-5a24-9ffa-28fba1686f34.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-05"
+  },
+  {
+    "sp_cf_id": "336",
+    "spc_id": "11",
+    "f_type": "1",
+    "f_name": "kingslide-2020csr.pdf",
+    "f_description": "2019",
+    "f_path": "f506f359-8594-91b2-aad0-611fa2333741.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-07"
+  },
+  {
+    "sp_cf_id": "337",
+    "spc_id": "29",
+    "f_type": "1",
+    "f_name": "Hannstar_2019CSR_tw.pdf",
+    "f_description": "2019",
+    "f_path": "9eecb75c-fbdf-5326-2b1a-8c07e69d7629.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-07"
+  },
+  {
+    "sp_cf_id": "338",
+    "spc_id": "51",
+    "f_type": "1",
+    "f_name": "2019_wiwynn_csr_tw.pdf",
+    "f_description": "2019",
+    "f_path": "21b9cd1d-fc68-d79c-d12a-412ce291fb16.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-07"
+  },
+  {
+    "sp_cf_id": "339",
+    "spc_id": "50",
+    "f_type": "1",
+    "f_name": "2019_WNC_CSR_Report_TC_FullVersion.pdf",
+    "f_description": "2019",
+    "f_path": "9521daae-b9e7-ff94-fbf5-23bbb91a7ff4.pdf",
+    "spc_id2": "0",
+    "create_date": "2020-10-07"
+  }
+]

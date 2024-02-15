@@ -1,0 +1,73 @@
+@import "../../styles/variables.scss";
+.sus_data_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .sus_data_container_header {
+    > h4 {
+      margin: 0;
+      font-size: 22px;
+    }
+  }
+
+  .selection_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    > label {
+      width: 100px;
+      font-weight: 700;
+    }
+
+    .Mui-focused .MuiOutlinedInput-notchedOutlin {
+      border-color: #000;
+    }
+
+    .MuiInputBase-root {
+      .Mui-focused {
+        .MuiOutlinedInput-notchedOutline {
+          border-color: #000;
+        }
+      }
+    }
+  }
+
+  .checkbox_container {
+    > legend {
+      font-weight: 700;
+      color: #000;
+      > span {
+        font-size: 14px;
+        font-weight: 400;
+        color: red;
+        transform: translateX(5px);
+      }
+    }
+
+    .MuiFormGroup-root {
+      padding: 20px 0px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .menu_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > button {
+      color: #ffffff;
+      font-weight: 600;
+      background: $dark-color;
+      text-decoration: none;
+      transition: 0.5s;
+
+      &:hover {
+        border-radius: 15px;
+        transition: 0.5s;
+      }
+    }
+  }
+}

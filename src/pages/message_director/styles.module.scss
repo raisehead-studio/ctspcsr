@@ -1,0 +1,30 @@
+.message_director_photo_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  .director_profile {
+    padding: 20px 0px 50px 0px;
+    width: 20vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+
+    > img {
+      width: 100%;
+      object-fit: contain;
+      position: inherit !important;
+    }
+  }
+
+  .signature_container {
+    padding: 20px 0px 50px 0px;
+    width: 20vw;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    > img {
+      width: 100%;
+      object-fit: contain;
+      position: inherit !important;
+    }
+  }
+}
