@@ -81,7 +81,7 @@ export default function Header() {
                   },
                   {
                     title: "Survey",
-                    path: "https://forms.gle/kxzyUP6eUqnRkkr38",
+                    path: "https://forms.gle/fzxToSUo4MS2kRJL8",
                     isOpenNewTab: true,
                     icon: <PollIcon />,
                   },
@@ -126,7 +126,7 @@ export default function Header() {
                   },
                   {
                     title: "利害關係人問卷",
-                    path: "https://forms.gle/kxzyUP6eUqnRkkr38",
+                    path: "https://forms.gle/fzxToSUo4MS2kRJL8",
                     isOpenNewTab: true,
                     icon: <PollIcon />,
                   },
