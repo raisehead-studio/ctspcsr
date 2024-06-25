@@ -142,7 +142,7 @@ export default function Links() {
             {
               f_id: "1",
               f_title: "行政院國家永續發展委員會",
-              f_url: "https://nsdn.epa.gov.tw/",
+              f_url: "https://ncsd.ndc.gov.tw/",
               f_image_path:
                 "http://www.ctspcsr.com.tw/user_files/extra_links/01_%E8%A1%8C%E6%94%BF%E9%99%A2%E5%9C%8B%E5%AE%B6%E6%B0%B8%E7%BA%8C%E7%99%BC%E5%B1%95%E5%A7%94%E5%93%A1%E6%9C%83.png",
               f_order_by: "1",
@@ -182,7 +182,8 @@ export default function Links() {
             {
               f_id: "5",
               f_title: "行政院環境部綠色生活資訊網",
-              f_url: "https://greenliving.epa.gov.tw/newPublic",
+              f_url:
+                "https://greenliving.epa.gov.tw/GreenLife/Anonymous/LoginById.aspx",
               f_image_path:
                 "http://www.ctspcsr.com.tw/user_files/extra_links/05_%E8%A1%8C%E6%94%BF%E9%99%A2%E7%92%B0%E4%BF%9D%E7%BD%B2%E7%B6%A0%E8%89%B2%E7%94%9F%E6%B4%BB%E8%B3%87%E8%A8%8A%E7%B6%B2.png",
               f_order_by: "5",
