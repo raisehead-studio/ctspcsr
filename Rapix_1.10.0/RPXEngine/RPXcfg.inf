@@ -1,0 +1,8 @@
+{
+   "ApiPort" : 443,
+   "ServerIp" : "https://10.205.23.9",
+   "WebPort" : 443,
+   "Version" : "1.10.0",
+   "GcbDataVersion" : "1.5.0",
+   "LogFolder" : "/etc/RPXEngine/root"
+}
