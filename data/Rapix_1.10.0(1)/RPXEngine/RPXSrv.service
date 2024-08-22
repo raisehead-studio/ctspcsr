@@ -1,0 +1,12 @@
+[Unit]
+Description=RapixEngine Service
+
+[Service]
+Type=simple
+WorkingDirectory=/etc/RPXEngine/
+ExecStart=/bin/bash /etc/RPXEngine/srvrun.sh
+ExecStop=/bin/bash /etc/RPXEngine/srvstop.sh
+Restart=always
+
+[Install]
+WantedBy=multi-user.target
