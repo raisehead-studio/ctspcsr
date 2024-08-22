@@ -1,0 +1,11 @@
+/sbin/netreport
+/usr/bin/crontab
+/usr/bin/locate
+/usr/bin/lockfile
+/usr/bin/ssh-agent
+/usr/bin/wall
+/usr/bin/write
+/usr/lib/vte/gnome-pty-helper
+/usr/libexec/utempter/utempter
+/usr/sbin/lockdev
+/usr/sbin/sendmail.sendmail
