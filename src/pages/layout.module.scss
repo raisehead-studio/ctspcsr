@@ -530,6 +530,18 @@
   }
 }
 
+.big_font {
+  font-size: 30px;
+}
+
+.middle_font {
+  font-size: 14px;
+}
+
+.small_font {
+  font-size: 11px;
+}
+
 .page_layout {
   min-height: 70vh;
   max-width: 1280px;
@@ -558,7 +570,6 @@
     .page_description {
       > p {
         text-align: justify;
-        font-size: 14px;
         color: #999;
         line-height: 1.6;
         font-family: "微軟正黑體", "Microsoft JhengHei !important";

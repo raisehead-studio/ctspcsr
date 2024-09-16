@@ -1,3 +1,4 @@
+import { useState } from "react";
 import type { AppProps } from "next/app";
 import { usePathname } from "next/navigation";
 import Head from "next/head";
@@ -10,6 +11,8 @@ import Footer from "../components/Footer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   const pathname = usePathname();
+  const [fontSize, setFontSize] = useState("middle");
+
   return (
     <>
       <Head>
@@ -37,9 +40,18 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
-      <Header />
+      <Header
+        handleFontSize={(size:string) => setFontSize(size)}
+      />
       {pathname === "/performance/" && <div className={style.stat}></div>}
-      <main className={style.main}>
+      <main
+        className={`${style.main} ${
+          fontSize === "big"
+            ? style.big_font
+            : fontSize === "big"
+            ? style.middle_font
+            : style.small_font
+        }`}>
         <Component {...pageProps} />
         <Footer />
         <div className="backdrop"></div>

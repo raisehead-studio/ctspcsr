@@ -13,12 +13,16 @@ import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import LanguageIcon from "@mui/icons-material/Language";
+import Button from "@mui/material/Button";
+import Box from "@mui/material/Box";
 import Swal from "sweetalert2";
+
 
 import menu_zh from "../../data/menu_zh.json";
 import menu_en from "../../data/menu_en.json";
 
 import style from "./styles.module.scss";
+import { IconButton } from "@mui/material";
 
 export default function Header() {
   const [openItem, setOpenItem] = useState<string>("");
@@ -125,12 +129,6 @@ export default function Header() {
                     icon: <FactoryIcon />,
                   },
                   {
-                    title: "利害關係人問卷",
-                    path: "https://forms.gle/fzxToSUo4MS2kRJL8",
-                    isOpenNewTab: true,
-                    icon: <PollIcon />,
-                  },
-                  {
                     title: "訂閱電子報",
                     path: "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108&sn=51",
                     isOpenNewTab: true,
@@ -155,12 +153,19 @@ export default function Header() {
                     isConstruction: true,
                     icon: <LanguageIcon />,
                   },
+                  {
+                    title: "ENG",
+                    path: { pathname: "/", query: { lang: "en" } },
+                    isOpenNewTab: false,
+                    isConstruction: true,
+                    icon: <LanguageIcon />,
+                  },
                 ]
             ).map((item: any, index) => (
               <li
                 key={item.title}
                 style={{
-                  borderRight: index === 6 ? "none" : "1px solid #ffff",
+                  borderRight: "1px solid #ffff",
                 }}>
                 <Link
                   className={style.top_bar_menu_container_item_desktop}
@@ -176,6 +181,13 @@ export default function Header() {
                 </Link>
               </li>
             ))}
+            <li>
+              <a className={style.top_bar_menu_container_item_desktop}
+                onClick={ toogleFontSize }
+              >
+                字級大小
+              </a>
+            </li>
           </ul>
         </div>
       </div>
