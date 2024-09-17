@@ -13,8 +13,9 @@ import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import LanguageIcon from "@mui/icons-material/Language";
-import Button from "@mui/material/Button";
 import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Slider from "@mui/material/Slider";
 import Swal from "sweetalert2";
 
 
@@ -22,13 +23,13 @@ import menu_zh from "../../data/menu_zh.json";
 import menu_en from "../../data/menu_en.json";
 
 import style from "./styles.module.scss";
-import { IconButton } from "@mui/material";
 
 export default function Header() {
   const [openItem, setOpenItem] = useState<string>("");
   const [openSlide, setOpenSlide] = useState<boolean>(false);
   const [openMobileMainMenuItem, setOpenMobileMainMenuItem] =
     useState<string>("");
+  const [openFontSize, setOpenFontSize] = useState<boolean>(false);
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
   const pathname = usePathname();
@@ -45,6 +46,10 @@ export default function Header() {
   const handleToggleSlide = () => {
     setOpenSlide(!openSlide);
   };
+
+  const toggleFontSize = () => setOpenFontSize(!openFontSize);
+
+  const handleCloseFontSize = () => setOpenFontSize(false);
 
   useEffect(() => {
     setOpenSlide(false);
@@ -182,11 +187,12 @@ export default function Header() {
               </li>
             ))}
             <li>
-              <a className={style.top_bar_menu_container_item_desktop}
-                onClick={ toogleFontSize }
-              >
+              <Link
+                href={"javascript:void(0)"}
+                className={style.top_bar_menu_container_item_desktop}
+                onClick={toggleFontSize}>
                 字級大小
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
@@ -491,6 +497,27 @@ export default function Header() {
           })}
         </ul>
       </div>
+      <Modal open={openFontSize} onClose={handleCloseFontSize}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: 200,
+            bgcolor: "background.paper",
+            boxShadow: 24,
+            borderRadius: 4,
+            p: 4,
+          }}>
+          <Slider
+            step={50}
+            marks
+            min={10}
+            max={110}
+          />
+        </Box>
+      </Modal>
     </header>
   );
 }
