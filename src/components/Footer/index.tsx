@@ -6,7 +6,6 @@ import LocationOnIcon from "@mui/icons-material/LocationOn";
 import CallIcon from "@mui/icons-material/Call";
 import FaxIcon from "@mui/icons-material/Fax";
 import { useSearchParams } from "next/navigation";
-import Swal from "sweetalert2";
 
 import style from "./styles.module.scss";
 
@@ -15,16 +14,6 @@ export default function Header() {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
 
-  const handleOpenUnderConstruction = (e: any) => {
-    e.preventDefault();
-
-    Swal.fire({
-      title: lang ? "Under Construction." : "頁面正在維修中。",
-    }).then(() => {
-      return;
-    });
-  };
-
   return (
     <footer className={style.footer}>
       <div className={style.container1}>
@@ -32,18 +21,34 @@ export default function Header() {
           <h5>{lang ? "Facebook" : "中部科學園區 FB粉專"}</h5>
         </div>
         <div className={style.qrcode_container}>
-          <Image
-            width="120"
-            height="180"
-            src="/images/footer/zh/qr1.png"
-            alt=""
-          />
-          <Image
-            width="120"
-            height="180"
-            src="/images/footer/zh/qr2.png"
-            alt=""
-          />
+          <Link
+            href="https://www.facebook.com/CTSPBureau/?locale=zh_TW"
+            target="_blank">
+            <Image
+              width="80"
+              height="80"
+              src="/images/footer/facebook_logo.png"
+              alt=""
+            />
+            <div>
+              <p>悠遊中科</p>
+              <p>Facebook</p>
+            </div>
+          </Link>
+          <Link
+            href="https://www.facebook.com/groups/ctspnews/"
+            target="_blank">
+            <Image
+              width="80"
+              height="80"
+              src="/images/footer/facebook_logo.png"
+              alt=""
+            />
+            <div>
+              <p>中科新鮮事</p>
+              <p>Facebook</p>
+            </div>
+          </Link>
         </div>
       </div>
       <div className={style.container2}>
@@ -53,18 +58,17 @@ export default function Header() {
         <div>
           <ul>
             <li>
-              <Link
-                onClick={handleOpenUnderConstruction}
-                href={
-                  "https://www.stsp.gov.tw/web/WEB/Jsp/Page/cindex.jsp?frontTarget=DEFAULT&thisRootID=85"
-                }>
+              <Link href={"/interactive_art/"}>
                 {lang ? "Interactive Art" : "互動藝術"}
               </Link>
             </li>
             <li>
               <Link
-                onClick={handleOpenUnderConstruction}
-                href={"https://www.facebook.com/stsp543/?ref=ts&fref=ts"}>
+                href={
+                  "https://www.ctsp.gov.tw/chinese/05-Publication/05-mv.aspx?v=1&fr=1105&no=1110"
+                }
+                target="_blank"
+              >
                 {lang ? "Video" : "影音專區"}
               </Link>
             </li>
@@ -72,7 +76,7 @@ export default function Header() {
               <Link
                 target="_blank"
                 href={
-                  "https://www.stsp.gov.tw/feedback/?opg=Y&frontTarget=DEFAULT"
+                  "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108"
                 }>
                 {lang ? "Q&A" : "中科簡訊"}
               </Link>
@@ -107,7 +111,7 @@ export default function Header() {
             <p>
               {lang
                 ? "No.2, Jhongke Rd., Situn District, Taichung City 407726, Taiwan (R.O.C.)"
-                : "40763 臺中市西屯區中科路2段"}
+                : "40763 臺中市西屯區中科路2號"}
             </p>
           </div>
         </div>
@@ -146,7 +150,7 @@ export default function Header() {
           <Image
             width="250"
             height="180"
-            src="/images/footer/zh/fakemap.png"
+            src="/images/footer/zh/fakemap.jpg"
             alt=""
           />
         </div>

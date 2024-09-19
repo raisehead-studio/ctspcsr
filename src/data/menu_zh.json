@@ -16,23 +16,6 @@
         "path": "/message_director"
       },
       {
-        "title": "焦點專欄",
-        "sub": [
-          {
-            "title": "開拓永續水資源",
-            "path": "/focus/1"
-          },
-          {
-            "title": "疫起守護護國神山群",
-            "path": "/focus/2"
-          },
-          {
-            "title": "振興中部產業 投資二林園區",
-            "path": "/focus/3"
-          }
-        ]
-      },
-      {
         "title": "最新消息",
         "path": "/news"
       },
@@ -231,6 +214,22 @@
   },
   {
     "title": "報告書下載",
-    "path": "/report_download"
+    "path": "/report_download",
+    "sub": [
+      {
+        "title": "報告書下載",
+        "path": "/report_download"
+      },
+      {
+        "title": "中科簡訊",
+        "path": "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108",
+        "isExternal": true
+      },
+      {
+        "title": "中科年報",
+        "path": "https://www.ctsp.gov.tw/chinese/05-Publication/01-documents_yearbook.aspx?v=1&fr=1105&no=1109d",
+        "isExternal": true
+      }
+    ]
   }
 ]

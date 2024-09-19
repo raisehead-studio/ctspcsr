@@ -13,6 +13,7 @@ import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import LanguageIcon from "@mui/icons-material/Language";
+import FontDownloadIcon from "@mui/icons-material/FontDownload";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Slider from "@mui/material/Slider";
@@ -24,7 +25,12 @@ import menu_en from "../../data/menu_en.json";
 
 import style from "./styles.module.scss";
 
-export default function Header() {
+interface HeaderProps {
+  handleFontSize: (size: string) => void;
+  fontSize:string;
+}
+
+export default function Header({ handleFontSize, fontSize }: HeaderProps) {
   const [openItem, setOpenItem] = useState<string>("");
   const [openSlide, setOpenSlide] = useState<boolean>(false);
   const [openMobileMainMenuItem, setOpenMobileMainMenuItem] =
@@ -89,12 +95,6 @@ export default function Header() {
                     icon: <FactoryIcon />,
                   },
                   {
-                    title: "Survey",
-                    path: "https://forms.gle/fzxToSUo4MS2kRJL8",
-                    isOpenNewTab: true,
-                    icon: <PollIcon />,
-                  },
-                  {
                     title: "News",
                     path: "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108&sn=51",
                     isOpenNewTab: true,
@@ -118,6 +118,15 @@ export default function Header() {
                     isOpenNewTab: false,
                     isConstruction: true,
                     icon: <LanguageIcon />,
+                  }
+                  ,
+                  {
+                    title: "字級大小",
+                    path: "javascript:void(0)",
+                    isOpenNewTab: false,
+                    isConstruction: true,
+                    icon: <FontDownloadIcon />,
+                    func: toggleFontSize,
                   },
                 ]
               : [
@@ -159,11 +168,12 @@ export default function Header() {
                     icon: <LanguageIcon />,
                   },
                   {
-                    title: "ENG",
-                    path: { pathname: "/", query: { lang: "en" } },
+                    title: "字級大小",
+                    path: "javascript:void(0)",
                     isOpenNewTab: false,
                     isConstruction: true,
-                    icon: <LanguageIcon />,
+                    icon: <FontDownloadIcon />,
+                    func: toggleFontSize,
                   },
                 ]
             ).map((item: any, index) => (
@@ -175,7 +185,8 @@ export default function Header() {
                 <Link
                   className={style.top_bar_menu_container_item_desktop}
                   target={item.isOpenNewTab ? "_blank" : ""}
-                  href={item.path}>
+                  href={item.path}
+                  onClick={item.func ? item.func : () => {}}>
                   {item.title}
                 </Link>
                 <Link
@@ -186,14 +197,6 @@ export default function Header() {
                 </Link>
               </li>
             ))}
-            <li>
-              <Link
-                href={"javascript:void(0)"}
-                className={style.top_bar_menu_container_item_desktop}
-                onClick={toggleFontSize}>
-                字級大小
-              </Link>
-            </li>
           </ul>
         </div>
       </div>
@@ -510,11 +513,54 @@ export default function Header() {
             borderRadius: 4,
             p: 4,
           }}>
+          <Box
+            sx={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+            }}>
+            <p
+              style={{
+                fontSize: "11px",
+                padding: "0px",
+                margin: "0",
+              }}>
+              小
+            </p>
+            <p
+              style={{
+                fontSize: "14px",
+                padding: "0px",
+                margin: "0",
+              }}>
+              中
+            </p>
+            <p
+              style={{
+                fontSize: "18px",
+                padding: "0px",
+                margin: "0",
+              }}>
+              大
+            </p>
+          </Box>
           <Slider
+            onChange={(e: any) => {
+              const val = e.target.value;
+              if (val < 60) {
+                handleFontSize("small");
+              } else if (val > 80) {
+                handleFontSize("big");
+              } else {
+                handleFontSize("middle");
+              }
+            }}
             step={50}
             marks
             min={10}
             max={110}
+            value={fontSize === "small" ? 10 : fontSize === "middle" ? 60 : 110}
           />
         </Box>
       </Modal>

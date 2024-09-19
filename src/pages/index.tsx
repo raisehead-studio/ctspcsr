@@ -1,7 +1,6 @@
 import { useRouter } from "next/router";
 import Image from "next/image";
 import Link from "next/link";
-import Slider from "react-slick";
 import { useSearchParams } from "next/navigation";
 import { Carousel } from "react-responsive-carousel";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
@@ -20,9 +19,6 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
-
-  console.log(zh_data, en_data);
-
   return (
     <>
       <section className={style.slider_mobile}>
@@ -32,39 +28,41 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
           infiniteLoop
           interval={6000}
           showStatus={false}>
-          <div>
-            <a href="">
-              <Image
-                alt=""
-                src={`/images/home/${lang ? "en" : "zh"}/banner3.png`}
-                sizes={"100vw"}
-                width={500}
-                height={280}
-              />
-            </a>
+          <div
+            onClick={() => {
+              router.push("/e");
+            }}>
+            <Image
+              alt=""
+              src={`/images/home/${lang ? "en" : "zh"}/banner3.jpg`}
+              sizes={"100vw"}
+              width={500}
+              height={280}
+            />
           </div>
-          <div>
-            <a href="">
-              <Image
-                alt=""
-                src={`/images/home/${lang ? "en" : "zh"}/banner2.png`}
-                sizes={"100vw"}
-                width={500}
-                height={280}
-              />
-            </a>
+          <div
+            onClick={() => {
+              router.push("/s");
+            }}>
+            <Image
+              alt=""
+              src={`/images/home/${lang ? "en" : "zh"}/banner2.jpg`}
+              sizes={"100vw"}
+              width={500}
+              height={280}
+            />
           </div>
-
-          <div>
-            <a href="">
-              <Image
-                alt=""
-                src={`/images/home/${lang ? "en" : "zh"}/banner1.png`}
-                sizes={"100vw"}
-                width={500}
-                height={280}
-              />
-            </a>
+          <div
+            onClick={() => {
+              router.push("/g");
+            }}>
+            <Image
+              alt=""
+              src={`/images/home/${lang ? "en" : "zh"}/banner1.jpg`}
+              sizes={"100vw"}
+              width={500}
+              height={280}
+            />
           </div>
         </Carousel>
       </section>
@@ -75,39 +73,41 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
           infiniteLoop
           interval={6000}
           showStatus={false}>
-          <div>
-            <a href="">
-              <Image
-                alt=""
-                src={`/images/home/${lang ? "en" : "zh"}/banner3.png`}
-                sizes={"100vw"}
-                width={500}
-                height={380}
-              />
-            </a>
+          <div
+            onClick={() => {
+              router.push("/e");
+            }}>
+            <Image
+              alt=""
+              src={`/images/home/${lang ? "en" : "zh"}/banner3.jpg`}
+              sizes={"100vw"}
+              width={500}
+              height={380}
+            />
           </div>
-          <div>
-            <a href="">
-              <Image
-                alt=""
-                src={`/images/home/${lang ? "en" : "zh"}/banner2.png`}
-                sizes={"100vw"}
-                width={500}
-                height={380}
-              />
-            </a>
+          <div
+            onClick={() => {
+              router.push("/s");
+            }}>
+            <Image
+              alt=""
+              src={`/images/home/${lang ? "en" : "zh"}/banner2.jpg`}
+              sizes={"100vw"}
+              width={500}
+              height={380}
+            />
           </div>
-
-          <div>
-            <a href="">
-              <Image
-                alt=""
-                src={`/images/home/${lang ? "en" : "zh"}/banner1.png`}
-                sizes={"100vw"}
-                width={500}
-                height={380}
-              />
-            </a>
+          <div
+            onClick={() => {
+              router.push("/g");
+            }}>
+            <Image
+              alt=""
+              src={`/images/home/${lang ? "en" : "zh"}/banner1.jpg`}
+              sizes={"100vw"}
+              width={500}
+              height={380}
+            />
           </div>
         </Carousel>
       </section>
@@ -153,8 +153,8 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
           <div className={style.head}>
             <p className={style.year}>
               {lang
-                ? "Sustainability Management Performance in 2021"
-                : "2021 永續管理績效"}
+                ? "Sustainability Management Performance in 2022-2023"
+                : "2022-2023 永續管理績效"}
             </p>
             <div className={style.poly_container}>
               <Image
@@ -166,48 +166,34 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
             </div>
           </div>
           <div className={style.performance_data_content_container}>
-            <div className={`${style.data_container} ${style.data_container1}`}>
-              <div className={style.data_type}>
-                <p>{lang ? "Economic" : "經濟面"}</p>
-              </div>
-              <RunningNumbers
-                n={9353}
-                c_ahead={lang ? "billions" : ""}
-                c={lang ? "NTD" : "億元"}
-                to_fixed={0}
-                is_currency={true}
-              />
-              <div className={style.data_type}>
-                <RunningNumbers
-                  n={9353}
-                  c_ahead={lang ? "revenue" : "營業額達"}
-                  c={lang ? "billion NTD" : "億元"}
-                  to_fixed={0}
-                  is_currency={true}
-                  is_table
-                />
-              </div>
-            </div>
             <div className={`${style.data_container} ${style.data_container2}`}>
               <div className={style.data_type}>
                 <p>{lang ? "Environment" : "環境面"}</p>
               </div>
               <RunningNumbers
                 c_ahead=""
-                n={46}
+                n={96.1}
                 c={"MW"}
+                to_fixed={1}
+                is_currency={true}
+              />
+              <div className={style.data_type}>
+                {lang ? "Installed-Capacity" : "事業廢棄物再利用率"}
+              </div>
+            </div>
+            <div className={`${style.data_container} ${style.data_container1}`}>
+              <div className={style.data_type}>
+                <p>{lang ? "Economic" : "經濟面"}</p>
+              </div>
+              <RunningNumbers
+                n={4631}
+                c_ahead={lang ? "" : ""}
+                c={lang ? "people" : "人次"}
                 to_fixed={0}
                 is_currency={true}
               />
               <div className={style.data_type}>
-                <RunningNumbers
-                  n={46.33}
-                  c_ahead={lang ? "Installed-Capacity" : "太陽能發電裝置容量達"}
-                  c={"MW"}
-                  to_fixed={2}
-                  is_currency={true}
-                  is_table
-                />
+                {lang ? "revenue" : "累計辦理各項產學合作"}
               </div>
             </div>
             <div className={`${style.data_container} ${style.data_container3}`}>
@@ -215,25 +201,14 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
                 <p>{lang ? "Society" : "社會面"}</p>
               </div>
               <RunningNumbers
-                n={55937}
+                n={15935.2}
                 c_ahead={lang ? "thousand" : ""}
-                c={lang ? "NTD" : "千元"}
+                c={lang ? "NTD" : "萬元"}
                 to_fixed={0}
                 is_currency={true}
               />
               <div className={style.data_type}>
-                <RunningNumbers
-                  n={lang ? 5937000 : 5937}
-                  c_ahead={
-                    lang
-                      ? "Implemented 77 Programs"
-                      : "辦理紓困方案共77件，統計"
-                  }
-                  c={lang ? "" : "千元"}
-                  to_fixed={0}
-                  is_currency={true}
-                  is_table
-                />
+                {lang ? "Implemented 77 Programs" : "帶動廠商投入研發投資"}
               </div>
             </div>
           </div>
@@ -331,45 +306,33 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/images/image54.png"
+          image_src="/images/home/zh/局長的話.jpg"
           alt="team"
           link={lang ? "/message_director/?lang=en" : "/message_director/"}
-          text={lang ? "Message from the Director-General" : "局長的話"}
-          text_container_color="rgba(91, 39, 245, 0.2)"
         />
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/team_icon4.png"
+          image_src="/images/home/zh/好站相連.jpg"
           alt="team"
-          link={lang ? "/focus/1/?lang=en" : "/focus/1"}
-          text={
-            lang ? "Developing sustainable water resources" : "開拓永續水資源"
-          }
-          text_container_color="rgba(39, 82, 245, 0.4)"
+          link={lang ? "/links/?lang=en" : "/links"}
         />
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/team_icon3.png"
+          image_src="/images/home/zh/利害關係人問卷.jpg"
           alt="team"
-          link={lang ? "/focus/2/?lang=en" : "/focus/2/"}
-          text={
-            lang
-              ? "In the epidemic, jointly protect competitive industries"
-              : "疫起守護護國神山群"
+          link={
+            "https://docs.google.com/forms/d/e/1FAIpQLScWzbHpQEQxRFh1eQbQBQ3jS1n0QVZbn1aVAFGcxZdrxBdc0Q/viewform"
           }
-          text_container_color="rgba(245, 39, 43, 0.4)"
         />
 
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/team_icon2.png"
+          image_src="/images/home/zh/ESG管理績效.jpg"
           alt="team"
-          link={lang ? "/focus/3/?lang=en" : "/focus/3/"}
-          text={lang ? "Message from the Director-General" : "振興中部產業"}
-          text_container_color="rgba(39, 99, 245, 0.66)"
+          link={lang ? "/csr_performance/?lang=en" : "/csr_performance/"}
         />
       </section>
     </>

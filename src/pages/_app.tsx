@@ -41,14 +41,14 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="theme-color" content="#ffffff"></meta>
       </Head>
       <Header
-        handleFontSize={(size:string) => setFontSize(size)}
-      />
+        fontSize={fontSize} 
+        handleFontSize={(size: string) => setFontSize(size)} />
       {pathname === "/performance/" && <div className={style.stat}></div>}
       <main
         className={`${style.main} ${
           fontSize === "big"
             ? style.big_font
-            : fontSize === "big"
+            : fontSize === "middle"
             ? style.middle_font
             : style.small_font
         }`}>
