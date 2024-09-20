@@ -53,7 +53,13 @@ export default function F({
 }
 
 async function getData() {
-  const filePath = path.join(process.cwd(), "data", "e", "index.json");
+ const filePath = path.join(
+   process.cwd(),
+   "data",
+   "e",
+   "tsdg9&11",
+   "index.json"
+ );
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
   return data;
