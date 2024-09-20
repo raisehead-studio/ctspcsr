@@ -1,22 +1,25 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useSearchParams, usePathname } from "next/navigation";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
 import MenuIcon from "@mui/icons-material/Menu";
 import DoorbellIcon from "@mui/icons-material/Doorbell";
-import PollIcon from "@mui/icons-material/Poll";
 import FactoryIcon from "@mui/icons-material/Factory";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import LanguageIcon from "@mui/icons-material/Language";
 import FontDownloadIcon from "@mui/icons-material/FontDownload";
+import SearchIcon from "@mui/icons-material/Search";
 import Box from "@mui/material/Box";
 import Modal from "@mui/material/Modal";
 import Slider from "@mui/material/Slider";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import Swal from "sweetalert2";
 
 
@@ -36,6 +39,9 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
   const [openMobileMainMenuItem, setOpenMobileMainMenuItem] =
     useState<string>("");
   const [openFontSize, setOpenFontSize] = useState<boolean>(false);
+  const [keyword, setKeyword] = useState<string>("");
+  
+  const router = useRouter();
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
   const pathname = usePathname();
@@ -72,6 +78,10 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
     });
   };
 
+  const handleNavigate = () => { 
+    router.push(`/result?keyword=${keyword}`);
+  }
+
   return (
     <header className={style.header}>
       <div className={style.mobile_menu_icon} onClick={handleToggleSlide}>
@@ -79,6 +89,23 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
       </div>
       <div className={style.top_bar}>
         <div className={style.top_bar_menu_container}>
+          <div className={style.top_bar_search}>
+            <TextField
+              variant="outlined"
+              size="small"
+              sx={{
+                width: "120px",
+                backgroundColor: "#fff",
+                borderRadius: "4px",
+              }}
+              value={keyword}
+              onChange={(e) => setKeyword(e.target.value)}>
+              <SearchIcon />
+            </TextField>
+            <Button variant="contained" onClick={handleNavigate}>
+              搜尋
+            </Button>
+          </div>
           <ul>
             {(lang === "en"
               ? [
@@ -118,8 +145,7 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
                     isOpenNewTab: false,
                     isConstruction: true,
                     icon: <LanguageIcon />,
-                  }
-                  ,
+                  },
                   {
                     title: "字級大小",
                     path: "javascript:void(0)",
@@ -354,10 +380,33 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
           </ul>
         </div>
       </div>
+
       <div
         className={style.slide_down_container}
         style={openSlide ? { top: "54px" } : { top: "-150vh" }}>
         <ul>
+          <li className={style.dropdown}>
+            <div className={style.dropdown_row}>
+              <TextField
+                variant="outlined"
+                size="small"
+                sx={{
+                  width: "120px",
+                  backgroundColor: "#fff",
+                  borderRadius: "4px",
+                }}
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}>
+                <SearchIcon />
+              </TextField>
+              <Button variant="contained" onClick={() => { 
+                handleNavigate();
+                setOpenSlide(false);
+              }}>
+                搜尋
+              </Button>
+            </div>
+          </li>
           {(lang === "en" ? menu_en : menu_zh).map((item) => {
             if (item.sub) {
               return (

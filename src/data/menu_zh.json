@@ -4,16 +4,16 @@
     "path": "/",
     "sub": [
       {
-        "title": "中科園區簡介",
+        "title": "局長的話",
+        "path": "/message_director"
+      },
+      {
+        "title": "中科園區介紹",
         "path": "/introduction"
       },
       {
         "title": "永續管理績效",
         "path": "/csr_performance"
-      },
-      {
-        "title": "局長的話",
-        "path": "/message_director"
       },
       {
         "title": "最新消息",
@@ -38,29 +38,22 @@
     "title": "主題與目標實踐",
     "sub": [
       {
-        "title": "利害關係人互動",
-        "path": "/stakeholder_interaction"
-      },
-      {
-        "title": "重大主題鑑別",
-        "path": "/big_topics"
-      },
-      {
-        "title": "永續發展目標",
+        "title": "願景與藍圖",
         "path": "/csr_goals"
       },
       {
-        "title": "積極實踐永續發展目標",
-        "path": "/csr_practical_goals"
+        "title": "利害關係人互動",
+        "path": "/stakeholder_interaction"
       },
+
       {
-        "title": "展望未來",
+        "title": "未來展望",
         "path": "/future"
       }
     ]
   },
   {
-    "title": "2022 ESG摘要",
+    "title": "2023 VDR摘要",
     "sub": [
       {
         "title": "社會共融",
