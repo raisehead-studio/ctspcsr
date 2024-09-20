@@ -123,22 +123,31 @@ export default function SideMenu() {
                     : `${style.side_menu_item} ${style.is_sub_menu}`
                 }
                 key={item.title}>
-                <Link
-                  onClick={item.isConstruction && handleOpenUnderConstruction}
-                  href={
-                    lang === "en"
-                      ? {
-                          pathname: item.path,
-                          query: {
-                            lang: "en",
-                          },
-                        }
-                      : {
-                          pathname: item.path,
-                        }
-                  }>
-                  {item.title}
-                </Link>
+                {item.isExternal ? (
+                  <a
+                    onClick={item.isConstruction && handleOpenUnderConstruction}
+                    target="_blank"
+                    href={item.path}>
+                    {item.title}
+                  </a>
+                ) : (
+                  <Link
+                    onClick={item.isConstruction && handleOpenUnderConstruction}
+                    href={
+                      lang === "en"
+                        ? {
+                            pathname: item.path,
+                            query: {
+                              lang: "en",
+                            },
+                          }
+                        : {
+                            pathname: item.path,
+                          }
+                    }>
+                    {item.title}
+                  </Link>
+                )}
               </div>
               {item.sub !== undefined && (
                 <Collapse in={true}>

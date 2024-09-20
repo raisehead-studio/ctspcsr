@@ -1,30 +1,47 @@
 import { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { useRouter } from "next/router";
 import { useSearchParams, usePathname } from "next/navigation";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import Collapse from "@mui/material/Collapse";
 import MenuIcon from "@mui/icons-material/Menu";
 import DoorbellIcon from "@mui/icons-material/Doorbell";
-import PollIcon from "@mui/icons-material/Poll";
 import FactoryIcon from "@mui/icons-material/Factory";
 import NewspaperIcon from "@mui/icons-material/Newspaper";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import FeedbackIcon from "@mui/icons-material/Feedback";
 import LanguageIcon from "@mui/icons-material/Language";
+import FontDownloadIcon from "@mui/icons-material/FontDownload";
+import SearchIcon from "@mui/icons-material/Search";
+import Box from "@mui/material/Box";
+import Modal from "@mui/material/Modal";
+import Slider from "@mui/material/Slider";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 import Swal from "sweetalert2";
+
 
 import menu_zh from "../../data/menu_zh.json";
 import menu_en from "../../data/menu_en.json";
 
 import style from "./styles.module.scss";
 
-export default function Header() {
+interface HeaderProps {
+  handleFontSize: (size: string) => void;
+  fontSize:string;
+}
+
+export default function Header({ handleFontSize, fontSize }: HeaderProps) {
   const [openItem, setOpenItem] = useState<string>("");
   const [openSlide, setOpenSlide] = useState<boolean>(false);
   const [openMobileMainMenuItem, setOpenMobileMainMenuItem] =
     useState<string>("");
+  const [openFontSize, setOpenFontSize] = useState<boolean>(false);
+  const [keyword, setKeyword] = useState<string>("");
+  
+  const router = useRouter();
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
   const pathname = usePathname();
@@ -42,6 +59,10 @@ export default function Header() {
     setOpenSlide(!openSlide);
   };
 
+  const toggleFontSize = () => setOpenFontSize(!openFontSize);
+
+  const handleCloseFontSize = () => setOpenFontSize(false);
+
   useEffect(() => {
     setOpenSlide(false);
     setOpenMobileMainMenuItem("");
@@ -57,6 +78,10 @@ export default function Header() {
     });
   };
 
+  const handleNavigate = () => { 
+    router.push(`/result?keyword=${keyword}`);
+  }
+
   return (
     <header className={style.header}>
       <div className={style.mobile_menu_icon} onClick={handleToggleSlide}>
@@ -64,6 +89,23 @@ export default function Header() {
       </div>
       <div className={style.top_bar}>
         <div className={style.top_bar_menu_container}>
+          <div className={style.top_bar_search}>
+            <TextField
+              variant="outlined"
+              size="small"
+              sx={{
+                width: "120px",
+                backgroundColor: "#fff",
+                borderRadius: "4px",
+              }}
+              value={keyword}
+              onChange={(e) => setKeyword(e.target.value)}>
+              <SearchIcon />
+            </TextField>
+            <Button variant="contained" onClick={handleNavigate}>
+              搜尋
+            </Button>
+          </div>
           <ul>
             {(lang === "en"
               ? [
@@ -78,12 +120,6 @@ export default function Header() {
                     path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
                     isOpenNewTab: true,
                     icon: <FactoryIcon />,
-                  },
-                  {
-                    title: "Survey",
-                    path: "https://forms.gle/fzxToSUo4MS2kRJL8",
-                    isOpenNewTab: true,
-                    icon: <PollIcon />,
                   },
                   {
                     title: "News",
@@ -110,6 +146,14 @@ export default function Header() {
                     isConstruction: true,
                     icon: <LanguageIcon />,
                   },
+                  {
+                    title: "字級大小",
+                    path: "javascript:void(0)",
+                    isOpenNewTab: false,
+                    isConstruction: true,
+                    icon: <FontDownloadIcon />,
+                    func: toggleFontSize,
+                  },
                 ]
               : [
                   {
@@ -123,12 +167,6 @@ export default function Header() {
                     path: "https://www.ctsp.gov.tw/chinese/00-Home/home.aspx?v=1",
                     isOpenNewTab: true,
                     icon: <FactoryIcon />,
-                  },
-                  {
-                    title: "利害關係人問卷",
-                    path: "https://forms.gle/fzxToSUo4MS2kRJL8",
-                    isOpenNewTab: true,
-                    icon: <PollIcon />,
                   },
                   {
                     title: "訂閱電子報",
@@ -155,17 +193,26 @@ export default function Header() {
                     isConstruction: true,
                     icon: <LanguageIcon />,
                   },
+                  {
+                    title: "字級大小",
+                    path: "javascript:void(0)",
+                    isOpenNewTab: false,
+                    isConstruction: true,
+                    icon: <FontDownloadIcon />,
+                    func: toggleFontSize,
+                  },
                 ]
             ).map((item: any, index) => (
               <li
                 key={item.title}
                 style={{
-                  borderRight: index === 6 ? "none" : "1px solid #ffff",
+                  borderRight: "1px solid #ffff",
                 }}>
                 <Link
                   className={style.top_bar_menu_container_item_desktop}
                   target={item.isOpenNewTab ? "_blank" : ""}
-                  href={item.path}>
+                  href={item.path}
+                  onClick={item.func ? item.func : () => {}}>
                   {item.title}
                 </Link>
                 <Link
@@ -333,10 +380,33 @@ export default function Header() {
           </ul>
         </div>
       </div>
+
       <div
         className={style.slide_down_container}
         style={openSlide ? { top: "54px" } : { top: "-150vh" }}>
         <ul>
+          <li className={style.dropdown}>
+            <div className={style.dropdown_row}>
+              <TextField
+                variant="outlined"
+                size="small"
+                sx={{
+                  width: "120px",
+                  backgroundColor: "#fff",
+                  borderRadius: "4px",
+                }}
+                value={keyword}
+                onChange={(e) => setKeyword(e.target.value)}>
+                <SearchIcon />
+              </TextField>
+              <Button variant="contained" onClick={() => { 
+                handleNavigate();
+                setOpenSlide(false);
+              }}>
+                搜尋
+              </Button>
+            </div>
+          </li>
           {(lang === "en" ? menu_en : menu_zh).map((item) => {
             if (item.sub) {
               return (
@@ -479,6 +549,70 @@ export default function Header() {
           })}
         </ul>
       </div>
+      <Modal open={openFontSize} onClose={handleCloseFontSize}>
+        <Box
+          sx={{
+            position: "absolute",
+            top: "50%",
+            left: "50%",
+            transform: "translate(-50%, -50%)",
+            width: 200,
+            bgcolor: "background.paper",
+            boxShadow: 24,
+            borderRadius: 4,
+            p: 4,
+          }}>
+          <Box
+            sx={{
+              display: "flex",
+              width: "100%",
+              justifyContent: "space-between",
+              alignItems: "flex-end",
+            }}>
+            <p
+              style={{
+                fontSize: "11px",
+                padding: "0px",
+                margin: "0",
+              }}>
+              小
+            </p>
+            <p
+              style={{
+                fontSize: "14px",
+                padding: "0px",
+                margin: "0",
+              }}>
+              中
+            </p>
+            <p
+              style={{
+                fontSize: "18px",
+                padding: "0px",
+                margin: "0",
+              }}>
+              大
+            </p>
+          </Box>
+          <Slider
+            onChange={(e: any) => {
+              const val = e.target.value;
+              if (val < 60) {
+                handleFontSize("small");
+              } else if (val > 80) {
+                handleFontSize("big");
+              } else {
+                handleFontSize("middle");
+              }
+            }}
+            step={50}
+            marks
+            min={10}
+            max={110}
+            value={fontSize === "small" ? 10 : fontSize === "middle" ? 60 : 110}
+          />
+        </Box>
+      </Modal>
     </header>
   );
 }

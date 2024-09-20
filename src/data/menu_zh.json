@@ -4,33 +4,16 @@
     "path": "/",
     "sub": [
       {
-        "title": "中科園區簡介",
+        "title": "局長的話",
+        "path": "/message_director"
+      },
+      {
+        "title": "中科園區介紹",
         "path": "/introduction"
       },
       {
         "title": "永續管理績效",
         "path": "/csr_performance"
-      },
-      {
-        "title": "局長的話",
-        "path": "/message_director"
-      },
-      {
-        "title": "焦點專欄",
-        "sub": [
-          {
-            "title": "開拓永續水資源",
-            "path": "/focus/1"
-          },
-          {
-            "title": "疫起守護護國神山群",
-            "path": "/focus/2"
-          },
-          {
-            "title": "振興中部產業 投資二林園區",
-            "path": "/focus/3"
-          }
-        ]
       },
       {
         "title": "最新消息",
@@ -55,171 +38,124 @@
     "title": "主題與目標實踐",
     "sub": [
       {
-        "title": "利害關係人互動",
-        "path": "/stakeholder_interaction"
-      },
-      {
-        "title": "重大主題鑑別",
-        "path": "/big_topics"
-      },
-      {
-        "title": "永續發展目標",
+        "title": "願景與藍圖",
         "path": "/csr_goals"
       },
       {
-        "title": "積極實踐永續發展目標",
-        "path": "/csr_practical_goals"
+        "title": "利害關係人互動",
+        "path": "/stakeholder_interaction"
       },
+
       {
-        "title": "展望未來",
+        "title": "未來展望",
         "path": "/future"
       }
     ]
   },
   {
-    "title": "2022 ESG摘要",
+    "title": "2023 VDR摘要",
     "sub": [
       {
-        "title": "E 綠色園區-氣候行動",
+        "title": "社會共融",
         "path": "/e",
         "sub": [
           {
-            "title": "氣候變遷與防災調適",
-            "path": "/e/1"
-          },
-          {
-            "title": "能資源管理",
-            "path": "/e/2"
-          },
-          {
-            "title": "生態園區",
-            "path": "/e/3"
-          },
-          {
-            "title": "淨零計畫",
-            "path": "/e/4"
-          },
-          {
-            "title": "環境管理",
-            "path": "/e/5",
+            "title": "T-SDG5、8",
+            "path": "/e/tsdg5&8",
             "sub": [
               {
-                "title": "總量管制",
-                "path": "/e/5/1"
+                "title": "T-SDG5",
+                "path": "/e/tsdg5&8/tsdg5"
               },
               {
-                "title": "空污與溫室氣體",
-                "path": "/e/5/2"
+                "title": "T-SDG8",
+                "path": "/e/tsdg5&8/tsdg8"
+              }
+            ]
+          },
+          {
+            "title": "T-SDG9、11",
+            "path": "/e/tsdg9&11",
+            "sub": [
+              {
+                "title": "T-SDG9",
+                "path": "/e/tsdg9&11/tsdg9"
               },
               {
-                "title": "廢污水管理",
-                "path": "/e/5/3"
-              },
-              {
-                "title": "廢棄物處理",
-                "path": "/e/5/4"
+                "title": "T-SDG11",
+                "path": "/e/tsdg9&11/tsdg11"
               }
             ]
           }
         ]
       },
       {
-        "title": "S 創新驅動-創新驅動",
+        "title": "創新導向",
         "path": "/s",
         "sub": [
           {
-            "title": "園區發展與創新轉型",
-            "path": "/s/1"
-          },
-          {
-            "title": "智慧產業蓬勃發展",
-            "path": "/s/2"
-          },
-          {
-            "title": "結合產官學研",
-            "path": "/s/3"
-          },
-          {
-            "title": "深化國際合作",
-            "path": "/s/4"
-          },
-          {
-            "title": "新創圓夢",
-            "path": "/s/5"
-          },
-          {
-            "title": "科技創意 自造接軌",
-            "path": "/s/6"
-          },
-          {
-            "title": "安心職場",
-            "path": "/s/7",
+            "title": "T-SDG4、8",
+            "path": "/s/tsdg4&8",
             "sub": [
               {
-                "title": "創造就業機會",
-                "path": "/s/7/1"
+                "title": "T-SDG4",
+                "path": "/s/tsdg4&8/tsdg4"
               },
               {
-                "title": "培育人才",
-                "path": "/s/7/2"
-              },
-              {
-                "title": "園區勞工權益",
-                "path": "/s/7/3"
-              },
-              {
-                "title": "共創安全健康園區",
-                "path": "/s/7/4"
+                "title": "T-SDG8",
+                "path": "/s/tsdg4&8/tsdg8"
               }
             ]
           },
           {
-            "title": "社會互動",
-            "path": "/s/8",
-            "sub": [
+            "title": "T-SDG17",
+            "path": "/s/tsdg17",
+               "sub": [
               {
-                "title": "智慧園區 便利民眾",
-                "path": "/s/8/1"
-              },
-              {
-                "title": "敦親睦鄰 友善環境",
-                "path": "/s/8/2"
-              },
-              {
-                "title": "社區溝通 環境監測",
-                "path": "/s/8/3"
-              },
-              {
-                "title": "培養人才 佈局未來",
-                "path": "/s/8/4"
+                "title": "T-SDG17",
+                "path": "/s/tsdg17/tsdg17"
               }
             ]
           }
         ]
       },
       {
-        "title": "G園區運維-誠信治理",
+        "title": "永續園區",
         "path": "/g",
         "sub": [
           {
-            "title": "中科管理局營運狀況",
-            "path": "/g/1"
+            "title": "T-SDG6、12",
+            "path": "/g/tsdg6&12",
+            "sub": [
+              {
+                "title": "T-SDG6",
+                "path": "/g/tsdg6&12/tsdg6"
+              }, 
+              {
+                "title": "T-SD12",
+                "path": "/g/tsdg6&12/tsdg12"
+              }
+            ]
           },
           {
-            "title": "風險管理",
-            "path": "/g/2"
+            "title": "T-SDG7",
+            "path": "/g/tsdg7",
+                    "sub": [
+              {
+                "title": "T-SDG7",
+                "path": "/g/tsdg7/tsdg7"
+              }
+            ]
           },
           {
-            "title": "遵紀守法",
-            "path": "/g/3"
-          },
-          {
-            "title": "園區供應鏈",
-            "path": "/g/4"
-          },
-          {
-            "title": "資訊安全管理",
-            "path": "/g/5"
+            "title": "T-SDG13",
+            "path": "/g/tsdg13",
+            "sub": [
+              {
+                "title": "T-SDG13",
+                "path": "/g/tsdg13/tsdg13"
+              }
+            ]
           }
         ]
       }
@@ -231,6 +167,22 @@
   },
   {
     "title": "報告書下載",
-    "path": "/report_download"
+    "path": "/report_download",
+    "sub": [
+      {
+        "title": "報告書下載",
+        "path": "/report_download"
+      },
+      {
+        "title": "中科簡訊",
+        "path": "https://www.ctsp.gov.tw/chinese/05publication/03epaper_view_1.aspx?v=1&fr=1105&no=1108",
+        "isExternal": true
+      },
+      {
+        "title": "中科年報",
+        "path": "https://www.ctsp.gov.tw/chinese/05-Publication/01-documents_yearbook.aspx?v=1&fr=1105&no=1109d",
+        "isExternal": true
+      }
+    ]
   }
 ]
