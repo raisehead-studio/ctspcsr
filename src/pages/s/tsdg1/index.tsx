@@ -3,8 +3,8 @@ import { useSearchParams } from "next/navigation";
 import path from "path";
 import fs from "fs/promises";
 
-import Breadcrumb from "../../components/Breadcrumb";
-import SideMenu from "../../components/SideMenu";
+import Breadcrumb from "../../../components/Breadcrumb";
+import SideMenu from "../../../components/SideMenu";
 import layout from "../layout.module.scss";
 
 export default function F({
