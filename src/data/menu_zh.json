@@ -56,53 +56,71 @@
     "title": "2023 VDR摘要",
     "sub": [
       {
-        "title": "社會共融",
+        "title": "E 永續園區-建構永續經營與優質投資環境",
         "path": "/e",
         "sub": [
           {
-            "title": "T-SDG5、8",
-            "path": "/e/tsdg5&8",
+            "title": "T-SDG6、12",
+            "path": "/e/tsdg6&12",
             "sub": [
               {
-                "title": "T-SDG5",
-                "path": "/e/tsdg5&8/tsdg5"
+                "title": "環境污染風險管理",
+                "path": "/e/tsdg6&12/1"
               },
               {
-                "title": "T-SDG8",
-                "path": "/e/tsdg5&8/tsdg8"
+                "title": "精進水資源利用",
+                "path": "/e/tsdg6&12/2"
+              },
+              {
+                "title": "資源循環及廢棄物完善處理",
+                "path": "/e/tsdg6&12/3"
               }
             ]
           },
           {
-            "title": "T-SDG9、11",
-            "path": "/e/tsdg9&11",
+            "title": "T-SDG7",
+            "path": "/e/tsdg7",
             "sub": [
               {
-                "title": "T-SDG9",
-                "path": "/e/tsdg9&11/tsdg9"
-              },
-              {
-                "title": "T-SDG11",
-                "path": "/e/tsdg9&11/tsdg11"
+                "title": "穩定園區供電",
+                "path": "/e/tsdg7/1"
               }
             ]
-          }
+          },
+           {
+             "title": "T-SDG13",
+             "path": "/e/tsdg13",
+             "sub": [
+               {
+                 "title": "應用智慧系統提升園區應變能力",
+                 "path": "/e/tsdg13/1"
+               },
+               {
+                 "title": "溫室氣體管理",
+                 "path": "/e/tsdg13/2"
+               }
+             ]
+           }
         ]
       },
       {
-        "title": "創新導向",
+        "title": "S 創新導向-激勵高科技產業再創高峰、建構創新創業基地、發揮產業群聚效應",
         "path": "/s",
         "sub": [
           {
-            "title": "T-SDG4、8",
+            "title": "T-SDG 4、8",
             "path": "/s/tsdg4&8",
             "sub": [
               {
-                "title": "T-SDG4",
+                "title": "促進高科技投資與地方就業",
                 "path": "/s/tsdg4&8/tsdg4"
               },
               {
-                "title": "T-SDG8",
+                "title": "提升專業人才量能",
+                "path": "/s/tsdg4&8/2"
+              },
+              {
+                "title": "推動高值化產業技術升級",
                 "path": "/s/tsdg4&8/tsdg8"
               }
             ]
@@ -112,48 +130,46 @@
             "path": "/s/tsdg17",
                "sub": [
               {
-                "title": "T-SDG17",
-                "path": "/s/tsdg17/tsdg17"
+                "title": "串聯產官學研資源",
+                "path": "/s/tsdg17/1"
+              },
+              {
+                "title": "產業交流與國際連結",
+                "path": "/s/tsdg17/2"
               }
             ]
           }
         ]
       },
       {
-        "title": "永續園區",
+        "title": "G 社會共融-建構永續經營與優質投資環境",
         "path": "/g",
         "sub": [
           {
-            "title": "T-SDG6、12",
-            "path": "/g/tsdg6&12",
+            "title": "T-SDG 5、8",
+            "path": "/g/tsdg5&8",
             "sub": [
               {
-                "title": "T-SDG6",
-                "path": "/g/tsdg6&12/tsdg6"
-              }, 
-              {
-                "title": "T-SD12",
-                "path": "/g/tsdg6&12/tsdg12"
+                "title": "營造安全健康的幸福職場環境",
+                "path": "/g/tsdg5&8/tsdg5"
               }
             ]
           },
           {
-            "title": "T-SDG7",
-            "path": "/g/tsdg7",
-                    "sub": [
-              {
-                "title": "T-SDG7",
-                "path": "/g/tsdg7/tsdg7"
-              }
-            ]
-          },
-          {
-            "title": "T-SDG13",
-            "path": "/g/tsdg13",
+            "title": "T-SDG 9、11",
+            "path": "/g/tsdg9&11",
             "sub": [
               {
-                "title": "T-SDG13",
-                "path": "/g/tsdg13/tsdg13"
+                "title": "便捷的智慧化服務",
+                "path": "/g/tsdg9&11/tsdg9"
+              },
+              {
+                "title": "打造健康樂活中科",
+                "path": "/g/tsdg9&11/2"
+              },
+              {
+                "title": "環境生態永續",
+                "path": "/g/tsdg9&11/tsdg11"
               }
             ]
           }

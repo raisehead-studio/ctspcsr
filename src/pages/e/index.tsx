@@ -57,7 +57,6 @@ async function getData() {
    process.cwd(),
    "data",
    "e",
-   "tsdg9&11",
    "index.json"
  );
   const jsonData = await fs.readFile(filePath);
