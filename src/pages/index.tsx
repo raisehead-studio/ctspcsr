@@ -306,21 +306,33 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/局長的話.jpg"
+          image_src={
+            lang
+              ? "/images/home/en/局長的話.jpg"
+              : "/images/home/zh/局長的話.jpg"
+          }
           alt="team"
           link={lang ? "/message_director/?lang=en" : "/message_director/"}
         />
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/好站相連.jpg"
+          image_src={
+            lang
+              ? "/images/home/en/好站相連.jpg"
+              : "/images/home/zh/好站相連.jpg"
+          }
           alt="team"
           link={lang ? "/links/?lang=en" : "/links"}
         />
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/利害關係人問卷.jpg"
+          image_src={
+            lang
+              ? "/images/home/en/利害關係人問卷.jpg"
+              : "/images/home/zh/利害關係人問卷.jpg"
+          }
           alt="team"
           link={
             "https://docs.google.com/forms/d/e/1FAIpQLScWzbHpQEQxRFh1eQbQBQ3jS1n0QVZbn1aVAFGcxZdrxBdc0Q/viewform"
@@ -330,7 +342,11 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
         <CardWithMoreEffect
           small
           height={"220"}
-          image_src="/images/home/zh/ESG管理績效.jpg"
+          image_src={
+            lang
+              ? "/images/home/en/ESG管理績效.jpg"
+              : "/images/home/zh/ESG管理績效.jpg"
+          }
           alt="team"
           link={lang ? "/csr_performance/?lang=en" : "/csr_performance/"}
         />

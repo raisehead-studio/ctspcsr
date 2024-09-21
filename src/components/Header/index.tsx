@@ -103,7 +103,7 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
               <SearchIcon />
             </TextField>
             <Button variant="contained" onClick={handleNavigate}>
-              搜尋
+              {lang === "en" ? "Search" : "搜尋"}
             </Button>
           </div>
           <ul>
@@ -147,7 +147,7 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
                     icon: <LanguageIcon />,
                   },
                   {
-                    title: "字級大小",
+                    title: "Font Size",
                     path: "javascript:void(0)",
                     isOpenNewTab: false,
                     isConstruction: true,
@@ -399,11 +399,13 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
                 onChange={(e) => setKeyword(e.target.value)}>
                 <SearchIcon />
               </TextField>
-              <Button variant="contained" onClick={() => { 
-                handleNavigate();
-                setOpenSlide(false);
-              }}>
-                搜尋
+              <Button
+                variant="contained"
+                onClick={() => {
+                  handleNavigate();
+                  setOpenSlide(false);
+                }}>
+                {lang === "en" ? "Search" : "搜尋"}
               </Button>
             </div>
           </li>
@@ -575,7 +577,7 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
                 padding: "0px",
                 margin: "0",
               }}>
-              小
+              {lang === "en" ? "Small" : "小"}
             </p>
             <p
               style={{
@@ -583,7 +585,7 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
                 padding: "0px",
                 margin: "0",
               }}>
-              中
+              {lang === "en" ? "Medium" : "中"}
             </p>
             <p
               style={{
@@ -591,7 +593,7 @@ export default function Header({ handleFontSize, fontSize }: HeaderProps) {
                 padding: "0px",
                 margin: "0",
               }}>
-              大
+              {lang === "en" ? "Big" : "大"}
             </p>
           </Box>
           <Slider
