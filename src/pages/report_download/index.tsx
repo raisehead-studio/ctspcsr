@@ -34,6 +34,13 @@ export default function ReportDownload() {
     if (lang) {
       setData([
         {
+          name: "2023 Sustainability Report",
+          image: "2023.png",
+          reader_link: "",
+          pdf_link: "https://www.ctspcsr.com.tw/download/2023_en.pdf",
+          video_link: "",
+        },
+        {
           name: "2021 Sustainability Report",
           image: "2021.png",
           reader_link: "",
