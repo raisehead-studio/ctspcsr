@@ -180,7 +180,8 @@
         padding: 20px 0px;
         border-radius: 5px;
         width: 250px;
-        background-color: white;
+
+        
         .data_value {
           display: flex;
           justify-content: space-around;
@@ -202,6 +203,12 @@
         }
 
         .data_type {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          >img{
+            height: 30px;
+          }
           > p {
             margin: 0px;
             color: #555;
@@ -213,19 +220,29 @@
 
       .data_container1 {
         grid-area: data_container1;
+        background-image: url("/images/home/data_container_bg_3.png");
+        background-repeat: repeat;
+        background-size: cover;
+    
       }
 
       .data_container2 {
         grid-area: data_container2;
         background-image: url("/images/home/data_container_bg_2.png");
+        background-repeat: repeat;
+        background-size: cover;
       }
 
       .data_container3 {
         grid-area: data_container3;
+        background-image: url("/images/home/data_container_bg_4.png");
+        background-repeat: repeat;
+        background-size: cover;
       }
 
       .data_container4 {
         grid-area: data_container4;
+   
       }
 
       .menu_button {

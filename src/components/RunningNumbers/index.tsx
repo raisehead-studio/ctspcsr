@@ -10,8 +10,10 @@ export default function RunningNumbers(props: {
   is_table?: boolean;
   c_ahead?: string;
   is_trillion?: boolean;
+  color?: string;
 }) {
-  const { n, c, c_ahead, to_fixed, is_currency, is_table, is_trillion } = props;
+  const { n, c, c_ahead, to_fixed, is_currency, is_table, is_trillion, color } =
+    props;
   const { number } = useSpring({
     from: { number: 0 },
     number: n,
@@ -35,7 +37,9 @@ export default function RunningNumbers(props: {
           padding: "0px",
           gap: "10px",
         }}>
-        {c_ahead && <span style={{ fontSize: "12px" }}>{c_ahead}</span>}
+        <div>
+          {c_ahead && <span style={{ fontSize: "12px" }}>{c_ahead}</span>}
+        </div>
         {is_trillion && (
           <span
             style={{
@@ -67,12 +71,20 @@ export default function RunningNumbers(props: {
       {is_trillion && (
         <p style={{ fontSize: "33px", padding: "0px 2px" }}>1兆 </p>
       )}
-      <animated.p>
+      <animated.p
+        style={{
+          color: color,
+        }}>
         {!is_currency
           ? number.to((n) => n.toFixed(to_fixed))
           : number.to((n) => toCurrency(n.toFixed(to_fixed)))}
       </animated.p>
-      <span>{c}</span>
+      <span
+        style={{
+          color: color,
+        }}>
+        {c}
+      </span>
     </animated.div>
   );
 }

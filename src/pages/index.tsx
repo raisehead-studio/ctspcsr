@@ -168,14 +168,16 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
           <div className={style.performance_data_content_container}>
             <div className={`${style.data_container} ${style.data_container2}`}>
               <div className={style.data_type}>
+                <img src="/images/home/data_containe1_icon.png" alt="" />
                 <p>{lang ? "Environment" : "環境面"}</p>
               </div>
               <RunningNumbers
                 c_ahead=""
                 n={96.1}
-                c={"MW"}
+                c={"%"}
                 to_fixed={1}
                 is_currency={true}
+                color={"#8ec31f"}
               />
               <div className={style.data_type}>
                 {lang ? "Installed-Capacity" : "事業廢棄物再利用率"}
@@ -183,6 +185,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
             </div>
             <div className={`${style.data_container} ${style.data_container1}`}>
               <div className={style.data_type}>
+                <img src="/images/home/data_containe3_icon.png" alt="" />
                 <p>{lang ? "Economic" : "經濟面"}</p>
               </div>
               <RunningNumbers
@@ -191,6 +194,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
                 c={lang ? "people" : "人次"}
                 to_fixed={0}
                 is_currency={true}
+                color={"#28a7e1"}
               />
               <div className={style.data_type}>
                 {lang ? "revenue" : "累計辦理各項產學合作"}
@@ -198,6 +202,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
             </div>
             <div className={`${style.data_container} ${style.data_container3}`}>
               <div className={style.data_type}>
+                <img src="/images/home/data_containe4_icon.png" alt="" />
                 <p>{lang ? "Society" : "社會面"}</p>
               </div>
               <RunningNumbers
@@ -206,6 +211,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
                 c={lang ? "NTD" : "萬元"}
                 to_fixed={0}
                 is_currency={true}
+                color={"#f39700"}
               />
               <div className={style.data_type}>
                 {lang ? "Implemented 77 Programs" : "帶動廠商投入研發投資"}
