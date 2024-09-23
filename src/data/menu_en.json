@@ -47,228 +47,126 @@
     "title": "2023 VDR Summary",
     "sub": [
       {
-        "title": "E Green Park-Climate Action",
+        "title": "E Sustainable Park Building a sustainable management and high-quality investment environment",
         "path": "/e",
         "sub": [
           {
-            "title": "E 永續園區-建構永續經營與優質投資環境",
-            "path": "/e",
+            "title": "T-SDG6、12",
+            "path": "/e/tsdg6&12",
             "sub": [
               {
-                "title": "T-SDG6、12",
-                "path": "/e/tsdg6&12",
-                "sub": [
-                  {
-                    "title": "環境污染風險管理",
-                    "path": "/e/tsdg6&12/1"
-                  },
-                  {
-                    "title": "精進水資源利用",
-                    "path": "/e/tsdg6&12/2"
-                  },
-                  {
-                    "title": "資源循環及廢棄物完善處理",
-                    "path": "/e/tsdg6&12/3"
-                  }
-                ]
+                "title": "Environmental Pollution Risk Management",
+                "path": "/e/tsdg6&12/1"
               },
               {
-                "title": "T-SDG7",
-                "path": "/e/tsdg7",
-                "sub": [
-                  {
-                    "title": "穩定園區供電",
-                    "path": "/e/tsdg7/1"
-                  }
-                ]
+                "title": "Intensive Utilization of Water Resources",
+                "path": "/e/tsdg6&12/2"
               },
               {
-                "title": "T-SDG13",
-                "path": "/e/tsdg13",
-                "sub": [
-                  {
-                    "title": "應用智慧系統提升園區應變能力",
-                    "path": "/e/tsdg13/1"
-                  },
-                  {
-                    "title": "溫室氣體管理",
-                    "path": "/e/tsdg13/2"
-                  }
-                ]
+                "title": " Intensive Utilization of Water Resources",
+                "path": "/e/tsdg6&12/3"
               }
             ]
           },
           {
-            "title": "S 創新導向-激勵高科技產業再創高峰、建構創新創業基地、發揮產業群聚效應",
-            "path": "/s",
+            "title": "T-SDG7",
+            "path": "/e/tsdg7",
             "sub": [
               {
-                "title": "T-SDG 4、8",
-                "path": "/s/tsdg4&8",
-                "sub": [
-                  {
-                    "title": "促進高科技投資與地方就業",
-                    "path": "/s/tsdg4&8/tsdg4"
-                  },
-                  {
-                    "title": "提升專業人才量能",
-                    "path": "/s/tsdg4&8/2"
-                  },
-                  {
-                    "title": "推動高值化產業技術升級",
-                    "path": "/s/tsdg4&8/tsdg8"
-                  }
-                ]
-              },
-              {
-                "title": "T-SDG17",
-                "path": "/s/tsdg17",
-                "sub": [
-                  {
-                    "title": "串聯產官學研資源",
-                    "path": "/s/tsdg17/1"
-                  },
-                  {
-                    "title": "產業交流與國際連結",
-                    "path": "/s/tsdg17/2"
-                  }
-                ]
+                "title": "Stabilize the supply of the park",
+                "path": "/e/tsdg7/1"
               }
             ]
           },
           {
-            "title": "G 社會共融-建構永續經營與優質投資環境",
-            "path": "/g",
+            "title": "T-SDG13",
+            "path": "/e/tsdg13",
             "sub": [
               {
-                "title": "T-SDG 5、8",
-                "path": "/g/tsdg5&8",
-                "sub": [
-                  {
-                    "title": "營造安全健康的幸福職場環境",
-                    "path": "/g/tsdg5&8/tsdg5"
-                  }
-                ]
+                "title": "Applying intelligent system to improve the adaptability of the park",
+                "path": "/e/tsdg13/1"
               },
               {
-                "title": "T-SDG 9、11",
-                "path": "/g/tsdg9&11",
-                "sub": [
-                  {
-                    "title": "便捷的智慧化服務",
-                    "path": "/g/tsdg9&11/tsdg9"
-                  },
-                  {
-                    "title": "打造健康樂活中科",
-                    "path": "/g/tsdg9&11/2"
-                  },
-                  {
-                    "title": "環境生態永續",
-                    "path": "/g/tsdg9&11/tsdg11"
-                  }
-                ]
+                "title": "Greenhouse gas management",
+                "path": "/e/tsdg13/2"
               }
             ]
           }
         ]
       },
       {
-        "title": "S Innovation Driven Industries-Innovation Driven Industries",
+        "title": "S Innovation orientation -Encourage high-tech industries to reach new heights, build an innovation and entrepreneurship base, develop the industrial clustering effect",
         "path": "/s",
         "sub": [
           {
-            "title": "Park Development and Innovation Transformation",
-            "path": "/s/1"
-          },
-          {
-            "title": "Booming smart industry",
-            "path": "/s/2"
-          },
-          {
-            "title": "Combined with industry-government, university and research",
-            "path": "/s/3"
-          },
-          {
-            "title": "Deepen International Cooperation",
-            "path": "/s/4"
-          },
-          {
-            "title": "New Dreams Come True",
-            "path": "/s/5"
-          },
-          {
-            "title": "Integration of Technological Creativity and Self- production",
-            "path": "/s/6"
-          },
-          {
-            "title": "Safe Workplace",
-            "path": "/s/7",
+            "title": "T-SDG 4、8",
+            "path": "/s/tsdg4&8",
             "sub": [
               {
-                "title": "Creating Career Opportunities",
-                "path": "/s/7/1"
+                "title": "Promote high-tech investment and local employment",
+                "path": "/s/tsdg4&8/tsdg4"
               },
               {
-                "title": "Cultivating Talent",
-                "path": "/s/7/2"
+                "title": "Continuously improve the quantity and ability of professional talents",
+                "path": "/s/tsdg4&8/2"
               },
               {
-                "title": "Park Labor Rights",
-                "path": "/s/7/3"
+                "title": "Promote technological upgrading of high-value industries",
+                "path": "/s/tsdg4&8/tsdg8"
               },
               {
-                "title": "Creating a Safe and Healthy Park",
-                "path": "/s/7/4"
+                "title": "Encourage R&D and innovation and cultivate new teams",
+                "path": "/s/tsdg4&8/3"
               }
             ]
           },
           {
-            "title": "Social Interaction",
-            "path": "/s/8",
+            "title": "T-SDG17",
+            "path": "/s/tsdg17",
             "sub": [
               {
-                "title": "Convenient Life in the Smart Park",
-                "path": "/s/8/1"
+                "title": "Tandem Industry, Government, Academy and Research Resources",
+                "path": "/s/tsdg17/1"
               },
               {
-                "title": "Good neighborly and friendly environment",
-                "path": "/s/8/2"
-              },
-              {
-                "title": "Cultivate talents to lay out the future",
-                "path": "/s/8/3"
-              },
-              {
-                "title": "Cultivate talents to lay out the future",
-                "path": "/s/8/4"
+                "title": "Industrial Exchange and International Connection",
+                "path": "/s/tsdg17/2"
               }
             ]
           }
         ]
       },
       {
-        "title": "G Park operation and maintenance- Integrity Governance",
+        "title": "G Social Co-prosperity Building a sustainable management and high-quality investment environment",
         "path": "/g",
         "sub": [
           {
-            "title": "Overview of the operation of the CTSP",
-            "path": "/g/1"
+            "title": "T-SDG 5、8",
+            "path": "/g/tsdg5&8",
+            "sub": [
+              {
+                "title": " Create a Safe, Healthy and Happy Workplace",
+                "path": "/g/tsdg5&8/tsdg5"
+              }
+            ]
           },
           {
-            "title": "Risk management",
-            "path": "/g/2"
-          },
-          {
-            "title": "Compliance with Laws and Regulations",
-            "path": "/g/3"
-          },
-          {
-            "title": "Supply Chain Management",
-            "path": "/g/4"
-          },
-          {
-            "title": "Information security management",
-            "path": "/g/5"
+            "title": "T-SDG 9、11",
+            "path": "/g/tsdg9&11",
+            "sub": [
+              {
+                "title": "Convenient and Intelligent Service",
+                "path": "/g/tsdg9&11/tsdg9"
+              },
+              {
+                "title": "Create a Healthy Lohas CTSP",
+                "path": "/g/tsdg9&11/2"
+              },
+              {
+                "title": "Environmental and ecological sustainability",
+                "path": "/g/tsdg9&11/tsdg11"
+              }
+            ]
           }
         ]
       }

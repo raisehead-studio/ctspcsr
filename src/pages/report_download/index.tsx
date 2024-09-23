@@ -65,6 +65,13 @@ export default function ReportDownload() {
     } else {
       setData([
         {
+          name: "2023永續報告書",
+          image: "2023.png",
+          reader_link: "",
+          pdf_link: "https://www.ctspcsr.com.tw/download/2023_en.pdf",
+          video_link: "",
+        },
+        {
           name: "2021永續報告書",
           image: "2021.png",
           reader_link: "",
