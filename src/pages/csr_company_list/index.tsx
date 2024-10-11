@@ -346,7 +346,7 @@ const CSRCompanyListPage = () => {
                           )}
                         </Link>
                       </td> */}
-                      <td>{item["發行時間(年)"]}</td>
+                      <td>{item["發行年份"]}</td>
                       <td>{item["上市櫃狀況"]}</td>
                     </tr>
                   ))}
