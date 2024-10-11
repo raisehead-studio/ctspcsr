@@ -36,7 +36,7 @@ export default function ReportDownload() {
         {
           name: "2023 Sustainability Report",
           image: "2023.png",
-          reader_link: "",
+          reader_link: "https://www.ctspcsr.com.tw/ebook2023_en",
           pdf_link: "https://www.ctspcsr.com.tw/download/2023_en.pdf",
           video_link: "",
         },
@@ -67,7 +67,7 @@ export default function ReportDownload() {
         {
           name: "2023永續報告書",
           image: "2023.png",
-          reader_link: "",
+          reader_link: "https://www.ctspcsr.com.tw/ebook2023",
           pdf_link: "https://www.ctspcsr.com.tw/download/2023_zh.pdf",
           video_link: "",
         },
@@ -138,12 +138,23 @@ export default function ReportDownload() {
                 </div>
                 <div className={style.download_section_item_button_container}>
                   {i.reader_link && (
-                    <Link href={i.reader_link} target="_blank">
-                      <div style={{ color: "#32b4c2" }}>
-                        <TabletAndroidIcon />
-                        <p>{lang ? "Online Reader" : "線上閱讀"}</p>
-                      </div>
-                    </Link>
+                    <IconButton onClick={handleRedirect(i.pdf_link)}>
+                      <Link href={i.reader_link} target="_blank">
+                        <div style={{ color: "#32b4c2" }}>
+                          <TabletAndroidIcon
+                            sx={{
+                              fontSize: "40px",
+                            }}
+                          />
+                          <p
+                            style={{
+                              fontSize: "15px",
+                            }}>
+                            {lang ? "Online Reader" : "線上閱讀"}
+                          </p>
+                        </div>
+                      </Link>
+                    </IconButton>
                   )}
                   {i.pdf_link && (
                     <IconButton onClick={handleRedirect(i.pdf_link)}>
