@@ -38,7 +38,7 @@ export default function ReportDownload() {
           image: "2023.png",
           reader_link: "https://ctspcsr.com.tw/ebook2023_en",
           pdf_link: "https://ctspcsr.com.tw/download/2023_en.pdf",
-          video_link: "",
+          video_link: "https://ctspcsr.com.tw/ppsx/2023.ppsx",
         },
         {
           name: "2021 Sustainability Report",
@@ -69,7 +69,7 @@ export default function ReportDownload() {
           image: "2023.png",
           reader_link: "https://ctspcsr.com.tw/ebook2023",
           pdf_link: "https://ctspcsr.com.tw/download/2023_zh.pdf",
-          video_link: "",
+          video_link: "https://ctspcsr.com.tw/ppsx/zh/2023.ppsx",
         },
         {
           name: "2021永續報告書",
@@ -174,12 +174,21 @@ export default function ReportDownload() {
                     </IconButton>
                   )}
                   {i.video_link && (
-                    <Link href={i.video_link} target="_blank">
+                    <IconButton onClick={handleRedirect(i.pdf_link)}>
                       <div style={{ color: "#0f8441" }}>
-                        <SmartDisplayIcon />
-                        <p>播放檔</p>
+                        <SmartDisplayIcon
+                          sx={{
+                            fontSize: "40px",
+                          }}
+                        />
+                        <p
+                          style={{
+                            fontSize: "15px",
+                          }}>
+                          播放檔
+                        </p>
                       </div>
-                    </Link>
+                    </IconButton>
                   )}
                 </div>
               </div>
