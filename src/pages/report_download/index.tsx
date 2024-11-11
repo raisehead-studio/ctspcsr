@@ -38,7 +38,7 @@ export default function ReportDownload() {
           image: "2023.png",
           reader_link: "https://ctspcsr.com.tw/ebook2023_en",
           pdf_link: "https://ctspcsr.com.tw/download/2023_en.pdf",
-          video_link: "https://ctspcsr.com.tw/ppsx/2023.ppsx",
+          video_link: "https://ctspcsr.com.tw/ppsx/en/2023.ppsx",
         },
         {
           name: "2021 Sustainability Report",
