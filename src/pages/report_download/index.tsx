@@ -174,7 +174,7 @@ export default function ReportDownload() {
                     </IconButton>
                   )}
                   {i.video_link && (
-                    <IconButton onClick={handleRedirect(i.pdf_link)}>
+                    <IconButton onClick={handleRedirect(i.video_link)}>
                       <div style={{ color: "#0f8441" }}>
                         <SmartDisplayIcon
                           sx={{
@@ -185,7 +185,7 @@ export default function ReportDownload() {
                           style={{
                             fontSize: "15px",
                           }}>
-                          播放檔
+                          {lang ? "PPSX" : "播放檔"}
                         </p>
                       </div>
                     </IconButton>
