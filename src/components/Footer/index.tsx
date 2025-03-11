@@ -22,7 +22,7 @@ export default function Header() {
         </div>
         <div className={style.qrcode_container}>
           <Link
-            href="https://www.facebook.com/CTSPBureau/?locale=zh_TW"
+            href="https://www.facebook.com/CentralTaiwanSciencePark/?locale=zh_TW"
             target="_blank">
             <Image
               width="80"
@@ -67,8 +67,7 @@ export default function Header() {
                 href={
                   "https://www.ctsp.gov.tw/chinese/05-Publication/05-mv.aspx?v=1&fr=1105&no=1110"
                 }
-                target="_blank"
-              >
+                target="_blank">
                 {lang ? "Video" : "影音專區"}
               </Link>
             </li>
