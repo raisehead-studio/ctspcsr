@@ -15,15 +15,20 @@ const News = ({ data }: { data: any }) => {
   const router = useRouter();
   const [page, setPage] = useState(1);
   const PER_PAGE = 10;
+
+
   function currentData() {
     const begin = (page - 1) * PER_PAGE;
     const end = begin + PER_PAGE;
+
     return data.slice(begin, end);
   }
 
   function handleChangePage(_: any, value: number) {
     setPage(value);
   }
+
+
 
   return (
     <div
@@ -88,14 +93,18 @@ async function getData() {
   const filePath = path.join(process.cwd(), "data", "news.json");
   const jsonData = await fs.readFile(filePath);
   const data = JSON.parse(jsonData.toString());
+
   return data;
 }
 
 export async function getStaticProps(context: any) {
   const data = await getData();
+
   const news = data
     .sort(
-      (a: any, b: any) => +new Date(b.create_date) - +new Date(a.create_date)
+      (a: any, b: any) => {
+        return +b.news_id - +a.news_id;
+      }
     )
     .map((news: any) => ({
       news_id: news.news_id,
@@ -103,9 +112,12 @@ export async function getStaticProps(context: any) {
       create_date: news.create_date,
     }));
 
+
+
   if (!news) {
     return { notFound: true };
   }
+
 
   return {
     props: {
