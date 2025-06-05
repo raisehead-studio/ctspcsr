@@ -51,7 +51,11 @@ const News = ({ data }: { data: any }) => {
           </thead>
 
           <tbody>
-            {currentData().map((i: any) => (
+            {currentData()
+              .sort((a: any, b: any) => {
+                return new Date(b.create_date).getTime() - new Date(a.create_date).getTime();
+              })
+              .map((i: any) => (
               <tr key={i.news_id}>
                 <td>{i.create_date}</td>
                 <td>{i.news_title}</td>
@@ -103,7 +107,7 @@ export async function getStaticProps(context: any) {
   const news = data
     .sort(
       (a: any, b: any) => {
-        return +b.news_id - +a.news_id;
+        return new Date(b.create_date).getTime() - new Date(a.create_date).getTime();
       }
     )
     .map((news: any) => ({
