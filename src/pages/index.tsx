@@ -124,28 +124,43 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
           </div>
           <div className={style.line}></div>
         </div>
-        <div className={style.text}>
-          <p>
-            {lang
-              ? "Provide a high-tech industry-friendly environment, encourage R&D and manufacturing of high-tech industrial products, "
-              : ""}
-            <br />
-            {lang
-              ? "and drive technological advancement in the tech industry."
-              : "提供高科技產業優質之環境，鼓勵研究發展及製造高科技工業產品，進而帶動科技產業技術提昇，"}
-            <br />
-            {lang
-              ? "Promote industrial upgrading in the central region and establish a new hub for high-tech industries."
-              : "促進中部地區產業之升級，並形成中部高科技產業新聚落。"}
-          </p>
-        </div>
-        <div className={style.image}>
-          <Image
-            objectFit="contain"
-            src={`/images/home/${lang ? "en" : "zh"}/main.png`}
-            layout="fill"
-            alt="team"
-          />
+
+        <div className={style.sdgs_awards_layout}>
+          {/* Left Side - SDGs Image */}
+          <div className={style.sdgs_section}>
+            <div className={style.sdg_image_container}>
+              <Image
+                src="/images/home/zh/main.png"
+                width={800}
+                height={1000}
+                alt="SDGs Core Objectives"
+                objectFit="contain"
+              />
+            </div>
+          </div>
+
+          {/* Right Side - Awards Section */}
+          <div className={style.awards_section}>
+            <div className={style.award_image_only}>
+              <Image
+                src="/images/home/zh/tsaa-award-2024.png"
+                width={1200}
+                height={600}
+                alt="TSAA 2024 Award"
+                objectFit="contain"
+              />
+            </div>
+
+            <div className={style.award_image_only}>
+              <Image
+                src="/images/home/zh/tcsa-award-2024.png"
+                width={1200}
+                height={600}
+                alt="TCSA 2024 Award"
+                objectFit="contain"
+              />
+            </div>
+          </div>
         </div>
       </section>
       <section className={style.performance_data_section}>

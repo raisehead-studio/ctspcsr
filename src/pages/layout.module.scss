@@ -39,13 +39,17 @@
   }
 
   .main_section {
-    width: calc(100vw - 60px);
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    @media (max-width: 768px) {
-      margin: 0px 30px;
+    padding: 40px 30px;
+    max-width: 1400px;
+    margin: 0 auto;
+
+    @media (max-width: 1024px) {
+      padding: 20px 15px;
     }
 
     .head {
@@ -76,41 +80,49 @@
       }
     }
 
-    .text {
-      > p {
-        color: #999;
-        padding: 0px;
-        margin: 2.5px;
-        text-align: center;
-        @media (max-width: 768px) {
-          font-size: 12px;
+    .sdgs_awards_layout {
+      display: flex;
+      gap: 40px;
+      width: 100%;
+      margin-top: 30px;
+
+      @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      // Left Side - SDGs Section
+      .sdgs_section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+
+        .sdg_image_container {
+          width: 100%;
+
+          img {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+          }
         }
       }
 
-      .big_font {
-        font-size: 18px;
-      }
+      // Right Side - Awards Section
+      .awards_section {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
 
-      .middle_font {
-        font-size: 14px;
-      }
+        .award_image_only {
+          width: 100%;
 
-      .small_font {
-        font-size: 11px;
-      }
-    }
-
-    .image {
-      padding: 50px 0px;
-      > img {
-        height: 80vh !important;
-        position: relative !important;
-      }
-
-      @media (max-width: 768px) {
-        padding: 10px;
-        > img {
-          height: 30vh !important;
+          img {
+            width: 100% !important;
+            height: auto !important;
+            display: block;
+          }
         }
       }
     }
