@@ -355,9 +355,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
               : "/images/home/zh/利害關係人問卷.jpg"
           }
           alt="team"
-          link={
-            "https://docs.google.com/forms/d/e/1FAIpQLScWzbHpQEQxRFh1eQbQBQ3jS1n0QVZbn1aVAFGcxZdrxBdc0Q/viewform"
-          }
+          link={"https://www.surveycake.com/s/BG4pD"}
         />
 
         <CardWithMoreEffect
