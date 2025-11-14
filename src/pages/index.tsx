@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
 import { Carousel } from "react-responsive-carousel";
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import path from "path";
 import fs from "fs/promises";
 
@@ -112,22 +111,10 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
         </Carousel>
       </section>
       <section className={style.main_section}>
-        <h4 className={style.head}>
-          {lang
-            ? "Actively Implementing Sustainable Development Goals"
-            : "積極實踐永續發展目標"}
-        </h4>
-        <div className={style.divider}>
-          <div className={style.line}></div>
-          <div>
-            <KeyboardArrowDownIcon />
-          </div>
-          <div className={style.line}></div>
-        </div>
-
         <div className={style.sdgs_awards_layout}>
           {/* Left Side - SDGs Image */}
           <div className={style.sdgs_section}>
+            <h3 className={style.section_title}>積極實踐永續發展目標</h3>
             <div className={style.sdg_image_container}>
               <Image
                 src="/images/home/zh/main.png"
@@ -141,6 +128,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
 
           {/* Right Side - Awards Section */}
           <div className={style.awards_section}>
+            <h3 className={style.section_title}>2024年中科榮耀肯定</h3>
             <div className={style.award_image_only}>
               <Image
                 src="/images/home/zh/tsaa-award-2024.png"
