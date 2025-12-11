@@ -18,8 +18,8 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
   const router = useRouter();
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
-
-  console.log("lang", "test pull 222");
+  
+  console.log("lang", "test pull 333");
 
   return (
     <>
