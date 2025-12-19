@@ -19,7 +19,7 @@ const Home = ({ zh_data, en_data }: { zh_data: any[]; en_data: any[] }) => {
   const searchParams = useSearchParams();
   const lang = searchParams.get("lang");
   
-  console.log("lang", "test pull 444");
+  console.log("lang", "test pull 555");
 
   return (
     <>
