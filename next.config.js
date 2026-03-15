@@ -14,7 +14,7 @@ const nextConfig = {
     ],
   },
   output: "export",
-  distDir: "",
+  distDir: "out",
   trailingSlash: true,
 };
 
