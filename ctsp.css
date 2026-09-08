@@ -1,0 +1,5 @@
+/* CTSP (中科) per-site theme overrides. Inherits tokens.css defaults (teal). */
+:root {
+  --site-accent: var(--brand);
+  --site-accent-ink: var(--brand-ink);
+}
