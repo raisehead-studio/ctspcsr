@@ -1,4 +1,4 @@
-<#
+﻿<#
   中科 (CTSP) 自動部署常駐服務 — 每隔幾分鐘檢查 GitHub 有沒有新版，有就自動部署。
 
   設計成「裝一次就不用再進 Citrix」：
@@ -17,17 +17,19 @@ param(
   [string]$Branch     = 'static',
   [int]$IntervalSec   = 300,
   [int]$KeepBackups   = 5,
+  # 備份與紀錄檔的存放位置。預設放使用者家目錄，因為中科主機的 D:\ 根目錄不給寫。
+  [string]$WorkRoot   = "$env:USERPROFILE\ctsp-deploy",
   # 只跑一輪就結束（測試用，也可以配合 Windows 排程器每 N 分鐘叫一次）
   [switch]$Once
 )
 
 $ErrorActionPreference = 'Stop'
-$root       = Split-Path $RepoPath -Parent
+$root       = $WorkRoot
 $logDir     = Join-Path $root 'logs'
 $backupRoot = Join-Path $root 'backup'
 $lockFile   = Join-Path $root 'watch-deploy.lock'
 $stateFile  = Join-Path $root 'watch-deploy.state'
-New-Item -ItemType Directory -Force -Path $logDir, $backupRoot | Out-Null
+New-Item -ItemType Directory -Force -Path $root, $logDir, $backupRoot | Out-Null
 
 function Log($msg, $level = 'INFO') {
   $line = "[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $level, $msg
