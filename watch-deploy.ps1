@@ -91,9 +91,13 @@ function Invoke-Deploy {
       }
   }
 
-  # /MIR makes the target identical to the source, deletions included.
+  # /E copies and overwrites but does not purge. /MIR would be tidier, but on
+  # this host the legacy files under the site root were created by another
+  # account and ap1 cannot delete them, so /MIR fails on thousands of entries.
+  # web.config is excluded for the same reason - it is not writable, and the
+  # site deliberately ships no .webp so the missing MIME map does not matter.
   $prev = $ErrorActionPreference; $ErrorActionPreference = 'Continue'
-  robocopy $RepoPath $SitePath /MIR /XD '.git' /NFL /NDL /NJH /R:2 /W:2 | Out-Null
+  robocopy $RepoPath $SitePath /E /XD '.git' /XF 'web.config' /NFL /NDL /NJH /R:2 /W:2 | Out-Null
   $code = $LASTEXITCODE
   $ErrorActionPreference = $prev
   # robocopy: 0-7 are success codes, 8 and above are real failures
