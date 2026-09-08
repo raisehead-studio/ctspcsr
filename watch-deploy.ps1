@@ -28,6 +28,11 @@ param(
   # Backups / logs / lock / state live here. Defaults to the user profile
   # because D:\ root is not writable for the deploy account on this host.
   [string]$WorkRoot   = "$env:USERPROFILE\ctsp-deploy",
+  # Global git config to use. A scheduled task running as SYSTEM reads
+  # C:\Windows\System32\config\systemprofile\.gitconfig, which does not have
+  # the intranet proxy the interactive account configured, so git cannot reach
+  # GitHub. Pointing GIT_CONFIG_GLOBAL at the operator's .gitconfig reuses it.
+  [string]$GitConfig  = 'C:\Users\ap1\.gitconfig',
   # Run a single cycle and exit (for testing, or for a Task Scheduler trigger).
   [switch]$Once
 )
@@ -38,6 +43,8 @@ $backupRoot = Join-Path $WorkRoot 'backup'
 $lockFile   = Join-Path $WorkRoot 'watch-deploy.lock'
 $stateFile  = Join-Path $WorkRoot 'watch-deploy.state'
 New-Item -ItemType Directory -Force -Path $WorkRoot, $logDir, $backupRoot | Out-Null
+
+if ($GitConfig -and (Test-Path $GitConfig)) { $env:GIT_CONFIG_GLOBAL = $GitConfig }
 
 function Invoke-Git {
   # git writes progress ("From https://github.com/...") to stderr. With
@@ -60,7 +67,12 @@ function Write-Log($msg, $level = 'INFO') {
 
 function Get-RemoteSha {
   $r = Invoke-Git -C $RepoPath ls-remote origin "refs/heads/$Branch"
-  if ($r.Code -ne 0) { throw ("ls-remote failed: " + $r.Output) }
+  if ($r.Code -ne 0) {
+    Write-Log ("git: " + (Get-Command git -ErrorAction SilentlyContinue).Source) 'DEBUG'
+    Write-Log ("GIT_CONFIG_GLOBAL: " + $env:GIT_CONFIG_GLOBAL) 'DEBUG'
+    Write-Log ("proxy: " + (Invoke-Git config --get http.proxy).Output.Trim()) 'DEBUG'
+    throw ("ls-remote failed: " + $r.Output)
+  }
   if ($r.Output -match '([0-9a-f]{40})') { return $Matches[1] }
   throw "remote branch '$Branch' not found"
 }
