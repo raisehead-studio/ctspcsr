@@ -39,6 +39,19 @@ $lockFile   = Join-Path $WorkRoot 'watch-deploy.lock'
 $stateFile  = Join-Path $WorkRoot 'watch-deploy.state'
 New-Item -ItemType Directory -Force -Path $WorkRoot, $logDir, $backupRoot | Out-Null
 
+function Invoke-Git {
+  # git writes progress ("From https://github.com/...") to stderr. With
+  # $ErrorActionPreference = 'Stop' PowerShell turns that into a terminating
+  # NativeCommandError, so native calls run with it relaxed and are checked
+  # via $LASTEXITCODE instead.
+  param([Parameter(ValueFromRemainingArguments = $true)][string[]]$GitArgs)
+  $prev = $ErrorActionPreference
+  $ErrorActionPreference = 'Continue'
+  try { $out = & git @GitArgs 2>&1 | Out-String }
+  finally { $ErrorActionPreference = $prev }
+  return @{ Output = $out; Code = $LASTEXITCODE }
+}
+
 function Write-Log($msg, $level = 'INFO') {
   $line = "[{0}] [{1}] {2}" -f (Get-Date -Format 'yyyy-MM-dd HH:mm:ss'), $level, $msg
   Write-Host $line
@@ -46,9 +59,9 @@ function Write-Log($msg, $level = 'INFO') {
 }
 
 function Get-RemoteSha {
-  $out = git -C $RepoPath ls-remote origin "refs/heads/$Branch" 2>&1
-  if ($LASTEXITCODE -ne 0) { throw "ls-remote failed: $out" }
-  if ($out -match '([0-9a-f]{40})') { return $Matches[1] }
+  $r = Invoke-Git -C $RepoPath ls-remote origin "refs/heads/$Branch"
+  if ($r.Code -ne 0) { throw ("ls-remote failed: " + $r.Output) }
+  if ($r.Output -match '([0-9a-f]{40})') { return $Matches[1] }
   throw "remote branch '$Branch' not found"
 }
 
@@ -56,15 +69,19 @@ function Invoke-Deploy {
   $stamp = Get-Date -Format 'yyyyMMdd-HHmmss'
 
   Write-Log 'Fetching latest build...'
-  git -C $RepoPath fetch --prune origin $Branch 2>&1 | Out-Null
-  git -C $RepoPath reset --hard "origin/$Branch" 2>&1 | Out-Null
-  git -C $RepoPath clean -fd 2>&1 | Out-Null
-  $sha = (git -C $RepoPath rev-parse HEAD).Trim()
+  $r = Invoke-Git -C $RepoPath fetch --prune origin $Branch
+  if ($r.Code -ne 0) { throw ("fetch failed: " + $r.Output) }
+  $r = Invoke-Git -C $RepoPath reset --hard "origin/$Branch"
+  if ($r.Code -ne 0) { throw ("reset failed: " + $r.Output) }
+  Invoke-Git -C $RepoPath clean -fd | Out-Null
+  $sha = (Invoke-Git -C $RepoPath rev-parse HEAD).Output.Trim()
   Write-Log ("Checked out {0}" -f $sha.Substring(0, 7))
 
   if (Test-Path $SitePath) {
     $backup = Join-Path $backupRoot $stamp
+    $prev = $ErrorActionPreference; $ErrorActionPreference = 'Continue'
     robocopy $SitePath $backup /E /NFL /NDL /NJH /NJS /R:1 /W:1 | Out-Null
+    $ErrorActionPreference = $prev
     Write-Log "Backed up live site to $backup"
     Get-ChildItem $backupRoot -Directory |
       Sort-Object Name -Descending | Select-Object -Skip $KeepBackups |
@@ -75,8 +92,12 @@ function Invoke-Deploy {
   }
 
   # /MIR makes the target identical to the source, deletions included.
+  $prev = $ErrorActionPreference; $ErrorActionPreference = 'Continue'
   robocopy $RepoPath $SitePath /MIR /XD '.git' /NFL /NDL /NJH /R:2 /W:2 | Out-Null
-  if ($LASTEXITCODE -ge 8) { throw "robocopy failed with code $LASTEXITCODE" }
+  $code = $LASTEXITCODE
+  $ErrorActionPreference = $prev
+  # robocopy: 0-7 are success codes, 8 and above are real failures
+  if ($code -ge 8) { throw "robocopy failed with code $code" }
 
   Set-Content -Path $stateFile -Value $sha
   Write-Log ("Deploy complete: {0}" -f $sha.Substring(0, 7)) 'OK'
