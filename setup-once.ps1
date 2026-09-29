@@ -38,6 +38,14 @@ if (Test-Path (Join-Path $RepoPath '.git')) {
   Write-Host '  完成' -ForegroundColor Green
 }
 
+# 2b. git 連線設定：中科內網擋掉憑證撤銷檢查用的外部端點（CRL/OCSP），
+#     Git 2.56 起以 schannel 連線會因此握手失敗（schannel: failed to receive
+#     handshake）。寫在 repo 層級，任何執行身分都適用。
+if (Test-Path (Join-Path $RepoPath '.git')) {
+  git -C $RepoPath config http.schannelCheckRevoke false
+  Write-Host '  已停用 schannel 憑證撤銷檢查（內網無法連線至 CRL/OCSP）' -ForegroundColor Gray
+}
+
 # 3. 部署腳本
 Write-Host "`n[3/4] 安裝部署腳本…" -ForegroundColor Yellow
 $src = Join-Path $PSScriptRoot 'deploy.ps1'
