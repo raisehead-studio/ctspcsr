@@ -213,6 +213,11 @@ if (-not $Apply) {
 
 # ------------------------------------------------------------- post-check
 Head 'Post-check'
+# The installer may move Git to a different directory (x86 -> Program Files)
+# and PATH changes do not reach a process that is already running, so reload
+# it before checking -- otherwise this reports a perfectly good Git as missing.
+$env:Path = [Environment]::GetEnvironmentVariable('Path', 'Machine') + ';' +
+            [Environment]::GetEnvironmentVariable('Path', 'User')
 $git2 = Get-Command git -ErrorAction SilentlyContinue
 if ($git2) { Say ("git : {0}  {1}" -f $git2.Source, (Invoke-Native { git --version }).Trim()) 'Green' }
 else { Say 'git : NOT FOUND - the deploy task will fail. Fix this before finishing.' 'Red'; Note 'git missing after upgrade' }
@@ -222,6 +227,15 @@ if ($node2) { Say ("node: still present at {0}" -f $node2.Source) 'Yellow'; Note
 else { Say 'node: gone' 'Green' }
 
 if ($Apply -and $deploy) {
+  # A newer Git defaults to schannel, which needs to reach CRL/OCSP endpoints
+  # the CTSP intranet blocks; without this the first fetch after an upgrade
+  # fails with 'schannel: failed to receive handshake'.
+  $repo = 'D:\ctsp-static'
+  if (Test-Path (Join-Path $repo '.git')) {
+    Invoke-Native { git -C $repo config http.schannelCheckRevoke false } | Out-Null
+    Say 'Disabled schannel revocation checking for the deploy clone.' 'Gray'
+  }
+
   Say 'Running the deploy task once to confirm the pipeline still works...' 'Yellow'
   try {
     Start-ScheduledTask -TaskName $deploy.TaskName -TaskPath $deploy.TaskPath
