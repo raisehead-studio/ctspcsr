@@ -171,5 +171,8 @@ if ($WhatIf) {
 }
 
 Set-Content -Path $stateFile -Value (@{ total = $state.total; files = $state.files } | ConvertTo-Json -Depth 4)
-Set-Content -Path (Join-Path $SitePath 'visits.json') -Value $json -Encoding UTF8
+# Written without a BOM: Set-Content -Encoding UTF8 on PowerShell 5.1 adds one,
+# and a leading BOM trips up strict JSON parsers even though fetch() copes.
+[System.IO.File]::WriteAllText(
+  (Join-Path $SitePath 'visits.json'), $json, (New-Object System.Text.UTF8Encoding $false))
 Write-Log ("wrote {0}\visits.json" -f $SitePath)
